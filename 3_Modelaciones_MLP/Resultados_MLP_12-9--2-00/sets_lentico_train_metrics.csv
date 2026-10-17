@@ -1,0 +1,16 @@
+DataFrame,RMSE,MAE,NSE,KGE,PBIAS,R2,RSR
+hibrido_(corr_top3)_(relfis_agua),0.098,0.066,0.98,0.98,0.016,0.98,0.13
+hibrido_(corr_top4)_(relfis_agua_qmax),0.31,0.24,0.83,0.85,0.02,0.83,0.41
+hibrido_(corr_top4)_(relfis_agua),0.3,0.23,0.84,0.85,0.0099,0.84,0.4
+hibrido_(corr_top3)_(relfis_agua_q),0.25,0.2,0.89,0.9,-0.0086,0.89,0.33
+hibrido_(corr_top4)_(relfis_agua_q),0.27,0.21,0.87,0.89,0.0001,0.87,0.36
+corr_top3,0.65,0.51,0.25,0.16,0.0089,0.52,0.86
+hibrido_(corr_meteorologia)_(relfis_agua),0.69,0.55,0.16,0.054,0.0021,0.25,0.92
+hibrido_(corr_top3)_(relfis_agua_qmax),0.57,0.45,0.43,0.32,-0.042,0.6,0.76
+corr_top4,0.63,0.48,0.3,0.23,-0.21,0.57,0.84
+corr_meteorologia,0.72,0.57,0.096,-0.0078,-0.031,0.31,0.95
+hibrido_(corr_meteorologia)_(relfis_agua_q),0.71,0.57,0.12,0.045,0.12,0.44,0.94
+hibrido_(corr_meteorologia)_(relfis_agua_qmax),0.71,0.57,0.13,0.035,0.041,0.38,0.93
+relfis_agua_q,0.67,0.54,0.21,0.12,0.033,0.29,0.89
+relfis_agua_qmax,0.67,0.53,0.22,0.14,0.035,0.3,0.88
+relfis_agua,0.64,0.52,0.29,0.23,0.14,0.4,0.84

@@ -1,0 +1,6 @@
+DataFrame,NSE,NSE,NSE,NSE,NSE,NSE,RMSE,RMSE,MAE,MAE,KGE,KGE,PBIAS,PBIAS,R2,R2,RSR,RSR,EarlyStop,Tiempo,Tiempo
+,CV Mean,CV Std,CV Performance,Train,Test,Test Performance,Train,Test,Train,Test,Train,Test,Train,Test,Train,Test,Train,Test,BestEpoch,Segundos,Texto
+hibrido_(corr_top3)_(relfis_agua_qmax)_top3,0.36,0.14,Satisfactorio,0.6,0.52,Bueno,0.8,0.8,0.57,0.58,0.67,0.54,0.0025,-0.33,0.6,0.58,0.63,0.69,65,2850.0,47 min 33.93 s
+corr_todos_sinP_top5,0.37,0.17,Satisfactorio,0.74,0.51,Bueno,0.65,0.82,0.47,0.59,0.78,0.69,0.042,-0.4,0.74,0.56,0.51,0.7,168,3450.0,57 min 26.91 s
+corr_todos_sinP_top3,0.47,0.074,Satisfactorio,0.61,0.51,Bueno,0.79,0.81,0.54,0.59,0.66,0.59,0.073,-0.37,0.62,0.56,0.62,0.7,107,4480.0,74 min 40.35 s
+hibrido_(corr_top3)_(relfis_agua_qmax)_top5,0.36,0.2,Satisfactorio,0.65,0.51,Bueno,0.76,0.82,0.55,0.62,0.74,0.54,0.026,-0.21,0.65,0.53,0.6,0.7,118,3450.0,57 min 34.73 s

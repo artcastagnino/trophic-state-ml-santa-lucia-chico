@@ -1,0 +1,8 @@
+feature,feature_importance
+Temperatura_del_aire_minima__TA___ºC__INIA_Las_Brujas_lag1,0.35499611
+Conductividad__μS_cm__EPSE040,0.24189237
+Potencial_de_Hidrogeno__pH___NA__EPSE040,0.13156013
+Oxigeno_Disuelto__OD___mg_L__EPSE040,0.10582007
+Caudal_Maximo__Qmax___m3_s__Florida__Puente_Ruta_5_,0.06797345
+Temperatura_del_agua__T___ºC__EPSE040,0.0641252
+Turbidez__NTU__EPSE040,0.033632725

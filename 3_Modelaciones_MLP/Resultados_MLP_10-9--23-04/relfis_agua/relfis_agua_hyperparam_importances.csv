@@ -1,0 +1,10 @@
+hiperparametro,importancia
+hidden_layers,0.4791815973462178
+learning_rate,0.2854770749598328
+activation,0.17103390906795912
+batch_size,0.037124473332317776
+dropout,0.01948389688698915
+leaky_relu_slope,0.006322454776139917
+weight_decay,0.0013765936305434293
+use_batch_norm,0.0
+optimizer,0.0

@@ -1,0 +1,1384 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Log de salida del experimento</title>
+        
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .best-row td {
+            background: #e8f7e8 !important;
+            font-weight: bold;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kv-table th {
+            width: 38%;
+            background: #f8fafc;
+        }
+
+        .img-box {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            line-height: 1.35;
+            font-size: 0.92rem;
+        }
+
+        .dataset-title {
+            padding-top: 8px;
+            border-top: 2px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        .dataset-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+        }
+
+        .small {
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Log de salida del experimento</h1>
+                                <div class="code-block">
+==================================================================================================
+INICIO DEL PROCESAMIENTO
+==================================================================================================
+Diccionario procesado : sets_lentico
+Preset                : None
+Experiment label      : sets_lentico_conservador
+Cantidad de trials    : 1000
+Train size            : 0.8
+CV splits             : 4
+Make plots            : True
+Make tree evolution   : True
+Tree evolution step   : 1
+n_estimators saturation pct : 100
+Use early stopping    : True
+Early stopping rounds : 100
+Final val size        : 0.15
+Search space type     : custom
+Carpeta de salida     : Resultados_6-10--12-43
+
+
+######################################################################
+Procesando corr_top3...
+######################################################################
+
+
+-&gt; Dataset: corr_top3
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 365, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.08, &#x27;subsample&#x27;: 0.91, &#x27;colsample_bytree&#x27;: 0.96, &#x27;min_child_weight&#x27;: 10, &#x27;gamma&#x27;: 0.0687, &#x27;reg_alpha&#x27;: 0.0157, &#x27;reg_lambda&#x27;: 0.58}
+
+-&gt; CV NSE promedio: 0.51
+-&gt; CV NSE desvío  : 0.2
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 7
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 8
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 8.0
+-&gt; Reference tree 95           : 8.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;subsample&#x27;, &#x27;gamma&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.957, &#x27;learning_rate&#x27;: 0.0221, &#x27;subsample&#x27;: 0.0106, &#x27;gamma&#x27;: 0.00321, &#x27;reg_lambda&#x27;: 0.00216, &#x27;n_estimators&#x27;: 0.00171, &#x27;reg_alpha&#x27;: 0.00136, &#x27;colsample_bytree&#x27;: 0.00107, &#x27;max_depth&#x27;: 0.000321}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.53, &#x27;MAE&#x27;: 0.41, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.36, &#x27;PBIAS&#x27;: 0.027, &#x27;R2&#x27;: 0.74, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.5, &#x27;MAE&#x27;: 0.38, &#x27;NSE&#x27;: 0.45, &#x27;KGE&#x27;: 0.34, &#x27;PBIAS&#x27;: -0.24, &#x27;R2&#x27;: 0.77, &#x27;RSR&#x27;: 0.74}
+
+-&gt; Tiempo de ejecución: 11 min 28.00 s
+
+
+######################################################################
+Procesando corr_top4...
+######################################################################
+
+
+-&gt; Dataset: corr_top4
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 277, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.1, &#x27;subsample&#x27;: 0.85, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 9, &#x27;gamma&#x27;: 0.0791, &#x27;reg_alpha&#x27;: 0.139, &#x27;reg_lambda&#x27;: 2.17}
+
+-&gt; CV NSE promedio: 0.56
+-&gt; CV NSE desvío  : 0.15
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 7
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 8
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 8.0
+-&gt; Reference tree 95           : 7.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;subsample&#x27;, &#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;colsample_bytree&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;subsample&#x27;: 0.734, &#x27;min_child_weight&#x27;: 0.141, &#x27;learning_rate&#x27;: 0.0525, &#x27;colsample_bytree&#x27;: 0.0184, &#x27;n_estimators&#x27;: 0.0149, &#x27;gamma&#x27;: 0.0147, &#x27;reg_lambda&#x27;: 0.00946, &#x27;max_depth&#x27;: 0.0088, &#x27;reg_alpha&#x27;: 0.00635}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.51, &#x27;MAE&#x27;: 0.38, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.4, &#x27;PBIAS&#x27;: 0.017, &#x27;R2&#x27;: 0.77, &#x27;RSR&#x27;: 0.67}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.48, &#x27;MAE&#x27;: 0.32, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.43, &#x27;PBIAS&#x27;: -0.29, &#x27;R2&#x27;: 0.79, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Tiempo de ejecución: 11 min 10.00 s
+
+
+######################################################################
+Procesando corr_meteorologia...
+######################################################################
+
+
+-&gt; Dataset: corr_meteorologia
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 365, &#x27;max_depth&#x27;: 4, &#x27;learning_rate&#x27;: 0.08, &#x27;subsample&#x27;: 0.91, &#x27;colsample_bytree&#x27;: 0.94, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.11, &#x27;reg_alpha&#x27;: 0.0126, &#x27;reg_lambda&#x27;: 0.62}
+
+-&gt; CV NSE promedio: 0.012
+-&gt; CV NSE desvío  : 0.24
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 1
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 2
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 2.0
+-&gt; Reference tree 95           : 2.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;gamma&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_lambda&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.862, &#x27;gamma&#x27;: 0.0988, &#x27;learning_rate&#x27;: 0.0115, &#x27;reg_lambda&#x27;: 0.00744, &#x27;reg_alpha&#x27;: 0.00728, &#x27;colsample_bytree&#x27;: 0.00563, &#x27;subsample&#x27;: 0.0032, &#x27;max_depth&#x27;: 0.00257, &#x27;n_estimators&#x27;: 0.00164}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.71, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.12, &#x27;KGE&#x27;: 0.038, &#x27;PBIAS&#x27;: 0.019, &#x27;R2&#x27;: 0.44, &#x27;RSR&#x27;: 0.94}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.68, &#x27;MAE&#x27;: 0.5, &#x27;NSE&#x27;: 0.0042, &#x27;KGE&#x27;: 0.03, &#x27;PBIAS&#x27;: -0.36, &#x27;R2&#x27;: 0.37, &#x27;RSR&#x27;: 1.0}
+
+-&gt; Tiempo de ejecución: 8 min 58.00 s
+
+
+######################################################################
+Procesando relfis_agua...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 446, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.074, &#x27;subsample&#x27;: 0.94, &#x27;colsample_bytree&#x27;: 0.98, &#x27;min_child_weight&#x27;: 8, &#x27;gamma&#x27;: 0.0388, &#x27;reg_alpha&#x27;: 0.157, &#x27;reg_lambda&#x27;: 1.05}
+
+-&gt; CV NSE promedio: 0.044
+-&gt; CV NSE desvío  : 0.39
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 48
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 49
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 49.0
+-&gt; Reference tree 95           : 47.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;learning_rate&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.815, &#x27;max_depth&#x27;: 0.148, &#x27;learning_rate&#x27;: 0.0173, &#x27;subsample&#x27;: 0.007, &#x27;colsample_bytree&#x27;: 0.00359, &#x27;n_estimators&#x27;: 0.00273, &#x27;reg_alpha&#x27;: 0.0027, &#x27;reg_lambda&#x27;: 0.00238, &#x27;gamma&#x27;: 0.000712}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.43, &#x27;MAE&#x27;: 0.34, &#x27;NSE&#x27;: 0.67, &#x27;KGE&#x27;: 0.62, &#x27;PBIAS&#x27;: 0.033, &#x27;R2&#x27;: 0.71, &#x27;RSR&#x27;: 0.57}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.77, &#x27;MAE&#x27;: 0.63, &#x27;NSE&#x27;: -0.28, &#x27;KGE&#x27;: -0.082, &#x27;PBIAS&#x27;: -0.35, &#x27;R2&#x27;: 0.0032, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: 9 min 40.00 s
+
+
+######################################################################
+Procesando relfis_agua_q...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_q
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 343, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.087, &#x27;subsample&#x27;: 0.98, &#x27;colsample_bytree&#x27;: 0.89, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.0459, &#x27;reg_alpha&#x27;: 0.146, &#x27;reg_lambda&#x27;: 1.92}
+
+-&gt; CV NSE promedio: 0.14
+-&gt; CV NSE desvío  : 0.42
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 201
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 202
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 202.0
+-&gt; Reference tree 95           : 92.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;max_depth&#x27;, &#x27;min_child_weight&#x27;, &#x27;gamma&#x27;, &#x27;learning_rate&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;max_depth&#x27;: 0.722, &#x27;min_child_weight&#x27;: 0.195, &#x27;gamma&#x27;: 0.0206, &#x27;learning_rate&#x27;: 0.0125, &#x27;colsample_bytree&#x27;: 0.0123, &#x27;n_estimators&#x27;: 0.0111, &#x27;reg_lambda&#x27;: 0.0104, &#x27;subsample&#x27;: 0.0103, &#x27;reg_alpha&#x27;: 0.00528}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.24, &#x27;MAE&#x27;: 0.2, &#x27;NSE&#x27;: 0.9, &#x27;KGE&#x27;: 0.84, &#x27;PBIAS&#x27;: 0.047, &#x27;R2&#x27;: 0.91, &#x27;RSR&#x27;: 0.32}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.67, &#x27;NSE&#x27;: -0.38, &#x27;KGE&#x27;: -0.033, &#x27;PBIAS&#x27;: -0.19, &#x27;R2&#x27;: 0.0014, &#x27;RSR&#x27;: 1.2}
+
+-&gt; Tiempo de ejecución: 10 min 11.00 s
+
+
+######################################################################
+Procesando relfis_agua_qmax...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_qmax
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 415, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.098, &#x27;subsample&#x27;: 0.92, &#x27;colsample_bytree&#x27;: 0.93, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.0258, &#x27;reg_alpha&#x27;: 0.153, &#x27;reg_lambda&#x27;: 1.68}
+
+-&gt; CV NSE promedio: 0.12
+-&gt; CV NSE desvío  : 0.43
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 37
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 38
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 38.0
+-&gt; Reference tree 95           : 38.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_alpha&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.449, &#x27;max_depth&#x27;: 0.42, &#x27;learning_rate&#x27;: 0.0318, &#x27;reg_alpha&#x27;: 0.0298, &#x27;reg_lambda&#x27;: 0.0226, &#x27;subsample&#x27;: 0.0175, &#x27;gamma&#x27;: 0.0152, &#x27;n_estimators&#x27;: 0.0103, &#x27;colsample_bytree&#x27;: 0.00398}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.39, &#x27;MAE&#x27;: 0.31, &#x27;NSE&#x27;: 0.73, &#x27;KGE&#x27;: 0.64, &#x27;PBIAS&#x27;: 0.042, &#x27;R2&#x27;: 0.79, &#x27;RSR&#x27;: 0.52}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.8, &#x27;MAE&#x27;: 0.67, &#x27;NSE&#x27;: -0.39, &#x27;KGE&#x27;: -0.13, &#x27;PBIAS&#x27;: -0.36, &#x27;R2&#x27;: 0.00018, &#x27;RSR&#x27;: 1.2}
+
+-&gt; Tiempo de ejecución: 10 min 2.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 399, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.037, &#x27;subsample&#x27;: 0.89, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.139, &#x27;reg_alpha&#x27;: 0.00784, &#x27;reg_lambda&#x27;: 0.74}
+
+-&gt; CV NSE promedio: 0.61
+-&gt; CV NSE desvío  : 0.081
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 26
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 27
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 27.0
+-&gt; Reference tree 95           : 21.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;gamma&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.847, &#x27;max_depth&#x27;: 0.0736, &#x27;gamma&#x27;: 0.0229, &#x27;subsample&#x27;: 0.0149, &#x27;learning_rate&#x27;: 0.0148, &#x27;reg_lambda&#x27;: 0.00783, &#x27;n_estimators&#x27;: 0.00767, &#x27;colsample_bytree&#x27;: 0.00592, &#x27;reg_alpha&#x27;: 0.00514}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.33, &#x27;NSE&#x27;: 0.67, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: 0.03, &#x27;R2&#x27;: 0.84, &#x27;RSR&#x27;: 0.58}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.42, &#x27;MAE&#x27;: 0.29, &#x27;NSE&#x27;: 0.61, &#x27;KGE&#x27;: 0.51, &#x27;PBIAS&#x27;: -0.27, &#x27;R2&#x27;: 0.83, &#x27;RSR&#x27;: 0.62}
+
+-&gt; Tiempo de ejecución: 12 min 40.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_q)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 434, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.097, &#x27;subsample&#x27;: 0.87, &#x27;colsample_bytree&#x27;: 0.86, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.0522, &#x27;reg_alpha&#x27;: 0.196, &#x27;reg_lambda&#x27;: 2.01}
+
+-&gt; CV NSE promedio: 0.64
+-&gt; CV NSE desvío  : 0.076
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 14
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 15
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 15.0
+-&gt; Reference tree 95           : 8.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;learning_rate&#x27;, &#x27;max_depth&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.854, &#x27;subsample&#x27;: 0.0557, &#x27;learning_rate&#x27;: 0.0354, &#x27;max_depth&#x27;: 0.0251, &#x27;n_estimators&#x27;: 0.0109, &#x27;reg_alpha&#x27;: 0.00901, &#x27;reg_lambda&#x27;: 0.00431, &#x27;gamma&#x27;: 0.00422, &#x27;colsample_bytree&#x27;: 0.00171}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.39, &#x27;MAE&#x27;: 0.29, &#x27;NSE&#x27;: 0.73, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: 0.026, &#x27;R2&#x27;: 0.84, &#x27;RSR&#x27;: 0.52}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.41, &#x27;MAE&#x27;: 0.3, &#x27;NSE&#x27;: 0.64, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.3, &#x27;R2&#x27;: 0.81, &#x27;RSR&#x27;: 0.6}
+
+-&gt; Tiempo de ejecución: 11 min 3.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_qmax)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 491, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.098, &#x27;subsample&#x27;: 0.87, &#x27;colsample_bytree&#x27;: 0.85, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.0443, &#x27;reg_alpha&#x27;: 0.185, &#x27;reg_lambda&#x27;: 2.13}
+
+-&gt; CV NSE promedio: 0.65
+-&gt; CV NSE desvío  : 0.08
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 9
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 10
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 10.0
+-&gt; Reference tree 95           : 8.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;max_depth&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.872, &#x27;learning_rate&#x27;: 0.0587, &#x27;max_depth&#x27;: 0.025, &#x27;subsample&#x27;: 0.0203, &#x27;reg_alpha&#x27;: 0.00592, &#x27;reg_lambda&#x27;: 0.00585, &#x27;n_estimators&#x27;: 0.00468, &#x27;gamma&#x27;: 0.00376, &#x27;colsample_bytree&#x27;: 0.00353}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.47, &#x27;MAE&#x27;: 0.34, &#x27;NSE&#x27;: 0.62, &#x27;KGE&#x27;: 0.45, &#x27;PBIAS&#x27;: 0.02, &#x27;R2&#x27;: 0.82, &#x27;RSR&#x27;: 0.62}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.31, &#x27;NSE&#x27;: 0.57, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: -0.3, &#x27;R2&#x27;: 0.81, &#x27;RSR&#x27;: 0.66}
+
+-&gt; Tiempo de ejecución: 10 min 38.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 401, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.1, &#x27;subsample&#x27;: 0.85, &#x27;colsample_bytree&#x27;: 0.95, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.173, &#x27;reg_alpha&#x27;: 0.0314, &#x27;reg_lambda&#x27;: 1.12}
+
+-&gt; CV NSE promedio: 0.65
+-&gt; CV NSE desvío  : 0.085
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 9
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 10
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 9.0
+-&gt; Reference tree 95           : 8.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;reg_lambda&#x27;, &#x27;n_estimators&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.866, &#x27;subsample&#x27;: 0.0781, &#x27;reg_lambda&#x27;: 0.0199, &#x27;n_estimators&#x27;: 0.00957, &#x27;reg_alpha&#x27;: 0.00697, &#x27;learning_rate&#x27;: 0.00617, &#x27;colsample_bytree&#x27;: 0.00511, &#x27;max_depth&#x27;: 0.0044, &#x27;gamma&#x27;: 0.00396}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.33, &#x27;NSE&#x27;: 0.66, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: 0.02, &#x27;R2&#x27;: 0.82, &#x27;RSR&#x27;: 0.59}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.43, &#x27;MAE&#x27;: 0.31, &#x27;NSE&#x27;: 0.59, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.31, &#x27;R2&#x27;: 0.8, &#x27;RSR&#x27;: 0.64}
+
+-&gt; Tiempo de ejecución: 11 min 16.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_q)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 241, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.046, &#x27;subsample&#x27;: 0.87, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.035, &#x27;reg_alpha&#x27;: 0.165, &#x27;reg_lambda&#x27;: 0.7}
+
+-&gt; CV NSE promedio: 0.63
+-&gt; CV NSE desvío  : 0.071
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 23
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 24
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 24.0
+-&gt; Reference tree 95           : 21.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;gamma&#x27;, &#x27;reg_alpha&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.948, &#x27;subsample&#x27;: 0.03, &#x27;gamma&#x27;: 0.00548, &#x27;reg_alpha&#x27;: 0.0051, &#x27;learning_rate&#x27;: 0.00391, &#x27;reg_lambda&#x27;: 0.00314, &#x27;n_estimators&#x27;: 0.00225, &#x27;colsample_bytree&#x27;: 0.000932, &#x27;max_depth&#x27;: 0.000704}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.42, &#x27;MAE&#x27;: 0.31, &#x27;NSE&#x27;: 0.69, &#x27;KGE&#x27;: 0.52, &#x27;PBIAS&#x27;: 0.026, &#x27;R2&#x27;: 0.84, &#x27;RSR&#x27;: 0.55}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.41, &#x27;MAE&#x27;: 0.29, &#x27;NSE&#x27;: 0.63, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: -0.29, &#x27;R2&#x27;: 0.82, &#x27;RSR&#x27;: 0.61}
+
+-&gt; Tiempo de ejecución: 12 min 11.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_qmax)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 244, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.065, &#x27;subsample&#x27;: 0.89, &#x27;colsample_bytree&#x27;: 0.92, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.059, &#x27;reg_alpha&#x27;: 0.0777, &#x27;reg_lambda&#x27;: 1.79}
+
+-&gt; CV NSE promedio: 0.63
+-&gt; CV NSE desvío  : 0.061
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 22
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 23
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 16.0
+-&gt; Reference tree 95           : 15.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;max_depth&#x27;, &#x27;learning_rate&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.944, &#x27;subsample&#x27;: 0.0397, &#x27;max_depth&#x27;: 0.0053, &#x27;learning_rate&#x27;: 0.00303, &#x27;gamma&#x27;: 0.00256, &#x27;n_estimators&#x27;: 0.00213, &#x27;colsample_bytree&#x27;: 0.00101, &#x27;reg_alpha&#x27;: 0.001, &#x27;reg_lambda&#x27;: 0.000908}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.38, &#x27;MAE&#x27;: 0.28, &#x27;NSE&#x27;: 0.75, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: 0.032, &#x27;R2&#x27;: 0.85, &#x27;RSR&#x27;: 0.5}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.38, &#x27;MAE&#x27;: 0.28, &#x27;NSE&#x27;: 0.69, &#x27;KGE&#x27;: 0.65, &#x27;PBIAS&#x27;: -0.29, &#x27;R2&#x27;: 0.83, &#x27;RSR&#x27;: 0.56}
+
+-&gt; Tiempo de ejecución: 11 min 57.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 411, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.093, &#x27;subsample&#x27;: 0.89, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.102, &#x27;reg_alpha&#x27;: 0.0874, &#x27;reg_lambda&#x27;: 2.86}
+
+-&gt; CV NSE promedio: 0.21
+-&gt; CV NSE desvío  : 0.32
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 4
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 5
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 5.0
+-&gt; Reference tree 95           : 5.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;colsample_bytree&#x27;, &#x27;gamma&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.963, &#x27;colsample_bytree&#x27;: 0.00849, &#x27;gamma&#x27;: 0.007, &#x27;subsample&#x27;: 0.00607, &#x27;learning_rate&#x27;: 0.0052, &#x27;reg_alpha&#x27;: 0.00309, &#x27;n_estimators&#x27;: 0.00301, &#x27;reg_lambda&#x27;: 0.00242, &#x27;max_depth&#x27;: 0.0013}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.6, &#x27;MAE&#x27;: 0.48, &#x27;NSE&#x27;: 0.36, &#x27;KGE&#x27;: 0.24, &#x27;PBIAS&#x27;: 0.021, &#x27;R2&#x27;: 0.71, &#x27;RSR&#x27;: 0.8}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.73, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: -0.14, &#x27;KGE&#x27;: -0.13, &#x27;PBIAS&#x27;: -0.42, &#x27;R2&#x27;: 0.025, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: 9 min 29.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_q)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 350, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.055, &#x27;subsample&#x27;: 0.99, &#x27;colsample_bytree&#x27;: 0.92, &#x27;min_child_weight&#x27;: 6, &#x27;gamma&#x27;: 0.262, &#x27;reg_alpha&#x27;: 0.177, &#x27;reg_lambda&#x27;: 2.27}
+
+-&gt; CV NSE promedio: 0.2
+-&gt; CV NSE desvío  : 0.35
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 12
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 13
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 13.0
+-&gt; Reference tree 95           : 13.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;max_depth&#x27;, &#x27;gamma&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.948, &#x27;subsample&#x27;: 0.0175, &#x27;max_depth&#x27;: 0.0113, &#x27;gamma&#x27;: 0.00533, &#x27;learning_rate&#x27;: 0.00469, &#x27;reg_lambda&#x27;: 0.0037, &#x27;n_estimators&#x27;: 0.00349, &#x27;reg_alpha&#x27;: 0.0031, &#x27;colsample_bytree&#x27;: 0.00303}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.54, &#x27;MAE&#x27;: 0.43, &#x27;NSE&#x27;: 0.49, &#x27;KGE&#x27;: 0.35, &#x27;PBIAS&#x27;: 0.033, &#x27;R2&#x27;: 0.75, &#x27;RSR&#x27;: 0.71}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.71, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: -0.089, &#x27;KGE&#x27;: -0.028, &#x27;PBIAS&#x27;: -0.42, &#x27;R2&#x27;: 0.075, &#x27;RSR&#x27;: 1.0}
+
+-&gt; Tiempo de ejecución: 9 min 30.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_qmax)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Preset: None
+   Experiment label: sets_lentico_conservador
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 500
+   max_depth         : 2 a 4
+   learning_rate     : 0.01 a 0.1 (step=0.001)
+   subsample         : 0.85 a 1.0 (step=0.01)
+   colsample_bytree  : 0.85 a 1.0 (step=0.01)
+   min_child_weight  : 5 a 10
+   gamma             : 1e-05 a 0.3 (step=1e-05)
+   reg_alpha         : 1e-05 a 0.2 (step=1e-05)
+   reg_lambda        : 0.5 a 3.0 (step=0.01)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 273, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.05, &#x27;subsample&#x27;: 0.85, &#x27;colsample_bytree&#x27;: 0.98, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.0146, &#x27;reg_alpha&#x27;: 0.148, &#x27;reg_lambda&#x27;: 1.19}
+
+-&gt; CV NSE promedio: 0.21
+-&gt; CV NSE desvío  : 0.32
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lentico_conservador
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 9
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 10
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 10.0
+-&gt; Reference tree 95           : 10.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_lambda&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.988, &#x27;subsample&#x27;: 0.0028, &#x27;learning_rate&#x27;: 0.0023, &#x27;reg_lambda&#x27;: 0.00183, &#x27;max_depth&#x27;: 0.00154, &#x27;reg_alpha&#x27;: 0.00122, &#x27;n_estimators&#x27;: 0.000725, &#x27;colsample_bytree&#x27;: 0.000625, &#x27;gamma&#x27;: 0.000533}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.58, &#x27;MAE&#x27;: 0.47, &#x27;NSE&#x27;: 0.4, &#x27;KGE&#x27;: 0.26, &#x27;PBIAS&#x27;: 0.028, &#x27;R2&#x27;: 0.78, &#x27;RSR&#x27;: 0.77}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.7, &#x27;MAE&#x27;: 0.53, &#x27;NSE&#x27;: -0.065, &#x27;KGE&#x27;: -0.086, &#x27;PBIAS&#x27;: -0.38, &#x27;R2&#x27;: 0.077, &#x27;RSR&#x27;: 1.0}
+
+-&gt; Tiempo de ejecución: 10 min 46.00 s
+
+--------------------------------------------------------------------------------------------------
+
+Carpeta de resultados: Resultados_6-10--12-43
+
+Resumen de métricas de train:
+
+                                         DataFrame  RMSE   MAE   NSE    KGE  \
+0           hibrido_(corr_top4)_(relfis_agua_qmax)  0.38  0.28  0.75  0.600   
+1              hibrido_(corr_top3)_(relfis_agua_q)  0.39  0.29  0.73  0.580   
+2              hibrido_(corr_top4)_(relfis_agua_q)  0.42  0.31  0.69  0.520   
+3                hibrido_(corr_top3)_(relfis_agua)  0.44  0.33  0.67  0.490   
+4                hibrido_(corr_top4)_(relfis_agua)  0.44  0.33  0.66  0.490   
+5           hibrido_(corr_top3)_(relfis_agua_qmax)  0.47  0.34  0.62  0.450   
+6                                        corr_top4  0.51  0.38  0.55  0.400   
+7                                        corr_top3  0.53  0.41  0.51  0.360   
+8                                corr_meteorologia  0.71  0.57  0.12  0.038   
+9   hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.58  0.47  0.40  0.260   
+10     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.54  0.43  0.49  0.350   
+11       hibrido_(corr_meteorologia)_(relfis_agua)  0.60  0.48  0.36  0.240   
+12                                     relfis_agua  0.43  0.34  0.67  0.620   
+13                                   relfis_agua_q  0.24  0.20  0.90  0.840   
+14                                relfis_agua_qmax  0.39  0.31  0.73  0.640   
+
+    PBIAS    R2   RSR  
+0   0.032  0.85  0.50  
+1   0.026  0.84  0.52  
+2   0.026  0.84  0.55  
+3   0.030  0.84  0.58  
+4   0.020  0.82  0.59  
+5   0.020  0.82  0.62  
+6   0.017  0.77  0.67  
+7   0.027  0.74  0.70  
+8   0.019  0.44  0.94  
+9   0.028  0.78  0.77  
+10  0.033  0.75  0.71  
+11  0.021  0.71  0.80  
+12  0.033  0.71  0.57  
+13  0.047  0.91  0.32  
+14  0.042  0.79  0.52  
+
+Resumen de métricas de test:
+
+                                         DataFrame  RMSE   MAE     NSE    KGE  \
+0           hibrido_(corr_top4)_(relfis_agua_qmax)  0.38  0.28  0.6900  0.650   
+1              hibrido_(corr_top3)_(relfis_agua_q)  0.41  0.30  0.6400  0.580   
+2              hibrido_(corr_top4)_(relfis_agua_q)  0.41  0.29  0.6300  0.560   
+3                hibrido_(corr_top3)_(relfis_agua)  0.42  0.29  0.6100  0.510   
+4                hibrido_(corr_top4)_(relfis_agua)  0.43  0.31  0.5900  0.530   
+5           hibrido_(corr_top3)_(relfis_agua_qmax)  0.44  0.31  0.5700  0.490   
+6                                        corr_top4  0.48  0.32  0.5100  0.430   
+7                                        corr_top3  0.50  0.38  0.4500  0.340   
+8                                corr_meteorologia  0.68  0.50  0.0042  0.030   
+9   hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.70  0.53 -0.0650 -0.086   
+10     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.71  0.55 -0.0890 -0.028   
+11       hibrido_(corr_meteorologia)_(relfis_agua)  0.73  0.56 -0.1400 -0.130   
+12                                     relfis_agua  0.77  0.63 -0.2800 -0.082   
+13                                   relfis_agua_q  0.79  0.67 -0.3800 -0.033   
+14                                relfis_agua_qmax  0.80  0.67 -0.3900 -0.130   
+
+    PBIAS       R2   RSR  
+0   -0.29  0.83000  0.56  
+1   -0.30  0.81000  0.60  
+2   -0.29  0.82000  0.61  
+3   -0.27  0.83000  0.62  
+4   -0.31  0.80000  0.64  
+5   -0.30  0.81000  0.66  
+6   -0.29  0.79000  0.70  
+7   -0.24  0.77000  0.74  
+8   -0.36  0.37000  1.00  
+9   -0.38  0.07700  1.00  
+10  -0.42  0.07500  1.00  
+11  -0.42  0.02500  1.10  
+12  -0.35  0.00320  1.10  
+13  -0.19  0.00140  1.20  
+14  -0.36  0.00018  1.20  
+
+Resumen de mejores parámetros:
+
+                                         DataFrame  n_estimators  max_depth  \
+0           hibrido_(corr_top4)_(relfis_agua_qmax)           244          2   
+1              hibrido_(corr_top3)_(relfis_agua_q)           434          2   
+2              hibrido_(corr_top4)_(relfis_agua_q)           241          2   
+3                hibrido_(corr_top3)_(relfis_agua)           399          2   
+4                hibrido_(corr_top4)_(relfis_agua)           401          2   
+5           hibrido_(corr_top3)_(relfis_agua_qmax)           491          2   
+6                                        corr_top4           277          3   
+7                                        corr_top3           365          3   
+8                                corr_meteorologia           365          4   
+9   hibrido_(corr_meteorologia)_(relfis_agua_qmax)           273          3   
+10     hibrido_(corr_meteorologia)_(relfis_agua_q)           350          3   
+11       hibrido_(corr_meteorologia)_(relfis_agua)           411          3   
+12                                     relfis_agua           446          2   
+13                                   relfis_agua_q           343          2   
+14                                relfis_agua_qmax           415          2   
+
+    learning_rate  subsample  colsample_bytree  min_child_weight    gamma  \
+0           0.065       0.89              0.92                 5  0.05897   
+1           0.097       0.87              0.86                 5  0.05217   
+2           0.046       0.87              1.00                 5  0.03501   
+3           0.037       0.89              1.00                 5  0.13933   
+4           0.100       0.85              0.95                 5  0.17331   
+5           0.098       0.87              0.85                 5  0.04429   
+6           0.100       0.85              1.00                 9  0.07908   
+7           0.080       0.91              0.96                10  0.06872   
+8           0.080       0.91              0.94                 5  0.11044   
+9           0.050       0.85              0.98                 5  0.01461   
+10          0.055       0.99              0.92                 6  0.26182   
+11          0.093       0.89              1.00                 5  0.10242   
+12          0.074       0.94              0.98                 8  0.03875   
+13          0.087       0.98              0.89                 5  0.04586   
+14          0.098       0.92              0.93                 5  0.02580   
+
+    reg_alpha  reg_lambda  
+0     0.07771        1.79  
+1     0.19596        2.01  
+2     0.16538        0.70  
+3     0.00784        0.74  
+4     0.03135        1.12  
+5     0.18523        2.13  
+6     0.13936        2.17  
+7     0.01569        0.58  
+8     0.01264        0.62  
+9     0.14823        1.19  
+10    0.17725        2.27  
+11    0.08743        2.86  
+12    0.15662        1.05  
+13    0.14579        1.92  
+14    0.15308        1.68  
+
+Resumen de metadatos:
+
+                                         DataFrame  \
+0           hibrido_(corr_top4)_(relfis_agua_qmax)   
+1              hibrido_(corr_top3)_(relfis_agua_q)   
+2              hibrido_(corr_top4)_(relfis_agua_q)   
+3                hibrido_(corr_top3)_(relfis_agua)   
+4                hibrido_(corr_top4)_(relfis_agua)   
+5           hibrido_(corr_top3)_(relfis_agua_qmax)   
+6                                        corr_top4   
+7                                        corr_top3   
+8                                corr_meteorologia   
+9   hibrido_(corr_meteorologia)_(relfis_agua_qmax)   
+10     hibrido_(corr_meteorologia)_(relfis_agua_q)   
+11       hibrido_(corr_meteorologia)_(relfis_agua)   
+12                                     relfis_agua   
+13                                   relfis_agua_q   
+14                                relfis_agua_qmax   
+
+                             Target               config_mode  \
+0   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+1   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+2   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+3   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+4   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+5   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+6   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+7   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+8   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+9   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+10  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+11  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+12  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+13  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+14  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_conservador   
+
+   search_space_type  use_early_stopping  n_train  n_test  n_features  \
+0             custom                True       84      21          10   
+1             custom                True       84      21           9   
+2             custom                True       84      21          10   
+3             custom                True       84      21           8   
+4             custom                True       84      21           9   
+5             custom                True       84      21           9   
+6             custom                True       84      21           4   
+7             custom                True       84      21           3   
+8             custom                True       84      21           1   
+9             custom                True       84      21           7   
+10            custom                True       84      21           7   
+11            custom                True       84      21           6   
+12            custom                True       84      21           5   
+13            custom                True       84      21           6   
+14            custom                True       84      21           6   
+
+   train_start  train_end  ... final_val_size n_estimators_saturation_pct  \
+0   2014-04-30 2021-03-31  ...           0.15                         100   
+1   2014-04-30 2021-03-31  ...           0.15                         100   
+2   2014-04-30 2021-03-31  ...           0.15                         100   
+3   2014-04-30 2021-03-31  ...           0.15                         100   
+4   2014-04-30 2021-03-31  ...           0.15                         100   
+5   2014-04-30 2021-03-31  ...           0.15                         100   
+6   2014-04-30 2021-03-31  ...           0.15                         100   
+7   2014-04-30 2021-03-31  ...           0.15                         100   
+8   2014-04-30 2021-03-31  ...           0.15                         100   
+9   2014-04-30 2021-03-31  ...           0.15                         100   
+10  2014-04-30 2021-03-31  ...           0.15                         100   
+11  2014-04-30 2021-03-31  ...           0.15                         100   
+12  2014-04-30 2021-03-31  ...           0.15                         100   
+13  2014-04-30 2021-03-31  ...           0.15                         100   
+14  2014-04-30 2021-03-31  ...           0.15                         100   
+
+    reported_n_estimators  reported_n_estimators_mode  \
+0                      23     early_stopping_original   
+1                      15     early_stopping_original   
+2                      24     early_stopping_original   
+3                      27     early_stopping_original   
+4                      10     early_stopping_original   
+5                      10     early_stopping_original   
+6                       8     early_stopping_original   
+7                       8     early_stopping_original   
+8                       2     early_stopping_original   
+9                      10     early_stopping_original   
+10                     13     early_stopping_original   
+11                      5     early_stopping_original   
+12                     49     early_stopping_original   
+13                    202     early_stopping_original   
+14                     38     early_stopping_original   
+
+    reference_best_iteration_plus_1  reference_tree_n_99  reference_tree_n_95  \
+0                                23                 16.0                 15.0   
+1                                15                 15.0                  8.0   
+2                                24                 24.0                 21.0   
+3                                27                 27.0                 21.0   
+4                                10                  9.0                  8.0   
+5                                10                 10.0                  8.0   
+6                                 8                  8.0                  7.0   
+7                                 8                  8.0                  8.0   
+8                                 2                  2.0                  2.0   
+9                                10                 10.0                 10.0   
+10                               13                 13.0                 13.0   
+11                                5                  5.0                  5.0   
+12                               49                 49.0                 47.0   
+13                              202                202.0                 92.0   
+14                               38                 38.0                 38.0   
+
+    reference_max_nse_val_internal  execution_seconds  execution_time  
+0                         0.645778              717.0  11 min 57.00 s  
+1                         0.679619              663.0   11 min 3.00 s  
+2                         0.663136              731.0  12 min 11.00 s  
+3                         0.659523              760.0  12 min 40.00 s  
+4                         0.614414              676.0  11 min 16.00 s  
+5                         0.669722              638.0  10 min 38.00 s  
+6                         0.561861              670.0  11 min 10.00 s  
+7                         0.495836              688.0  11 min 28.00 s  
+8                         0.009450              538.0   8 min 58.00 s  
+9                         0.224436              646.0  10 min 46.00 s  
+10                        0.203564              570.0   9 min 30.00 s  
+11                        0.182606              569.0   9 min 29.00 s  
+12                        0.467651              580.0   9 min 40.00 s  
+13                        0.372554              611.0  10 min 11.00 s  
+14                        0.463376              602.0   10 min 2.00 s  
+
+[15 rows x 26 columns]
+
+Resumen comparativo final (train / test / CV / tiempo):
+
+                                         DataFrame     NSE         \
+                                                   CV Mean CV Std   
+0           hibrido_(corr_top4)_(relfis_agua_qmax)   0.630  0.061   
+1              hibrido_(corr_top3)_(relfis_agua_q)   0.640  0.076   
+2              hibrido_(corr_top4)_(relfis_agua_q)   0.630  0.071   
+3                hibrido_(corr_top3)_(relfis_agua)   0.610  0.081   
+4                hibrido_(corr_top4)_(relfis_agua)   0.650  0.085   
+5           hibrido_(corr_top3)_(relfis_agua_qmax)   0.650  0.080   
+6                                        corr_top4   0.560  0.150   
+7                                        corr_top3   0.510  0.200   
+8                                corr_meteorologia   0.012  0.240   
+9   hibrido_(corr_meteorologia)_(relfis_agua_qmax)   0.210  0.320   
+10     hibrido_(corr_meteorologia)_(relfis_agua_q)   0.200  0.350   
+11       hibrido_(corr_meteorologia)_(relfis_agua)   0.210  0.320   
+12                                     relfis_agua   0.044  0.390   
+13                                   relfis_agua_q   0.140  0.420   
+14                                relfis_agua_qmax   0.120  0.430   
+
+                                                      RMSE         MAE  ...  \
+      CV Performance Train    Test  Test Performance Train  Test Train  ...   
+0              Bueno  0.75  0.6900         Muy bueno  0.38  0.38  0.28  ...   
+1              Bueno  0.73  0.6400             Bueno  0.39  0.41  0.29  ...   
+2              Bueno  0.69  0.6300             Bueno  0.42  0.41  0.31  ...   
+3              Bueno  0.67  0.6100             Bueno  0.44  0.42  0.33  ...   
+4              Bueno  0.66  0.5900             Bueno  0.44  0.43  0.33  ...   
+5              Bueno  0.62  0.5700             Bueno  0.47  0.44  0.34  ...   
+6              Bueno  0.55  0.5100             Bueno  0.51  0.48  0.38  ...   
+7              Bueno  0.51  0.4500     Satisfactorio  0.53  0.50  0.41  ...   
+8   No satisfactorio  0.12  0.0042  No satisfactorio  0.71  0.68  0.57  ...   
+9   No satisfactorio  0.40 -0.0650  No satisfactorio  0.58  0.70  0.47  ...   
+10  No satisfactorio  0.49 -0.0890  No satisfactorio  0.54  0.71  0.43  ...   
+11  No satisfactorio  0.36 -0.1400  No satisfactorio  0.60  0.73  0.48  ...   
+12  No satisfactorio  0.67 -0.2800  No satisfactorio  0.43  0.77  0.34  ...   
+13  No satisfactorio  0.90 -0.3800  No satisfactorio  0.24  0.79  0.20  ...   
+14  No satisfactorio  0.73 -0.3900  No satisfactorio  0.39  0.80  0.31  ...   
+
+     RSR           EarlyStop Saturacion                \
+   Train  Test BestIteration        Pct ReportedTrees   
+0   0.50  0.56            22        100            23   
+1   0.52  0.60            14        100            15   
+2   0.55  0.61            23        100            24   
+3   0.58  0.62            26        100            27   
+4   0.59  0.64             9        100            10   
+5   0.62  0.66             9        100            10   
+6   0.67  0.70             7        100             8   
+7   0.70  0.74             7        100             8   
+8   0.94  1.00             1        100             2   
+9   0.77  1.00             9        100            10   
+10  0.71  1.00            12        100            13   
+11  0.80  1.10             4        100             5   
+12  0.57  1.10            48        100            49   
+13  0.32  1.20           201        100           202   
+14  0.52  1.20            37        100            38   
+
+                                                  Tiempo                  
+                       Mode RefTree99 RefTree95 Segundos           Texto  
+0   early_stopping_original      16.0      15.0    717.0  11 min 57.00 s  
+1   early_stopping_original      15.0       8.0    663.0   11 min 3.00 s  
+2   early_stopping_original      24.0      21.0    731.0  12 min 11.00 s  
+3   early_stopping_original      27.0      21.0    760.0  12 min 40.00 s  
+4   early_stopping_original       9.0       8.0    676.0  11 min 16.00 s  
+5   early_stopping_original      10.0       8.0    638.0  10 min 38.00 s  
+6   early_stopping_original       8.0       7.0    670.0  11 min 10.00 s  
+7   early_stopping_original       8.0       8.0    688.0  11 min 28.00 s  
+8   early_stopping_original       2.0       2.0    538.0   8 min 58.00 s  
+9   early_stopping_original      10.0      10.0    646.0  10 min 46.00 s  
+10  early_stopping_original      13.0      13.0    570.0   9 min 30.00 s  
+11  early_stopping_original       5.0       5.0    569.0   9 min 29.00 s  
+12  early_stopping_original      49.0      47.0    580.0   9 min 40.00 s  
+13  early_stopping_original     202.0      92.0    611.0  10 min 11.00 s  
+14  early_stopping_original      38.0      38.0    602.0   10 min 2.00 s  
+
+[15 rows x 27 columns]
+
+Estadísticas globales de performance NSE:
+
+  Estadística  CV Mean  CV Std  Train  Test
+0    Promedio     0.39    0.22   0.59  0.22
+1     Mediana     0.51    0.20   0.66  0.45
+2         Std     0.25    0.14   0.19  0.42
+</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

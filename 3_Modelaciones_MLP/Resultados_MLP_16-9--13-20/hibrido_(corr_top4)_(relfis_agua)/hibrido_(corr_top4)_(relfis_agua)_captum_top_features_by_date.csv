@@ -1,0 +1,85 @@
+Fecha,top_feature,top_attribution,top_abs_attribution
+2014-04-30,Conductividad [μS/cm] XSLH030,0.39986047,0.39986047
+2014-05-31,Conductividad [μS/cm] XSLH020,-0.64863193,0.64863193
+2014-06-30,Conductividad [μS/cm] XSLH020,-0.4150947,0.4150947
+2014-07-31,Conductividad [μS/cm] XSLH020,-1.0294638,1.0294638
+2014-08-31,Conductividad [μS/cm] XSLH020,-0.4265004,0.4265004
+2014-09-30,Conductividad [μS/cm] XSLH020,-0.65769464,0.65769464
+2014-10-31,Conductividad [μS/cm] XSLH020,-0.5115139,0.5115139
+2014-11-30,Conductividad [μS/cm] XSLH020,-0.87696356,0.87696356
+2014-12-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.24821426,0.24821426
+2015-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.45315382,0.45315382
+2015-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.44734707,0.44734707
+2015-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.514802,0.514802
+2015-04-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.4247338,0.4247338
+2015-05-31,Conductividad [μS/cm] XSLH020,0.70892346,0.70892346
+2015-06-30,Conductividad [μS/cm] XSLH020,0.3159218,0.3159218
+2015-07-31,Conductividad [μS/cm] XSLH020,0.69027734,0.69027734
+2015-08-31,Temperatura del agua (T) [ºC] XSLH030,0.32345992,0.32345992
+2015-09-30,Temperatura del agua (T) [ºC] XSLH030,0.28984874,0.28984874
+2015-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.19213757,0.19213757
+2015-11-30,Conductividad [μS/cm] XSLH020,0.34515402,0.34515402
+2015-12-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.17557023,0.17557023
+2016-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.51171,0.51171
+2016-02-29,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.6581242,0.6581242
+2016-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.6847482,0.6847482
+2016-04-30,Conductividad [μS/cm] XSLH020,0.4222039,0.4222039
+2016-05-31,Temperatura del agua (T) [ºC] XSLH030,0.27245966,0.27245966
+2016-06-30,Temperatura del agua (T) [ºC] XSLH030,0.66193134,0.66193134
+2016-07-31,Temperatura del agua (T) [ºC] XSLH030,0.3210685,0.3210685
+2016-08-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.32095802,0.32095802
+2016-09-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.2563026,0.2563026
+2016-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.3419339,0.3419339
+2016-11-30,Conductividad [μS/cm] EPSE020,0.2907952,0.2907952
+2016-12-31,Conductividad [μS/cm] EPSE020,0.33391646,0.33391646
+2017-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.49139342,0.49139342
+2017-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.55124146,0.55124146
+2017-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.5867745,0.5867745
+2017-04-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.3503264,0.3503264
+2017-05-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.16384646,0.16384646
+2017-06-30,Temperatura del agua (T) [ºC] XSLH030,0.5314236,0.5314236
+2017-07-31,Conductividad [μS/cm] XSLH020,-0.21069749,0.21069749
+2017-08-31,Conductividad [μS/cm] XSLH020,-0.64838415,0.64838415
+2017-09-30,Conductividad [μS/cm] XSLH020,-0.46144998,0.46144998
+2017-10-31,Conductividad [μS/cm] EPSE020,-0.34766674,0.34766674
+2017-11-30,Conductividad [μS/cm] XSLH020,0.23414758,0.23414758
+2017-12-31,Conductividad [μS/cm] XSLH020,0.4486289,0.4486289
+2018-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.49657056,0.49657056
+2018-02-28,Conductividad [μS/cm] XSLH020,0.699611,0.699611
+2018-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.5744689,0.5744689
+2018-04-30,Conductividad [μS/cm] XSLH020,0.74788505,0.74788505
+2018-05-31,Conductividad [μS/cm] EPSE020,0.24148591,0.24148591
+2018-06-30,Temperatura del agua (T) [ºC] XSLH030,0.21293622,0.21293622
+2018-07-31,Temperatura del agua (T) [ºC] XSLH030,0.31879225,0.31879225
+2018-08-31,Conductividad [μS/cm] EPSE020,-0.5221753,0.5221753
+2018-09-30,Conductividad [μS/cm] XSLH020,-0.27602097,0.27602097
+2018-10-31,Conductividad [μS/cm] XSLH020,-0.16047342,0.16047342
+2018-11-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.112311214,0.112311214
+2018-12-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.24513239,0.24513239
+2019-01-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.29080924,0.29080924
+2019-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.513396,0.513396
+2019-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.51490587,0.51490587
+2019-04-30,Conductividad [μS/cm] XSLH020,0.34547645,0.34547645
+2019-05-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.09043081,0.09043081
+2019-06-30,Conductividad [μS/cm] EPSE020,-0.26787865,0.26787865
+2019-07-31,Conductividad [μS/cm] XSLH020,-0.42689556,0.42689556
+2019-08-31,Conductividad [μS/cm] XSLH020,-0.93574685,0.93574685
+2019-09-30,Conductividad [μS/cm] XSLH020,-0.48286438,0.48286438
+2019-10-31,Conductividad [μS/cm] XSLH020,-0.5170391,0.5170391
+2019-11-30,Conductividad [μS/cm] EPSE020,-0.1953434,0.1953434
+2019-12-31,Conductividad [μS/cm] XSLH020,0.5918573,0.5918573
+2020-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.54437,0.54437
+2020-02-29,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.56531155,0.56531155
+2020-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.5920925,0.5920925
+2020-04-30,Conductividad [μS/cm] XSLH020,0.6570124,0.6570124
+2020-05-31,Conductividad [μS/cm] XSLH020,0.56387335,0.56387335
+2020-06-30,Conductividad [μS/cm] XSLH020,0.30471987,0.30471987
+2020-07-31,Temperatura del agua (T) [ºC] XSLH030,0.5257332,0.5257332
+2020-08-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.45137766,0.45137766
+2020-09-30,Temperatura del agua (T) [ºC] XSLH030,0.16837792,0.16837792
+2020-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.30502385,0.30502385
+2020-11-30,Conductividad [μS/cm] XSLH020,0.35216224,0.35216224
+2020-12-31,Conductividad [μS/cm] XSLH020,0.7242371,0.7242371
+2021-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.44602627,0.44602627
+2021-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.5643278,0.5643278
+2021-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.41289774,0.41289774

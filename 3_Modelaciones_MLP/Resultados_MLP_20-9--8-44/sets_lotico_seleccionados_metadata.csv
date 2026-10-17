@@ -1,0 +1,5 @@
+DataFrame,Target,experiment_label,n_train,n_test,n_features,train_start,train_end,test_start,test_end,cv_nse_mean,cv_nse_std,best_epoch,best_val_loss,max_epochs,patience,final_val_size,scale_y,pruning,seed_used,execution_seconds,execution_time
+hibrido_(corr_top3)_(relfis_agua_qmax)_top3,IET(PT) Lótico_Lamparelli [XSLH030],sets_lotico_seleccionados_flexible,84,21,3,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.36,0.14,65,0.334,500,100,0.15,True,True,42,2850.0,47 min 33.93 s
+corr_todos_sinP_top5,IET(PT) Lótico_Lamparelli [XSLH030],sets_lotico_seleccionados_flexible,84,21,5,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.37,0.17,168,0.288,500,100,0.15,True,True,42,3450.0,57 min 26.91 s
+corr_todos_sinP_top3,IET(PT) Lótico_Lamparelli [XSLH030],sets_lotico_seleccionados_flexible,84,21,3,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.47,0.074,107,0.358,500,100,0.15,True,True,42,4480.0,74 min 40.35 s
+hibrido_(corr_top3)_(relfis_agua_qmax)_top5,IET(PT) Lótico_Lamparelli [XSLH030],sets_lotico_seleccionados_flexible,84,21,5,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.36,0.2,118,0.28,500,100,0.15,True,True,42,3450.0,57 min 34.73 s

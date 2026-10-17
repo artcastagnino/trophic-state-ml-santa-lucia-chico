@@ -1,0 +1,11 @@
+dict_name,experiment_label,search_space_type,use_early_stopping,n_trials,train_size,cv_splits,final_val_size,max_epochs,patience,scale_y,make_plots,pruning,seed,output_dir_run,run_execution_seconds,run_execution_time,search_param,search_range
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,,
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,hidden_layers,"[(30, 20), (40, 20), (50, 30), (40, 30, 20), (50, 30, 20)]"
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,activation,"['relu', 'tanh']"
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,dropout,0.03 a 0.05 (step=0.01)
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,learning_rate,0.0001 a 0.0005 (step=5e-05)
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,weight_decay,1e-07 a 1e-06 (step=2.5e-08)
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,batch_size,"[8, 16]"
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,optimizer,['adam']
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,use_batch_norm,[False]
+sets_lotico,sets_lotico_conservador,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_14-9--15-17,165000.0,2756 min 53.28 s,leaky_relu_slope,0.001 a 0.009 (step=0.004)

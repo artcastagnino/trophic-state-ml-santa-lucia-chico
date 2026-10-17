@@ -1,0 +1,12 @@
+feature,feature_importance
+Heliofania__Hel___hs__INIA_Las_Brujas_lag1,0.31417716
+Temperatura_del_aire_maxima__TA___ºC__INIA_Las_Brujas_lag1,0.17498975
+Conductividad__μS_cm__EPSE020,0.14311264
+Conductividad__μS_cm__XSLH020,0.11077262
+Conductividad__μS_cm__XSLH020_lag1,0.08699378
+Oxigeno_Disuelto__OD___mg_L__XSLH010,0.039340306
+Conductividad__μS_cm__EPSE040,0.03802028
+Conductividad__μS_cm__XSLH010,0.034427725
+Temperatura_del_agua__T___ºC__XSLH030,0.020813487
+Turbidez__NTU__XSLH030,0.01869885
+Conductividad__μS_cm__XSLH030,0.01865341

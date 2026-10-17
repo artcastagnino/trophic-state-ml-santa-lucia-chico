@@ -1,0 +1,7 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Conductividad [μS/cm] XSLH020,0.42091978,0.049501017,0.5228736
+Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.37681338,0.01679815,0.4184598
+Conductividad [μS/cm] EPSE020,0.22858611,-0.012961027,0.2961894
+Conductividad [μS/cm] XSLH030,0.22311515,-0.04438112,0.2830009
+Temperatura del agua (T) [ºC] XSLH030,0.08467683,0.027159402,0.11017685
+Turbidez [NTU] XSLH030,0.01776756,0.00019239528,0.039600197

@@ -1,0 +1,16 @@
+DataFrame,Target,experiment_label,n_train,n_test,n_features,train_start,train_end,test_start,test_end,cv_nse_mean,cv_nse_std,best_epoch,best_val_loss,max_epochs,patience,final_val_size,scale_y,pruning,seed_used,execution_seconds,execution_time
+hibrido_(corr_top3)_(relfis_agua),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,8,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.27,0.34,278,0.0616,500,100,0.15,True,True,42,4770.0,79 min 25.04 s
+hibrido_(corr_top4)_(relfis_agua_qmax),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,10,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.19,0.27,83,0.131,500,100,0.15,True,True,42,3910.0,65 min 5.02 s
+hibrido_(corr_top4)_(relfis_agua),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,9,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.29,0.12,139,0.104,500,100,0.15,True,True,42,4670.0,77 min 50.69 s
+hibrido_(corr_top3)_(relfis_agua_q),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,9,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.33,0.15,224,0.0915,500,100,0.15,True,True,42,7110.0,118 min 28.65 s
+hibrido_(corr_top4)_(relfis_agua_q),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,10,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.33,0.15,128,0.109,500,100,0.15,True,True,42,4530.0,75 min 30.47 s
+corr_top3,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,3,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.46,0.15,50,0.136,500,100,0.15,True,True,42,14900.0,248 min 44.51 s
+hibrido_(corr_meteorologia)_(relfis_agua),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,6,2014-04-30,2021-03-31,2021-04-30,2022-12-31,-0.063,0.24,3,0.213,500,100,0.15,True,True,42,3360.0,56 min 0.98 s
+hibrido_(corr_top3)_(relfis_agua_qmax),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,9,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.23,0.14,68,0.155,500,100,0.15,True,True,42,6200.0,103 min 20.03 s
+corr_top4,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,4,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.53,0.2,29,0.15,500,100,0.15,True,True,42,4000.0,66 min 43.90 s
+corr_meteorologia,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,1,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.037,0.11,7,0.193,500,100,0.15,True,True,42,2950.0,49 min 10.04 s
+hibrido_(corr_meteorologia)_(relfis_agua_q),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,7,2014-04-30,2021-03-31,2021-04-30,2022-12-31,-0.14,0.17,13,0.234,500,100,0.15,True,True,42,3670.0,61 min 13.79 s
+hibrido_(corr_meteorologia)_(relfis_agua_qmax),IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,7,2014-04-30,2021-03-31,2021-04-30,2022-12-31,-0.26,0.18,4,0.194,500,100,0.15,True,True,42,3010.0,50 min 7.52 s
+relfis_agua_q,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,6,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.078,0.35,5,0.214,500,100,0.15,True,True,42,4190.0,69 min 52.75 s
+relfis_agua_qmax,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,6,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.055,0.23,6,0.211,500,100,0.15,True,True,42,4430.0,73 min 50.17 s
+relfis_agua,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_intermedio,84,21,5,2014-04-30,2021-03-31,2021-04-30,2022-12-31,-0.035,0.28,8,0.241,500,100,0.15,True,True,42,2810.0,46 min 49.49 s

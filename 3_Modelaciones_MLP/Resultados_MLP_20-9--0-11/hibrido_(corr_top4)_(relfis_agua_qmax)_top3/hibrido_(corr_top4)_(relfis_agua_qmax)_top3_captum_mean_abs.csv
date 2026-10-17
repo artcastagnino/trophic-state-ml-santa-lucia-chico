@@ -1,0 +1,4 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.2860178,0.07283744,0.37927547
+Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.12360306,0.06627055,0.1551969
+Temperatura del agua (T) [ºC] EPSE040,0.108770005,0.010653816,0.14098236

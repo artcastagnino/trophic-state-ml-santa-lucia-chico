@@ -1,0 +1,4 @@
+feature,mean_abs_shap
+Temperatura_del_agua__T___ºC__XSLH030,0.6778235
+Conductividad__μS_cm__XSLH030,0.28751215
+Turbidez__NTU__XSLH030,0.10783928

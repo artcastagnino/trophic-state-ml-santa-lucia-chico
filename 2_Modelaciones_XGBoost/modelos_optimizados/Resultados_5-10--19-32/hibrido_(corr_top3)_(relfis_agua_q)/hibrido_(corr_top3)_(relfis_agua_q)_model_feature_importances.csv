@@ -1,0 +1,8 @@
+feature,feature_importance
+Temperatura_del_aire_maxima__TA___ºC__INIA_Las_Brujas_lag1,0.27839977
+Conductividad__μS_cm__EPSE020,0.25973737
+Conductividad__μS_cm__XSLH020,0.1713544
+Temperatura_del_agua__T___ºC__XSLH030,0.11926329
+Caudal__Q___m3_s__Florida__Puente_Ruta_5_,0.07368986
+Conductividad__μS_cm__XSLH030,0.05467159
+Turbidez__NTU__XSLH030,0.04288375

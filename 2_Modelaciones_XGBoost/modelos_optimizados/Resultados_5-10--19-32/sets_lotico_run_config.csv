@@ -1,0 +1,11 @@
+dict_name,preset,experiment_label,search_space_type,use_early_stopping,early_stopping_rounds,final_val_size,n_trials,train_size,cv_splits,make_plots,make_tree_evolution_plot,tree_evolution_step,n_estimators_saturation_pct,output_dir_run,search_param,search_range
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,,
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,n_estimators,200 a 500
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,max_depth,2 a 4
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,learning_rate,0.01 a 0.1 (step=0.001)
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,subsample,0.85 a 1.0 (step=0.01)
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,colsample_bytree,0.85 a 1.0 (step=0.01)
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,min_child_weight,5 a 10
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,gamma,1e-05 a 0.3 (step=1e-05)
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,reg_alpha,1e-05 a 0.2 (step=1e-05)
+sets_lotico,,sets_lotico_conservador,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_5-10--19-32,reg_lambda,0.5 a 3.0 (step=0.01)

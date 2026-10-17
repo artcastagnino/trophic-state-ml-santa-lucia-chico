@@ -1,0 +1,11 @@
+dict_name,preset,experiment_label,search_space_type,use_early_stopping,early_stopping_rounds,final_val_size,n_trials,train_size,cv_splits,make_plots,make_tree_evolution_plot,tree_evolution_step,output_dir_run,search_param,search_range
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,True,1.0,Resultados_LB_1-6--19-58,,
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,n_estimators,2500 (máximo fijado para early stopping)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,learning_rate,0.3 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,max_depth,6 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,min_child_weight,1 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,gamma,0 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,reg_alpha,0 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,reg_lambda,1 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,subsample,1 (default/referencia XGBoost)
+sets_lentico,,sets_lentico_LB,xgb_baseline_defaults_explicit,True,100,0.15,,0.8,4,True,,,Resultados_LB_1-6--19-58,colsample_bytree,1 (default/referencia XGBoost)

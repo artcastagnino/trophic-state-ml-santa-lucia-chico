@@ -1,0 +1,5 @@
+feature,mean_abs_shap
+Temperatura_del_aire_maxima__TA___ºC__INIA_Las_Brujas_lag1,0.31748083
+Heliofania__Hel___hs__INIA_Las_Brujas_lag1,0.30751842
+Conductividad__μS_cm__EPSE020,0.2100271
+Conductividad__μS_cm__XSLH020,0.1838285

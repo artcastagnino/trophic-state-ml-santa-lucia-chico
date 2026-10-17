@@ -1,0 +1,7 @@
+feature,feature_importance
+Temperatura_del_aire_minima__TA___ºC__INIA_Las_Brujas_lag1,0.35277
+Conductividad__μS_cm__EPSE040,0.17226644
+Potencial_de_Hidrogeno__pH___NA__EPSE040,0.15737402
+Oxigeno_Disuelto__OD___mg_L__EPSE040,0.15088
+Temperatura_del_agua__T___ºC__EPSE040,0.088182606
+Turbidez__NTU__EPSE040,0.07852699

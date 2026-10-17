@@ -1,0 +1,334 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Log de salida del experimento MLP</title>
+        
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .best-row td {
+            background: #e8f7e8 !important;
+            font-weight: bold;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kv-table th {
+            width: 38%;
+            background: #f8fafc;
+        }
+
+        .img-box {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            line-height: 1.35;
+            font-size: 0.92rem;
+        }
+
+        .dataset-title {
+            padding-top: 8px;
+            border-top: 2px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        .dataset-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+        }
+
+        .small {
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Log de salida del experimento MLP</h1>
+                                <div class="code-block">
+==================================================================================================
+INICIO DEL PROCESAMIENTO MLP
+==================================================================================================
+Diccionario procesado : sets_lotico_seleccionados
+Experiment label      : sets_lotico_seleccionados_flexible
+Cantidad de trials    : 1000
+Train size            : 0.8
+CV splits             : 4
+Make plots reporte    : True
+Final val size        : 0.15
+Max epochs            : 500
+Patience              : 100
+Scale y               : True
+Pruning               : True
+Seed                  : 42
+Carpeta de salida     : Resultados_MLP_20-9--8-44
+
+
+==========================================================================================
+Procesando set: corr_todos_sinP_top5
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 20), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.0375, &#x27;learning_rate&#x27;: 0.00030000000000000003, &#x27;weight_decay&#x27;: 2.55e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.035}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.37
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.65, &#x27;MAE&#x27;: 0.47, &#x27;NSE&#x27;: 0.74, &#x27;KGE&#x27;: 0.78, &#x27;PBIAS&#x27;: 0.042, &#x27;R2&#x27;: 0.74, &#x27;RSR&#x27;: 0.51}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.69, &#x27;PBIAS&#x27;: -0.4, &#x27;R2&#x27;: 0.56, &#x27;RSR&#x27;: 0.7}
+
+==========================================================================================
+Procesando set: corr_todos_sinP_top3
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;relu&#x27;, &#x27;dropout&#x27;: 0.0475, &#x27;learning_rate&#x27;: 0.00011, &#x27;weight_decay&#x27;: 8.1e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.001}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.47
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.54, &#x27;NSE&#x27;: 0.61, &#x27;KGE&#x27;: 0.66, &#x27;PBIAS&#x27;: 0.073, &#x27;R2&#x27;: 0.62, &#x27;RSR&#x27;: 0.62}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.59, &#x27;PBIAS&#x27;: -0.37, &#x27;R2&#x27;: 0.56, &#x27;RSR&#x27;: 0.7}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top3)_(relfis_agua_qmax)_top5
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 20), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0325, &#x27;learning_rate&#x27;: 0.00045000000000000004, &#x27;weight_decay&#x27;: 9.450000000000001e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.013000000000000001}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.36
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.76, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: 0.65, &#x27;KGE&#x27;: 0.74, &#x27;PBIAS&#x27;: 0.026, &#x27;R2&#x27;: 0.65, &#x27;RSR&#x27;: 0.6}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.62, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.54, &#x27;PBIAS&#x27;: -0.21, &#x27;R2&#x27;: 0.53, &#x27;RSR&#x27;: 0.7}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top3)_(relfis_agua_qmax)_top3
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.035, &#x27;learning_rate&#x27;: 0.00029000000000000006, &#x27;weight_decay&#x27;: 9.05e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.036000000000000004}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.36
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.8, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.6, &#x27;KGE&#x27;: 0.67, &#x27;PBIAS&#x27;: 0.0025, &#x27;R2&#x27;: 0.6, &#x27;RSR&#x27;: 0.63}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.8, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.52, &#x27;KGE&#x27;: 0.54, &#x27;PBIAS&#x27;: -0.33, &#x27;R2&#x27;: 0.58, &#x27;RSR&#x27;: 0.69}
+--------------------------------------------------------------------------------------------------
+
+Carpeta de resultados: Resultados_MLP_20-9--8-44
+Tiempo total de corrida: 237 min 15.94 s
+
+Resumen de métricas de train:
+
+                                     DataFrame  RMSE   MAE   NSE   KGE  \
+0  hibrido_(corr_top3)_(relfis_agua_qmax)_top3  0.80  0.57  0.60  0.67   
+1                         corr_todos_sinP_top5  0.65  0.47  0.74  0.78   
+2                         corr_todos_sinP_top3  0.79  0.54  0.61  0.66   
+3  hibrido_(corr_top3)_(relfis_agua_qmax)_top5  0.76  0.55  0.65  0.74   
+
+    PBIAS    R2   RSR  
+0  0.0025  0.60  0.63  
+1  0.0420  0.74  0.51  
+2  0.0730  0.62  0.62  
+3  0.0260  0.65  0.60  
+
+Resumen de métricas de test:
+
+                                     DataFrame  RMSE   MAE   NSE   KGE  PBIAS  \
+0  hibrido_(corr_top3)_(relfis_agua_qmax)_top3  0.80  0.58  0.52  0.54  -0.33   
+1                         corr_todos_sinP_top5  0.82  0.59  0.51  0.69  -0.40   
+2                         corr_todos_sinP_top3  0.81  0.59  0.51  0.59  -0.37   
+3  hibrido_(corr_top3)_(relfis_agua_qmax)_top5  0.82  0.62  0.51  0.54  -0.21   
+
+     R2   RSR  
+0  0.58  0.69  
+1  0.56  0.70  
+2  0.56  0.70  
+3  0.53  0.70  
+
+Resumen de mejores parámetros:
+
+                                     DataFrame hidden_layers  activation  \
+0  hibrido_(corr_top3)_(relfis_agua_qmax)_top3      (50, 30)        tanh   
+1                         corr_todos_sinP_top5      (40, 20)  leaky_relu   
+2                         corr_todos_sinP_top3      (50, 30)        relu   
+3  hibrido_(corr_top3)_(relfis_agua_qmax)_top5      (40, 20)        tanh   
+
+   dropout  learning_rate  weight_decay  batch_size optimizer  use_batch_norm  \
+0   0.0350        0.00029  9.050000e-07           8     adamw               0   
+1   0.0375        0.00030  2.550000e-07          16     adamw               0   
+2   0.0475        0.00011  8.100000e-07           8      adam               0   
+3   0.0325        0.00045  9.450000e-07          16      adam               0   
+
+   leaky_relu_slope  best_epoch  best_val_loss  
+0             0.036          65          0.334  
+1             0.035         168          0.288  
+2             0.001         107          0.358  
+3             0.013         118          0.280  
+
+Resumen de metadatos:
+
+                                     DataFrame  \
+0  hibrido_(corr_top3)_(relfis_agua_qmax)_top3   
+1                         corr_todos_sinP_top5   
+2                         corr_todos_sinP_top3   
+3  hibrido_(corr_top3)_(relfis_agua_qmax)_top5   
+
+                                Target                    experiment_label  \
+0  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_seleccionados_flexible   
+1  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_seleccionados_flexible   
+2  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_seleccionados_flexible   
+3  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_seleccionados_flexible   
+
+   n_train  n_test  n_features train_start  train_end test_start   test_end  \
+0       84      21           3  2014-04-30 2021-03-31 2021-04-30 2022-12-31   
+1       84      21           5  2014-04-30 2021-03-31 2021-04-30 2022-12-31   
+2       84      21           3  2014-04-30 2021-03-31 2021-04-30 2022-12-31   
+3       84      21           5  2014-04-30 2021-03-31 2021-04-30 2022-12-31   
+
+   ...  best_epoch  best_val_loss  max_epochs  patience  final_val_size  \
+0  ...          65          0.334         500       100            0.15   
+1  ...         168          0.288         500       100            0.15   
+2  ...         107          0.358         500       100            0.15   
+3  ...         118          0.280         500       100            0.15   
+
+   scale_y  pruning  seed_used  execution_seconds  execution_time  
+0     True     True         42             2850.0  47 min 33.93 s  
+1     True     True         42             3450.0  57 min 26.91 s  
+2     True     True         42             4480.0  74 min 40.35 s  
+3     True     True         42             3450.0  57 min 34.73 s  
+
+[4 rows x 22 columns]
+
+Resumen comparativo final (train / test / CV):
+
+                                     DataFrame     NSE                        \
+                                               CV Mean CV Std CV Performance   
+0  hibrido_(corr_top3)_(relfis_agua_qmax)_top3    0.36  0.140  Satisfactorio   
+1                         corr_todos_sinP_top5    0.37  0.170  Satisfactorio   
+2                         corr_todos_sinP_top3    0.47  0.074  Satisfactorio   
+3  hibrido_(corr_top3)_(relfis_agua_qmax)_top5    0.36  0.200  Satisfactorio   
+
+                                RMSE         MAE  ...   KGE   PBIAS        \
+  Train  Test Test Performance Train  Test Train  ...  Test   Train  Test   
+0  0.60  0.52            Bueno  0.80  0.80  0.57  ...  0.54  0.0025 -0.33   
+1  0.74  0.51            Bueno  0.65  0.82  0.47  ...  0.69  0.0420 -0.40   
+2  0.61  0.51            Bueno  0.79  0.81  0.54  ...  0.59  0.0730 -0.37   
+3  0.65  0.51            Bueno  0.76  0.82  0.55  ...  0.54  0.0260 -0.21   
+
+     R2         RSR       EarlyStop   Tiempo                  
+  Train  Test Train  Test BestEpoch Segundos           Texto  
+0  0.60  0.58  0.63  0.69        65   2850.0  47 min 33.93 s  
+1  0.74  0.56  0.51  0.70       168   3450.0  57 min 26.91 s  
+2  0.62  0.56  0.62  0.70       107   4480.0  74 min 40.35 s  
+3  0.65  0.53  0.60  0.70       118   3450.0  57 min 34.73 s  
+
+[4 rows x 22 columns]
+
+Estadísticas globales de performance NSE:
+
+  Estadística  CV Mean  CV Std  Train   Test
+0    Promedio    0.390   0.150  0.650  0.510
+1     Mediana    0.360   0.160  0.630  0.510
+2         Std    0.054   0.054  0.064  0.005
+</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

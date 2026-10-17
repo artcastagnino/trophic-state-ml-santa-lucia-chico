@@ -1,0 +1,3 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.49686036,0.040318523,0.5599867
+Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.11634577,0.09951011,0.13919431

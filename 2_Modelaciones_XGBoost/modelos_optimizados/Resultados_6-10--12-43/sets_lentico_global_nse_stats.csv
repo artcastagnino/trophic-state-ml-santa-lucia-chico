@@ -1,0 +1,4 @@
+Estadística,CV Mean,CV Std,Train,Test
+Promedio,0.39,0.22,0.59,0.22
+Mediana,0.51,0.2,0.66,0.45
+Std,0.25,0.14,0.19,0.42

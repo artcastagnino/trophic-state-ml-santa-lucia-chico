@@ -1,0 +1,6 @@
+feature,mean_abs_shap
+Conductividad__μS_cm__EPSE040,0.08097047
+Potencial_de_Hidrogeno__pH___NA__EPSE040,0.06446244
+Temperatura_del_agua__T___ºC__EPSE040,0.04812053
+Oxigeno_Disuelto__OD___mg_L__EPSE040,0.036105197
+Turbidez__NTU__EPSE040,0.011427514

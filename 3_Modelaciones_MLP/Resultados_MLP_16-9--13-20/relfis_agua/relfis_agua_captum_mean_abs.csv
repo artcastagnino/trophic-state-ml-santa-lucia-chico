@@ -1,0 +1,4 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Conductividad [μS/cm] XSLH030,0.37012982,0.056321718,0.45285127
+Temperatura del agua (T) [ºC] XSLH030,0.36743215,0.0639838,0.40794855
+Turbidez [NTU] XSLH030,0.029019259,0.002808327,0.06685978

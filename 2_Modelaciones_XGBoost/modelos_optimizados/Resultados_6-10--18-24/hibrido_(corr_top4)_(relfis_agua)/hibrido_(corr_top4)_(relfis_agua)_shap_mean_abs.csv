@@ -1,0 +1,10 @@
+feature,mean_abs_shap
+Fósforo_Total__PT___μg_L__EPSE040_lag1,0.2465038
+Fósforo_Total__PT___μg_L__XSLH030_lag1,0.10194761
+Temperatura_del_aire_minima__TA___ºC__INIA_Las_Brujas_lag1,0.057735335
+Turbidez__NTU__EPSE040,0.053632952
+Potencial_de_Hidrogeno__pH___NA__EPSE040,0.048952334
+Conductividad__μS_cm__EPSE040,0.03503244
+Fósforo_Total__PT___μg_L__XSLH020_lag1,0.017885119
+Temperatura_del_agua__T___ºC__EPSE040,0.009132415
+Oxigeno_Disuelto__OD___mg_L__EPSE040,0.0

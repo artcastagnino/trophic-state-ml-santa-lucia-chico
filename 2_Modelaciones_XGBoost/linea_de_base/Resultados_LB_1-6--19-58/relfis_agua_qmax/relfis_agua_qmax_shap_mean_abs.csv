@@ -1,0 +1,7 @@
+feature,mean_abs_shap
+Conductividad__μS_cm__EPSE040,0.08382454
+Potencial_de_Hidrogeno__pH___NA__EPSE040,0.053008728
+Temperatura_del_agua__T___ºC__EPSE040,0.048479494
+Caudal_Maximo__Qmax___m3_s__Florida__Puente_Ruta_5_,0.046939082
+Oxigeno_Disuelto__OD___mg_L__EPSE040,0.04533949
+Turbidez__NTU__EPSE040,0.0

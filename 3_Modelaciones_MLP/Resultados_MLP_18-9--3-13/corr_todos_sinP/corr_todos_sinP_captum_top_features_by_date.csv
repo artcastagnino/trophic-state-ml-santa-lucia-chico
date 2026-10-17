@@ -1,0 +1,85 @@
+Fecha,top_feature,top_attribution,top_abs_attribution
+2014-04-30,Conductividad [μS/cm] XSLH020,-0.17346007,0.17346007
+2014-05-31,Conductividad [μS/cm] XSLH020,-0.26802883,0.26802883
+2014-06-30,Conductividad [μS/cm] XSLH020,-0.20269805,0.20269805
+2014-07-31,Conductividad [μS/cm] XSLH020,-0.5391133,0.5391133
+2014-08-31,Conductividad [μS/cm] XSLH020,-0.21293047,0.21293047
+2014-09-30,Conductividad [μS/cm] XSLH020,-0.3577792,0.3577792
+2014-10-31,Conductividad [μS/cm] XSLH020,-0.18897532,0.18897532
+2014-11-30,Conductividad [μS/cm] XSLH020,-0.34599236,0.34599236
+2014-12-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.17202485,0.17202485
+2015-01-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.3312839,0.3312839
+2015-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.34517103,0.34517103
+2015-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.4158084,0.4158084
+2015-04-30,Conductividad [μS/cm] XSLH020,0.28775725,0.28775725
+2015-05-31,Conductividad [μS/cm] XSLH020,0.5307533,0.5307533
+2015-06-30,Conductividad [μS/cm] XSLH020_lag1,0.27647334,0.27647334
+2015-07-31,Conductividad [μS/cm] XSLH020,0.33832404,0.33832404
+2015-08-31,Conductividad [μS/cm] XSLH020_lag1,0.18119277,0.18119277
+2015-09-30,Heliofania (Hel) [hs] INIA Las Brujas_lag1,-0.042424515,0.042424515
+2015-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.020988954,0.020988954
+2015-11-30,Conductividad [μS/cm] XSLH020,0.17689602,0.17689602
+2015-12-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.18488272,0.18488272
+2016-01-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.35538492,0.35538492
+2016-02-29,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.41236213,0.41236213
+2016-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.43067062,0.43067062
+2016-04-30,Conductividad [μS/cm] XSLH020,0.26755658,0.26755658
+2016-05-31,Conductividad [μS/cm] XSLH020_lag1,0.10584512,0.10584512
+2016-06-30,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.11021446,0.11021446
+2016-07-31,Conductividad [μS/cm] XSLH020,-0.13448402,0.13448402
+2016-08-31,Conductividad [μS/cm] XSLH020_lag1,-0.10694489,0.10694489
+2016-09-30,Conductividad [μS/cm] XSLH020_lag1,-0.087825574,0.087825574
+2016-10-31,Conductividad [μS/cm] XSLH020,0.08134845,0.08134845
+2016-11-30,Oxigeno Disuelto (OD) [mg/L] XSLH010,0.09916134,0.09916134
+2016-12-31,Conductividad [μS/cm] EPSE020,0.20431472,0.20431472
+2017-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.43819645,0.43819645
+2017-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.4306714,0.4306714
+2017-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.47304747,0.47304747
+2017-04-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.17867938,0.17867938
+2017-05-31,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.059876513,0.059876513
+2017-06-30,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.20825543,0.20825543
+2017-07-31,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.12243324,0.12243324
+2017-08-31,Conductividad [μS/cm] XSLH020,-0.36098918,0.36098918
+2017-09-30,Conductividad [μS/cm] XSLH020_lag1,-0.25407866,0.25407866
+2017-10-31,Conductividad [μS/cm] XSLH020_lag1,-0.15720077,0.15720077
+2017-11-30,Conductividad [μS/cm] XSLH020,0.12439026,0.12439026
+2017-12-31,Conductividad [μS/cm] XSLH020,0.36275783,0.36275783
+2018-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.4200431,0.4200431
+2018-02-28,Conductividad [μS/cm] XSLH020,0.5433877,0.5433877
+2018-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.453926,0.453926
+2018-04-30,Conductividad [μS/cm] XSLH020,0.5928732,0.5928732
+2018-05-31,Conductividad [μS/cm] XSLH020_lag1,0.32976785,0.32976785
+2018-06-30,Conductividad [μS/cm] XSLH020_lag1,0.09383827,0.09383827
+2018-07-31,Conductividad [μS/cm] XSLH020,-0.12133228,0.12133228
+2018-08-31,Conductividad [μS/cm] XSLH020,-0.14875042,0.14875042
+2018-09-30,Conductividad [μS/cm] XSLH020,-0.121321686,0.121321686
+2018-10-31,Conductividad [μS/cm] XSLH020_lag1,-0.07340029,0.07340029
+2018-11-30,Oxigeno Disuelto (OD) [mg/L] XSLH010,0.08830858,0.08830858
+2018-12-31,Oxigeno Disuelto (OD) [mg/L] XSLH010,0.18797469,0.18797469
+2019-01-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.28242704,0.28242704
+2019-02-28,Conductividad [μS/cm] XSLH020,-0.2302789,0.2302789
+2019-03-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.32163578,0.32163578
+2019-04-30,Conductividad [μS/cm] EPSE040,-0.37702248,0.37702248
+2019-05-31,Conductividad [μS/cm] XSLH020_lag1,0.11078305,0.11078305
+2019-06-30,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.053302392,0.053302392
+2019-07-31,Conductividad [μS/cm] XSLH020,-0.22034414,0.22034414
+2019-08-31,Conductividad [μS/cm] XSLH020,-0.44691664,0.44691664
+2019-09-30,Conductividad [μS/cm] XSLH020,-0.21941747,0.21941747
+2019-10-31,Conductividad [μS/cm] XSLH020,-0.2917827,0.2917827
+2019-11-30,Conductividad [μS/cm] XSLH020_lag1,-0.14658068,0.14658068
+2019-12-31,Conductividad [μS/cm] XSLH020,0.53113604,0.53113604
+2020-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.34093753,0.34093753
+2020-02-29,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.472524,0.472524
+2020-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.44384038,0.44384038
+2020-04-30,Conductividad [μS/cm] XSLH020,0.540589,0.540589
+2020-05-31,Conductividad [μS/cm] XSLH020,0.5269844,0.5269844
+2020-06-30,Conductividad [μS/cm] XSLH020,0.3143327,0.3143327
+2020-07-31,Conductividad [μS/cm] XSLH020_lag1,0.12187553,0.12187553
+2020-08-31,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.14110054,0.14110054
+2020-09-30,Oxigeno Disuelto (OD) [mg/L] XSLH010,-0.06612993,0.06612993
+2020-10-31,Conductividad [μS/cm] XSLH020,0.1266045,0.1266045
+2020-11-30,Conductividad [μS/cm] XSLH020,0.22402592,0.22402592
+2020-12-31,Conductividad [μS/cm] XSLH020,0.58559024,0.58559024
+2021-01-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.42059115,0.42059115
+2021-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.353911,0.353911
+2021-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.19236465,0.19236465

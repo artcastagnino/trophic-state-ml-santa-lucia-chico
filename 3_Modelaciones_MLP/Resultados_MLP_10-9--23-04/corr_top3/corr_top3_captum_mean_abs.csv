@@ -1,0 +1,4 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.090405084,0.02803291,0.124964796
+Fósforo Total (PT) [μg/L] XSLH030_lag1,0.06550909,0.010583442,0.10097996
+Fósforo Total (PT) [μg/L] XSLH020_lag1,0.044225518,0.043751534,0.07124168

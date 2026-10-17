@@ -1,0 +1,10 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.596496,0.0028724167,0.71634376
+Temperatura del agua (T) [ºC] EPSE040,0.36896458,-0.017665679,0.4276281
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.16051105,0.06852188,0.22056249
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.122716844,0.06319594,0.16828498
+Conductividad [μS/cm] EPSE040,0.08289688,-0.024884332,0.11535911
+Turbidez [NTU] EPSE040,0.07857887,-0.0009798703,0.10564272
+Fósforo Total (PT) [μg/L] XSLH020_lag1,0.07324389,0.010966329,0.1093377
+Caudal (Q) [m3/s] Florida (Puente Ruta 5),0.06474616,0.025999356,0.10888202
+Fósforo Total (PT) [μg/L] XSLH030_lag1,0.04984029,0.03193215,0.10568699

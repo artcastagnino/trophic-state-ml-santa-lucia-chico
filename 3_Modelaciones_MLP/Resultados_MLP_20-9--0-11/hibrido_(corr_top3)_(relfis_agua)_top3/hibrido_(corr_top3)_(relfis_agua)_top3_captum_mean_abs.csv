@@ -1,0 +1,4 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.4401467,0.0773544,0.54763055
+Temperatura del agua (T) [ºC] EPSE040,0.24058598,0.030525897,0.29439676
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.04617587,0.0071919537,0.0703725

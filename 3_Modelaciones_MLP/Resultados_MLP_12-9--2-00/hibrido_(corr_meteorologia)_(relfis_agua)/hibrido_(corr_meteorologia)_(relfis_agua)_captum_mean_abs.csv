@@ -1,0 +1,7 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.16717348,0.0009781895,0.18922234
+Turbidez [NTU] EPSE040,0.098391384,0.017561574,0.12368092
+Conductividad [μS/cm] EPSE040,0.043533605,0.0067726495,0.059114102
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.03313325,0.010318001,0.042265486
+Temperatura del agua (T) [ºC] EPSE040,0.02642568,0.0055154795,0.031542
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.0046825237,0.001323233,0.0074279257

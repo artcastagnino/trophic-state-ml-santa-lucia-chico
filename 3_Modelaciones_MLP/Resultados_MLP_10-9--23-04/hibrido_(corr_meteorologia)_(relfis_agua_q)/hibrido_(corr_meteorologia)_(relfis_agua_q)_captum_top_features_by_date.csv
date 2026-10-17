@@ -1,0 +1,85 @@
+Fecha,top_feature,top_attribution,top_abs_attribution
+2014-04-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.09861322,0.09861322
+2014-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.09906644,0.09906644
+2014-06-30,Turbidez [NTU] EPSE040,-0.07709039,0.07709039
+2014-07-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.12544791,0.12544791
+2014-08-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.08339432,0.08339432
+2014-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.096497126,0.096497126
+2014-10-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.07719643,0.07719643
+2014-11-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.079523906,0.079523906
+2014-12-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.08943053,0.08943053
+2015-01-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.12614468,0.12614468
+2015-02-28,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.1122697,0.1122697
+2015-03-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.0918696,0.0918696
+2015-04-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.06000322,0.06000322
+2015-05-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.061436635,0.061436635
+2015-06-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.0801996,0.0801996
+2015-07-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.103362724,0.103362724
+2015-08-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.07634731,0.07634731
+2015-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.0998944,0.0998944
+2015-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.06126859,0.06126859
+2015-11-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.05508505,0.05508505
+2015-12-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.03966575,0.03966575
+2016-01-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.048808448,0.048808448
+2016-02-29,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.08686837,0.08686837
+2016-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.10301863,0.10301863
+2016-04-30,Caudal (Q) [m3/s] Florida (Puente Ruta 5),-0.07091101,0.07091101
+2016-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.05315747,0.05315747
+2016-06-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.10935572,0.10935572
+2016-07-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.07045626,0.07045626
+2016-08-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.07631904,0.07631904
+2016-09-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.06043494,0.06043494
+2016-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.058808185,0.058808185
+2016-11-30,Temperatura del agua (T) [ºC] EPSE040,0.02741626,0.02741626
+2016-12-31,Temperatura del agua (T) [ºC] EPSE040,0.050610833,0.050610833
+2017-01-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.09006056,0.09006056
+2017-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.12075694,0.12075694
+2017-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.14301981,0.14301981
+2017-04-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.07105959,0.07105959
+2017-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.071573146,0.071573146
+2017-06-30,Temperatura del agua (T) [ºC] EPSE040,-0.11304665,0.11304665
+2017-07-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.082075045,0.082075045
+2017-08-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.06054998,0.06054998
+2017-09-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.041507043,0.041507043
+2017-10-31,Temperatura del agua (T) [ºC] EPSE040,-0.06961735,0.06961735
+2017-11-30,Temperatura del agua (T) [ºC] EPSE040,0.02415362,0.02415362
+2017-12-31,Turbidez [NTU] EPSE040,0.034474462,0.034474462
+2018-01-31,Turbidez [NTU] EPSE040,0.088049226,0.088049226
+2018-02-28,Turbidez [NTU] EPSE040,0.13163441,0.13163441
+2018-03-31,Turbidez [NTU] EPSE040,0.08942467,0.08942467
+2018-04-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.06344227,0.06344227
+2018-05-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.08649694,0.08649694
+2018-06-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.08664968,0.08664968
+2018-07-31,Temperatura del agua (T) [ºC] EPSE040,-0.11113117,0.11113117
+2018-08-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.18224563,0.18224563
+2018-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.092211746,0.092211746
+2018-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.10973539,0.10973539
+2018-11-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.08345835,0.08345835
+2018-12-31,Temperatura del agua (T) [ºC] EPSE040,0.041979425,0.041979425
+2019-01-31,Temperatura del agua (T) [ºC] EPSE040,0.036381118,0.036381118
+2019-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.10082989,0.10082989
+2019-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.06947191,0.06947191
+2019-04-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.041105688,0.041105688
+2019-05-31,Temperatura del agua (T) [ºC] EPSE040,-0.025864651,0.025864651
+2019-06-30,Caudal (Q) [m3/s] Florida (Puente Ruta 5),-0.055862933,0.055862933
+2019-07-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.07537062,0.07537062
+2019-08-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.096639484,0.096639484
+2019-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.10221748,0.10221748
+2019-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.133831,0.133831
+2019-11-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.11486227,0.11486227
+2019-12-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.13557605,0.13557605
+2020-01-31,Temperatura del agua (T) [ºC] EPSE040,0.065880276,0.065880276
+2020-02-29,Potencial de Hidrogeno (pH) [NA] EPSE040,0.050652925,0.050652925
+2020-03-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.05137459,0.05137459
+2020-04-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.06256168,0.06256168
+2020-05-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.05990358,0.05990358
+2020-06-30,Temperatura del agua (T) [ºC] EPSE040,-0.064965144,0.064965144
+2020-07-31,Temperatura del agua (T) [ºC] EPSE040,-0.09171417,0.09171417
+2020-08-31,Temperatura del agua (T) [ºC] EPSE040,-0.111925244,0.111925244
+2020-09-30,Temperatura del agua (T) [ºC] EPSE040,-0.06953877,0.06953877
+2020-10-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.035227593,0.035227593
+2020-11-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.023170982,0.023170982
+2020-12-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.031975612,0.031975612
+2021-01-31,Turbidez [NTU] EPSE040,-0.026421081,0.026421081
+2021-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.0644845,0.0644845
+2021-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.06510338,0.06510338

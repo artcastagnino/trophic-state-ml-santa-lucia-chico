@@ -1,0 +1,24 @@
+DataFrame,hidden_layers,activation,dropout,learning_rate,weight_decay,batch_size,optimizer,use_batch_norm,leaky_relu_slope,best_epoch,best_val_loss
+hibrido_(corr_todos)_(relfis_agua_q),"(50, 30)",tanh,0.035,0.000425,7.3e-07,16,adam,0,0.005,159,0.235
+hibrido_(corr_meteorologia)_(relfis_agua_q),"(40, 20)",tanh,0.045,0.000225,7.3e-07,16,adam,0,0.001,207,0.344
+hibrido_(corr_todos)_(relfis_agua_qmax),"(50, 30)",tanh,0.035,0.000425,9.1e-07,16,adamw,0,0.001,159,0.229
+hibrido_(corr_top4)_(relfis_agua_q),"(60, 40, 30)",tanh,0.015,0.000125,1e-06,8,adam,0,0.023,160,0.236
+corr_todos,"(30, 20)",leaky_relu,0.035,0.000275,8.8e-07,8,adamw,0,0.009,45,0.308
+hibrido_(corr_top4)_(relfis_agua_qmax),"(60, 40, 30)",tanh,0.035,0.000375,1e-08,8,adam,0,0.021,59,0.235
+corr_todos_sinP,"(30, 20)",relu,0.05,7.5e-05,1.7e-07,16,adam,0,0.021,395,0.301
+hibrido_(corr_todos_sinP)_(relfis_agua_q),"(30, 20)",tanh,0.025,0.0002,6.2e-07,8,adam,0,0.017,313,0.24
+corr_top3,"(30, 20)",tanh,0.035,7.5e-05,2.4e-07,8,adam,0,0.027,328,0.329
+corr_top4,"(50, 30)",leaky_relu,0.035,0.000325,2.6e-07,8,adam,0,0.023,46,0.323
+relfis_agua_qmax,"(50, 30)",tanh,0.01,5e-05,9e-07,8,adamw,0,0.007,157,0.581
+hibrido_(corr_todos)_(relfis_agua),"(40, 20)",relu,0.04,0.000175,8.1e-07,16,adam,0,0.005,126,0.286
+hibrido_(corr_top3)_(relfis_agua),"(30, 20)",tanh,0.025,0.00045,1.8e-07,8,adam,0,0.001,140,0.267
+hibrido_(corr_todos_sinP)_(relfis_agua_qmax),"(40, 30, 20)",relu,0.04,0.00015,4e-07,16,adamw,0,0.003,435,0.19
+relfis_agua,"(40, 20)",tanh,0.04,0.0005,8.6e-07,16,adam,0,0.005,74,0.565
+hibrido_(corr_meteorologia)_(relfis_agua),"(50, 30)",relu,0.04,0.000325,1e-06,16,adam,0,0.001,59,0.341
+hibrido_(corr_top3)_(relfis_agua_q),"(60, 50, 40, 30)",leaky_relu,0.04,0.000425,8.3e-07,8,adamw,0,0.015,15,0.354
+hibrido_(corr_meteorologia)_(relfis_agua_qmax),"(40, 20)",leaky_relu,0.02,0.0001,8.4e-07,16,adam,0,0.015,293,0.321
+hibrido_(corr_top4)_(relfis_agua),"(40, 30, 20, 10)",relu,0.02,0.0001,6.3e-07,8,adam,0,0.003,298,0.279
+corr_meteorologia,"(40, 20)",leaky_relu,0.02,0.000225,8e-08,16,adamw,0,0.017,72,0.492
+relfis_agua_q,"(60, 40, 30)",relu,0.03,5e-05,2e-07,16,adamw,0,0.003,245,0.592
+hibrido_(corr_top3)_(relfis_agua_qmax),"(40, 30, 20, 10)",leaky_relu,0.035,0.000475,2.6e-07,8,adam,0,0.001,58,0.295
+hibrido_(corr_todos_sinP)_(relfis_agua),"(40, 20)",leaky_relu,0.015,0.000325,3.2e-07,8,adam,0,0.009,254,0.169

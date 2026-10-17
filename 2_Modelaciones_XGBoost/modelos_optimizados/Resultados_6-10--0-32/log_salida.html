@@ -1,0 +1,2008 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Log de salida del experimento</title>
+        
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .best-row td {
+            background: #e8f7e8 !important;
+            font-weight: bold;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kv-table th {
+            width: 38%;
+            background: #f8fafc;
+        }
+
+        .img-box {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            line-height: 1.35;
+            font-size: 0.92rem;
+        }
+
+        .dataset-title {
+            padding-top: 8px;
+            border-top: 2px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        .dataset-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+        }
+
+        .small {
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Log de salida del experimento</h1>
+                                <div class="code-block">
+==================================================================================================
+INICIO DEL PROCESAMIENTO
+==================================================================================================
+Diccionario procesado : sets_lotico
+Preset                : None
+Experiment label      : sets_lotico_intermedio
+Cantidad de trials    : 1000
+Train size            : 0.8
+CV splits             : 4
+Make plots            : True
+Make tree evolution   : True
+Tree evolution step   : 1
+n_estimators saturation pct : 100
+Use early stopping    : True
+Early stopping rounds : 100
+Final val size        : 0.15
+Search space type     : custom
+Carpeta de salida     : Resultados_6-10--0-32
+
+
+######################################################################
+Procesando corr_top3...
+######################################################################
+
+
+-&gt; Dataset: corr_top3
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1444, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0935, &#x27;subsample&#x27;: 0.88, &#x27;colsample_bytree&#x27;: 0.88, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0189, &#x27;reg_alpha&#x27;: 0.00918, &#x27;reg_lambda&#x27;: 0.821}
+
+-&gt; CV NSE promedio: 0.46
+-&gt; CV NSE desvío  : 0.16
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 43
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 44
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 41.0
+-&gt; Reference tree 95           : 23.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;n_estimators&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.893, &#x27;max_depth&#x27;: 0.0452, &#x27;n_estimators&#x27;: 0.0198, &#x27;subsample&#x27;: 0.0118, &#x27;colsample_bytree&#x27;: 0.00846, &#x27;reg_lambda&#x27;: 0.00792, &#x27;gamma&#x27;: 0.00638, &#x27;reg_alpha&#x27;: 0.00376, &#x27;learning_rate&#x27;: 0.00339}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.63, &#x27;MAE&#x27;: 0.42, &#x27;NSE&#x27;: 0.76, &#x27;KGE&#x27;: 0.76, &#x27;PBIAS&#x27;: -0.0023, &#x27;R2&#x27;: 0.76, &#x27;RSR&#x27;: 0.49}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.9, &#x27;MAE&#x27;: 0.64, &#x27;NSE&#x27;: 0.4, &#x27;KGE&#x27;: 0.47, &#x27;PBIAS&#x27;: -0.4, &#x27;R2&#x27;: 0.46, &#x27;RSR&#x27;: 0.78}
+
+-&gt; Tiempo de ejecución: 13 min 31.00 s
+
+
+######################################################################
+Procesando corr_top4...
+######################################################################
+
+
+-&gt; Dataset: corr_top4
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1215, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0677, &#x27;subsample&#x27;: 0.83, &#x27;colsample_bytree&#x27;: 0.98, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0335, &#x27;reg_alpha&#x27;: 0.0252, &#x27;reg_lambda&#x27;: 1.64}
+
+-&gt; CV NSE promedio: 0.53
+-&gt; CV NSE desvío  : 0.14
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 63
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 64
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 61.0
+-&gt; Reference tree 95           : 43.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;learning_rate&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.954, &#x27;max_depth&#x27;: 0.0191, &#x27;learning_rate&#x27;: 0.00968, &#x27;subsample&#x27;: 0.00802, &#x27;reg_lambda&#x27;: 0.00292, &#x27;gamma&#x27;: 0.00261, &#x27;reg_alpha&#x27;: 0.00155, &#x27;colsample_bytree&#x27;: 0.000992, &#x27;n_estimators&#x27;: 0.000777}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.57, &#x27;MAE&#x27;: 0.41, &#x27;NSE&#x27;: 0.8, &#x27;KGE&#x27;: 0.78, &#x27;PBIAS&#x27;: 0.016, &#x27;R2&#x27;: 0.81, &#x27;RSR&#x27;: 0.44}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.88, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.43, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.35, &#x27;R2&#x27;: 0.47, &#x27;RSR&#x27;: 0.75}
+
+-&gt; Tiempo de ejecución: 15 min 8.00 s
+
+
+######################################################################
+Procesando corr_meteorologia...
+######################################################################
+
+
+-&gt; Dataset: corr_meteorologia
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1081, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0934, &#x27;subsample&#x27;: 0.88, &#x27;colsample_bytree&#x27;: 0.92, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.153, &#x27;reg_alpha&#x27;: 0.0482, &#x27;reg_lambda&#x27;: 0.385}
+
+-&gt; CV NSE promedio: 0.43
+-&gt; CV NSE desvío  : 0.15
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 265
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 266
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 245.0
+-&gt; Reference tree 95           : 99.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;max_depth&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.956, &#x27;learning_rate&#x27;: 0.0218, &#x27;max_depth&#x27;: 0.0104, &#x27;subsample&#x27;: 0.00427, &#x27;reg_alpha&#x27;: 0.00245, &#x27;gamma&#x27;: 0.00166, &#x27;n_estimators&#x27;: 0.00142, &#x27;colsample_bytree&#x27;: 0.00105, &#x27;reg_lambda&#x27;: 0.000973}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.54, &#x27;MAE&#x27;: 0.4, &#x27;NSE&#x27;: 0.82, &#x27;KGE&#x27;: 0.82, &#x27;PBIAS&#x27;: -0.016, &#x27;R2&#x27;: 0.83, &#x27;RSR&#x27;: 0.42}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.0, &#x27;MAE&#x27;: 0.81, &#x27;NSE&#x27;: 0.19, &#x27;KGE&#x27;: 0.51, &#x27;PBIAS&#x27;: -0.69, &#x27;R2&#x27;: 0.35, &#x27;RSR&#x27;: 0.9}
+
+-&gt; Tiempo de ejecución: 13 min 47.00 s
+
+
+######################################################################
+Procesando corr_todos_sinP...
+######################################################################
+
+
+-&gt; Dataset: corr_todos_sinP
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1442, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0737, &#x27;subsample&#x27;: 0.93, &#x27;colsample_bytree&#x27;: 0.82, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.00995, &#x27;reg_alpha&#x27;: 0.0913, &#x27;reg_lambda&#x27;: 0.858}
+
+-&gt; CV NSE promedio: 0.58
+-&gt; CV NSE desvío  : 0.087
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 95
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 96
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 90.0
+-&gt; Reference tree 95           : 49.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;reg_lambda&#x27;, &#x27;gamma&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.954, &#x27;max_depth&#x27;: 0.0152, &#x27;reg_lambda&#x27;: 0.0125, &#x27;gamma&#x27;: 0.00823, &#x27;learning_rate&#x27;: 0.00331, &#x27;subsample&#x27;: 0.00259, &#x27;n_estimators&#x27;: 0.00227, &#x27;reg_alpha&#x27;: 0.00142, &#x27;colsample_bytree&#x27;: 0.000874}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.42, &#x27;MAE&#x27;: 0.31, &#x27;NSE&#x27;: 0.89, &#x27;KGE&#x27;: 0.86, &#x27;PBIAS&#x27;: 0.04, &#x27;R2&#x27;: 0.9, &#x27;RSR&#x27;: 0.33}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.63, &#x27;PBIAS&#x27;: -0.19, &#x27;R2&#x27;: 0.52, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Tiempo de ejecución: 16 min 50.00 s
+
+
+######################################################################
+Procesando corr_todos...
+######################################################################
+
+
+-&gt; Dataset: corr_todos
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1106, &#x27;max_depth&#x27;: 4, &#x27;learning_rate&#x27;: 0.0891, &#x27;subsample&#x27;: 0.86, &#x27;colsample_bytree&#x27;: 0.95, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.0804, &#x27;reg_alpha&#x27;: 0.0251, &#x27;reg_lambda&#x27;: 0.661}
+
+-&gt; CV NSE promedio: 0.59
+-&gt; CV NSE desvío  : 0.054
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 43
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 44
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 31.0
+-&gt; Reference tree 95           : 22.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;n_estimators&#x27;, &#x27;reg_lambda&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.958, &#x27;n_estimators&#x27;: 0.0086, &#x27;reg_lambda&#x27;: 0.00748, &#x27;subsample&#x27;: 0.00607, &#x27;gamma&#x27;: 0.00588, &#x27;learning_rate&#x27;: 0.00579, &#x27;max_depth&#x27;: 0.00328, &#x27;reg_alpha&#x27;: 0.00254, &#x27;colsample_bytree&#x27;: 0.00186}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.39, &#x27;MAE&#x27;: 0.25, &#x27;NSE&#x27;: 0.9, &#x27;KGE&#x27;: 0.88, &#x27;PBIAS&#x27;: 0.021, &#x27;R2&#x27;: 0.91, &#x27;RSR&#x27;: 0.31}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.54, &#x27;KGE&#x27;: 0.63, &#x27;PBIAS&#x27;: -0.23, &#x27;R2&#x27;: 0.55, &#x27;RSR&#x27;: 0.68}
+
+-&gt; Tiempo de ejecución: 16 min 50.00 s
+
+
+######################################################################
+Procesando relfis_agua...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 477, &#x27;max_depth&#x27;: 6, &#x27;learning_rate&#x27;: 0.0875, &#x27;subsample&#x27;: 0.8, &#x27;colsample_bytree&#x27;: 0.89, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.000817, &#x27;reg_alpha&#x27;: 0.0119, &#x27;reg_lambda&#x27;: 1.26}
+
+-&gt; CV NSE promedio: 0.26
+-&gt; CV NSE desvío  : 0.13
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 131
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 132
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 128.0
+-&gt; Reference tree 95           : 125.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;gamma&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.913, &#x27;learning_rate&#x27;: 0.0298, &#x27;gamma&#x27;: 0.0171, &#x27;subsample&#x27;: 0.0147, &#x27;n_estimators&#x27;: 0.00736, &#x27;reg_lambda&#x27;: 0.00701, &#x27;reg_alpha&#x27;: 0.006, &#x27;max_depth&#x27;: 0.00331, &#x27;colsample_bytree&#x27;: 0.00221}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.24, &#x27;NSE&#x27;: 0.88, &#x27;KGE&#x27;: 0.87, &#x27;PBIAS&#x27;: 4.1e-05, &#x27;R2&#x27;: 0.88, &#x27;RSR&#x27;: 0.35}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.1, &#x27;MAE&#x27;: 0.83, &#x27;NSE&#x27;: 0.1, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.38, &#x27;R2&#x27;: 0.34, &#x27;RSR&#x27;: 0.95}
+
+-&gt; Tiempo de ejecución: 13 min 13.00 s
+
+
+######################################################################
+Procesando relfis_agua_qmax...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_qmax
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 512, &#x27;max_depth&#x27;: 4, &#x27;learning_rate&#x27;: 0.0847, &#x27;subsample&#x27;: 0.82, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 6, &#x27;gamma&#x27;: 0.174, &#x27;reg_alpha&#x27;: 0.0667, &#x27;reg_lambda&#x27;: 0.442}
+
+-&gt; CV NSE promedio: 0.23
+-&gt; CV NSE desvío  : 0.22
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 62
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 63
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 63.0
+-&gt; Reference tree 95           : 11.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_alpha&#x27;, &#x27;colsample_bytree&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.954, &#x27;learning_rate&#x27;: 0.0103, &#x27;reg_alpha&#x27;: 0.00697, &#x27;colsample_bytree&#x27;: 0.00684, &#x27;reg_lambda&#x27;: 0.00579, &#x27;n_estimators&#x27;: 0.00503, &#x27;gamma&#x27;: 0.00461, &#x27;subsample&#x27;: 0.00461, &#x27;max_depth&#x27;: 0.00195}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.62, &#x27;MAE&#x27;: 0.4, &#x27;NSE&#x27;: 0.76, &#x27;KGE&#x27;: 0.75, &#x27;PBIAS&#x27;: 0.019, &#x27;R2&#x27;: 0.77, &#x27;RSR&#x27;: 0.49}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.95, &#x27;MAE&#x27;: 0.78, &#x27;NSE&#x27;: 0.33, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.025, &#x27;R2&#x27;: 0.38, &#x27;RSR&#x27;: 0.82}
+
+-&gt; Tiempo de ejecución: 13 min 46.00 s
+
+
+######################################################################
+Procesando relfis_agua_q...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_q
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 397, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.0959, &#x27;subsample&#x27;: 0.87, &#x27;colsample_bytree&#x27;: 0.8, &#x27;min_child_weight&#x27;: 5, &#x27;gamma&#x27;: 0.0411, &#x27;reg_alpha&#x27;: 0.0511, &#x27;reg_lambda&#x27;: 0.835}
+
+-&gt; CV NSE promedio: 0.25
+-&gt; CV NSE desvío  : 0.19
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 16
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 17
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 16.0
+-&gt; Reference tree 95           : 16.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;reg_lambda&#x27;, &#x27;subsample&#x27;, &#x27;learning_rate&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.915, &#x27;reg_lambda&#x27;: 0.0291, &#x27;subsample&#x27;: 0.0188, &#x27;learning_rate&#x27;: 0.0169, &#x27;gamma&#x27;: 0.00559, &#x27;n_estimators&#x27;: 0.00536, &#x27;reg_alpha&#x27;: 0.00352, &#x27;max_depth&#x27;: 0.00307, &#x27;colsample_bytree&#x27;: 0.00237}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.83, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: 0.58, &#x27;KGE&#x27;: 0.5, &#x27;PBIAS&#x27;: -0.033, &#x27;R2&#x27;: 0.65, &#x27;RSR&#x27;: 0.65}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.9, &#x27;MAE&#x27;: 0.7, &#x27;NSE&#x27;: 0.41, &#x27;KGE&#x27;: 0.46, &#x27;PBIAS&#x27;: -0.16, &#x27;R2&#x27;: 0.42, &#x27;RSR&#x27;: 0.77}
+
+-&gt; Tiempo de ejecución: 12 min 38.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 476, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.0966, &#x27;subsample&#x27;: 0.96, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.0594, &#x27;reg_alpha&#x27;: 0.0686, &#x27;reg_lambda&#x27;: 0.908}
+
+-&gt; CV NSE promedio: 0.43
+-&gt; CV NSE desvío  : 0.16
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 222
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 223
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 75.0
+-&gt; Reference tree 95           : 37.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;colsample_bytree&#x27;, &#x27;learning_rate&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.955, &#x27;colsample_bytree&#x27;: 0.0126, &#x27;learning_rate&#x27;: 0.0104, &#x27;subsample&#x27;: 0.00796, &#x27;reg_lambda&#x27;: 0.00524, &#x27;n_estimators&#x27;: 0.00469, &#x27;reg_alpha&#x27;: 0.00188, &#x27;gamma&#x27;: 0.00138, &#x27;max_depth&#x27;: 0.000705}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.35, &#x27;MAE&#x27;: 0.2, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.9, &#x27;PBIAS&#x27;: -0.014, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.27}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.87, &#x27;MAE&#x27;: 0.69, &#x27;NSE&#x27;: 0.44, &#x27;KGE&#x27;: 0.54, &#x27;PBIAS&#x27;: -0.18, &#x27;R2&#x27;: 0.45, &#x27;RSR&#x27;: 0.75}
+
+-&gt; Tiempo de ejecución: 13 min 59.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 819, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.0738, &#x27;subsample&#x27;: 0.97, &#x27;colsample_bytree&#x27;: 0.97, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 7.3e-05, &#x27;reg_alpha&#x27;: 0.0491, &#x27;reg_lambda&#x27;: 1.48}
+
+-&gt; CV NSE promedio: 0.45
+-&gt; CV NSE desvío  : 0.18
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 149
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 150
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 97.0
+-&gt; Reference tree 95           : 60.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;subsample&#x27;, &#x27;colsample_bytree&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.976, &#x27;learning_rate&#x27;: 0.00677, &#x27;subsample&#x27;: 0.00429, &#x27;colsample_bytree&#x27;: 0.00328, &#x27;gamma&#x27;: 0.00321, &#x27;n_estimators&#x27;: 0.00314, &#x27;reg_alpha&#x27;: 0.00254, &#x27;reg_lambda&#x27;: 0.000863, &#x27;max_depth&#x27;: 0.000124}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.35, &#x27;MAE&#x27;: 0.2, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.89, &#x27;PBIAS&#x27;: -0.019, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.27}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.8, &#x27;MAE&#x27;: 0.6, &#x27;NSE&#x27;: 0.53, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: -0.25, &#x27;R2&#x27;: 0.55, &#x27;RSR&#x27;: 0.69}
+
+-&gt; Tiempo de ejecución: 14 min 59.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 613, &#x27;max_depth&#x27;: 4, &#x27;learning_rate&#x27;: 0.0778, &#x27;subsample&#x27;: 0.91, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.00901, &#x27;reg_alpha&#x27;: 0.0148, &#x27;reg_lambda&#x27;: 1.61}
+
+-&gt; CV NSE promedio: 0.45
+-&gt; CV NSE desvío  : 0.18
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 160
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 161
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 124.0
+-&gt; Reference tree 95           : 67.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;gamma&#x27;, &#x27;reg_lambda&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.991, &#x27;learning_rate&#x27;: 0.00253, &#x27;gamma&#x27;: 0.00201, &#x27;reg_lambda&#x27;: 0.00137, &#x27;subsample&#x27;: 0.00101, &#x27;colsample_bytree&#x27;: 0.000816, &#x27;n_estimators&#x27;: 0.000633, &#x27;reg_alpha&#x27;: 0.000594, &#x27;max_depth&#x27;: 0.000264}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.31, &#x27;MAE&#x27;: 0.14, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.92, &#x27;PBIAS&#x27;: -0.024, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.24}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.84, &#x27;MAE&#x27;: 0.65, &#x27;NSE&#x27;: 0.48, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.12, &#x27;R2&#x27;: 0.48, &#x27;RSR&#x27;: 0.72}
+
+-&gt; Tiempo de ejecución: 15 min 7.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1122, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0954, &#x27;subsample&#x27;: 0.85, &#x27;colsample_bytree&#x27;: 0.96, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0397, &#x27;reg_alpha&#x27;: 0.0133, &#x27;reg_lambda&#x27;: 0.589}
+
+-&gt; CV NSE promedio: 0.52
+-&gt; CV NSE desvío  : 0.13
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 63
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 64
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 44.0
+-&gt; Reference tree 95           : 33.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;max_depth&#x27;, &#x27;subsample&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.903, &#x27;learning_rate&#x27;: 0.0319, &#x27;max_depth&#x27;: 0.0221, &#x27;subsample&#x27;: 0.0208, &#x27;reg_lambda&#x27;: 0.00767, &#x27;gamma&#x27;: 0.00523, &#x27;colsample_bytree&#x27;: 0.00382, &#x27;n_estimators&#x27;: 0.00367, &#x27;reg_alpha&#x27;: 0.00224}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.47, &#x27;MAE&#x27;: 0.34, &#x27;NSE&#x27;: 0.86, &#x27;KGE&#x27;: 0.84, &#x27;PBIAS&#x27;: 0.019, &#x27;R2&#x27;: 0.87, &#x27;RSR&#x27;: 0.37}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.92, &#x27;MAE&#x27;: 0.67, &#x27;NSE&#x27;: 0.38, &#x27;KGE&#x27;: 0.57, &#x27;PBIAS&#x27;: -0.35, &#x27;R2&#x27;: 0.43, &#x27;RSR&#x27;: 0.79}
+
+-&gt; Tiempo de ejecución: 14 min 37.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 621, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0537, &#x27;subsample&#x27;: 1.0, &#x27;colsample_bytree&#x27;: 0.93, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.00532, &#x27;reg_alpha&#x27;: 0.0892, &#x27;reg_lambda&#x27;: 0.497}
+
+-&gt; CV NSE promedio: 0.53
+-&gt; CV NSE desvío  : 0.18
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 238
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 239
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 203.0
+-&gt; Reference tree 95           : 143.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;gamma&#x27;, &#x27;reg_lambda&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.972, &#x27;learning_rate&#x27;: 0.00864, &#x27;gamma&#x27;: 0.00507, &#x27;reg_lambda&#x27;: 0.00444, &#x27;max_depth&#x27;: 0.0043, &#x27;reg_alpha&#x27;: 0.00151, &#x27;n_estimators&#x27;: 0.00144, &#x27;subsample&#x27;: 0.00119, &#x27;colsample_bytree&#x27;: 0.0011}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.32, &#x27;MAE&#x27;: 0.23, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.9, &#x27;PBIAS&#x27;: 0.028, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.25}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.95, &#x27;MAE&#x27;: 0.71, &#x27;NSE&#x27;: 0.34, &#x27;KGE&#x27;: 0.54, &#x27;PBIAS&#x27;: -0.32, &#x27;R2&#x27;: 0.39, &#x27;RSR&#x27;: 0.81}
+
+-&gt; Tiempo de ejecución: 16 min 50.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 650, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0908, &#x27;subsample&#x27;: 0.92, &#x27;colsample_bytree&#x27;: 0.89, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.118, &#x27;reg_alpha&#x27;: 0.0175, &#x27;reg_lambda&#x27;: 0.353}
+
+-&gt; CV NSE promedio: 0.51
+-&gt; CV NSE desvío  : 0.14
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 103
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 104
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 51.0
+-&gt; Reference tree 95           : 38.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_lambda&#x27;, &#x27;max_depth&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.959, &#x27;learning_rate&#x27;: 0.0141, &#x27;reg_lambda&#x27;: 0.0126, &#x27;max_depth&#x27;: 0.00411, &#x27;gamma&#x27;: 0.00335, &#x27;reg_alpha&#x27;: 0.00311, &#x27;n_estimators&#x27;: 0.00172, &#x27;colsample_bytree&#x27;: 0.0011, &#x27;subsample&#x27;: 0.000928}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.4, &#x27;MAE&#x27;: 0.3, &#x27;NSE&#x27;: 0.9, &#x27;KGE&#x27;: 0.87, &#x27;PBIAS&#x27;: 0.033, &#x27;R2&#x27;: 0.91, &#x27;RSR&#x27;: 0.31}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.95, &#x27;MAE&#x27;: 0.73, &#x27;NSE&#x27;: 0.34, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.27, &#x27;R2&#x27;: 0.38, &#x27;RSR&#x27;: 0.81}
+
+-&gt; Tiempo de ejecución: 13 min 55.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1468, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.0954, &#x27;subsample&#x27;: 0.81, &#x27;colsample_bytree&#x27;: 0.91, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.143, &#x27;reg_alpha&#x27;: 0.0796, &#x27;reg_lambda&#x27;: 0.396}
+
+-&gt; CV NSE promedio: 0.43
+-&gt; CV NSE desvío  : 0.19
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 39
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 40
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 32.0
+-&gt; Reference tree 95           : 30.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;reg_lambda&#x27;, &#x27;gamma&#x27;, &#x27;learning_rate&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.988, &#x27;reg_lambda&#x27;: 0.00491, &#x27;gamma&#x27;: 0.0031, &#x27;learning_rate&#x27;: 0.00134, &#x27;reg_alpha&#x27;: 0.000908, &#x27;n_estimators&#x27;: 0.000817, &#x27;colsample_bytree&#x27;: 0.000476, &#x27;subsample&#x27;: 0.000452, &#x27;max_depth&#x27;: 0.000151}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.53, &#x27;MAE&#x27;: 0.38, &#x27;NSE&#x27;: 0.83, &#x27;KGE&#x27;: 0.78, &#x27;PBIAS&#x27;: -0.012, &#x27;R2&#x27;: 0.84, &#x27;RSR&#x27;: 0.41}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.1, &#x27;MAE&#x27;: 0.84, &#x27;NSE&#x27;: 0.18, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.79, &#x27;R2&#x27;: 0.41, &#x27;RSR&#x27;: 0.91}
+
+-&gt; Tiempo de ejecución: 12 min 46.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1399, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.0827, &#x27;subsample&#x27;: 0.84, &#x27;colsample_bytree&#x27;: 0.93, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0145, &#x27;reg_alpha&#x27;: 0.0146, &#x27;reg_lambda&#x27;: 0.344}
+
+-&gt; CV NSE promedio: 0.47
+-&gt; CV NSE desvío  : 0.2
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 53
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 54
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 52.0
+-&gt; Reference tree 95           : 35.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;reg_lambda&#x27;, &#x27;gamma&#x27;, &#x27;learning_rate&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.981, &#x27;reg_lambda&#x27;: 0.00673, &#x27;gamma&#x27;: 0.00397, &#x27;learning_rate&#x27;: 0.00304, &#x27;max_depth&#x27;: 0.00186, &#x27;reg_alpha&#x27;: 0.00159, &#x27;subsample&#x27;: 0.000753, &#x27;n_estimators&#x27;: 0.000422, &#x27;colsample_bytree&#x27;: 0.000273}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.3, &#x27;NSE&#x27;: 0.88, &#x27;KGE&#x27;: 0.83, &#x27;PBIAS&#x27;: -0.014, &#x27;R2&#x27;: 0.89, &#x27;RSR&#x27;: 0.34}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.98, &#x27;MAE&#x27;: 0.78, &#x27;NSE&#x27;: 0.29, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.61, &#x27;R2&#x27;: 0.43, &#x27;RSR&#x27;: 0.84}
+
+-&gt; Tiempo de ejecución: 13 min 15.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1164, &#x27;max_depth&#x27;: 3, &#x27;learning_rate&#x27;: 0.0306, &#x27;subsample&#x27;: 0.98, &#x27;colsample_bytree&#x27;: 0.94, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.0593, &#x27;reg_alpha&#x27;: 0.0718, &#x27;reg_lambda&#x27;: 0.57}
+
+-&gt; CV NSE promedio: 0.46
+-&gt; CV NSE desvío  : 0.19
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 1046
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 1047
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 355.0
+-&gt; Reference tree 95           : 159.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;subsample&#x27;, &#x27;max_depth&#x27;, &#x27;n_estimators&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.944, &#x27;subsample&#x27;: 0.0202, &#x27;max_depth&#x27;: 0.0128, &#x27;n_estimators&#x27;: 0.0106, &#x27;learning_rate&#x27;: 0.00497, &#x27;gamma&#x27;: 0.00364, &#x27;reg_lambda&#x27;: 0.0024, &#x27;reg_alpha&#x27;: 0.000616, &#x27;colsample_bytree&#x27;: 0.000362}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.32, &#x27;MAE&#x27;: 0.21, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.91, &#x27;PBIAS&#x27;: -0.0041, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.25}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.0, &#x27;MAE&#x27;: 0.85, &#x27;NSE&#x27;: 0.21, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.52, &#x27;R2&#x27;: 0.38, &#x27;RSR&#x27;: 0.89}
+
+-&gt; Tiempo de ejecución: 18 min 30.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_todos_sinP)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos_sinP)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 630, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0587, &#x27;subsample&#x27;: 0.96, &#x27;colsample_bytree&#x27;: 0.92, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.0211, &#x27;reg_alpha&#x27;: 0.0489, &#x27;reg_lambda&#x27;: 0.391}
+
+-&gt; CV NSE promedio: 0.52
+-&gt; CV NSE desvío  : 0.068
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 139
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 140
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 118.0
+-&gt; Reference tree 95           : 71.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;max_depth&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_lambda&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.943, &#x27;max_depth&#x27;: 0.0221, &#x27;learning_rate&#x27;: 0.0118, &#x27;reg_lambda&#x27;: 0.00616, &#x27;subsample&#x27;: 0.00487, &#x27;reg_alpha&#x27;: 0.00479, &#x27;gamma&#x27;: 0.00357, &#x27;n_estimators&#x27;: 0.003, &#x27;colsample_bytree&#x27;: 0.000973}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.38, &#x27;MAE&#x27;: 0.27, &#x27;NSE&#x27;: 0.91, &#x27;KGE&#x27;: 0.88, &#x27;PBIAS&#x27;: 0.035, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.3}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.85, &#x27;MAE&#x27;: 0.66, &#x27;NSE&#x27;: 0.47, &#x27;KGE&#x27;: 0.64, &#x27;PBIAS&#x27;: -0.22, &#x27;R2&#x27;: 0.49, &#x27;RSR&#x27;: 0.73}
+
+-&gt; Tiempo de ejecución: 20 min 0.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_todos_sinP)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos_sinP)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 562, &#x27;max_depth&#x27;: 5, &#x27;learning_rate&#x27;: 0.0551, &#x27;subsample&#x27;: 0.87, &#x27;colsample_bytree&#x27;: 0.88, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0491, &#x27;reg_alpha&#x27;: 0.0266, &#x27;reg_lambda&#x27;: 0.382}
+
+-&gt; CV NSE promedio: 0.53
+-&gt; CV NSE desvío  : 0.064
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 63
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 64
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 51.0
+-&gt; Reference tree 95           : 35.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;reg_lambda&#x27;, &#x27;subsample&#x27;, &#x27;max_depth&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.959, &#x27;reg_lambda&#x27;: 0.0186, &#x27;subsample&#x27;: 0.00704, &#x27;max_depth&#x27;: 0.00593, &#x27;learning_rate&#x27;: 0.00405, &#x27;reg_alpha&#x27;: 0.00187, &#x27;gamma&#x27;: 0.00152, &#x27;colsample_bytree&#x27;: 0.00115, &#x27;n_estimators&#x27;: 0.000769}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.33, &#x27;MAE&#x27;: 0.19, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.88, &#x27;PBIAS&#x27;: -0.0054, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.26}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.86, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.46, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: -0.26, &#x27;R2&#x27;: 0.48, &#x27;RSR&#x27;: 0.74}
+
+-&gt; Tiempo de ejecución: 19 min 50.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_todos_sinP)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos_sinP)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 1394, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0423, &#x27;subsample&#x27;: 0.8, &#x27;colsample_bytree&#x27;: 0.95, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0529, &#x27;reg_alpha&#x27;: 0.0609, &#x27;reg_lambda&#x27;: 0.808}
+
+-&gt; CV NSE promedio: 0.52
+-&gt; CV NSE desvío  : 0.067
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 266
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 267
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 217.0
+-&gt; Reference tree 95           : 124.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;reg_lambda&#x27;, &#x27;subsample&#x27;, &#x27;learning_rate&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.96, &#x27;reg_lambda&#x27;: 0.0087, &#x27;subsample&#x27;: 0.00858, &#x27;learning_rate&#x27;: 0.00802, &#x27;max_depth&#x27;: 0.00679, &#x27;n_estimators&#x27;: 0.00255, &#x27;gamma&#x27;: 0.00228, &#x27;colsample_bytree&#x27;: 0.00204, &#x27;reg_alpha&#x27;: 0.0012}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.35, &#x27;MAE&#x27;: 0.24, &#x27;NSE&#x27;: 0.92, &#x27;KGE&#x27;: 0.91, &#x27;PBIAS&#x27;: 0.046, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.28}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.85, &#x27;MAE&#x27;: 0.65, &#x27;NSE&#x27;: 0.47, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.16, &#x27;R2&#x27;: 0.48, &#x27;RSR&#x27;: 0.73}
+
+-&gt; Tiempo de ejecución: 19 min 50.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_todos)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 265, &#x27;max_depth&#x27;: 5, &#x27;learning_rate&#x27;: 0.0955, &#x27;subsample&#x27;: 0.9, &#x27;colsample_bytree&#x27;: 1.0, &#x27;min_child_weight&#x27;: 4, &#x27;gamma&#x27;: 0.0628, &#x27;reg_alpha&#x27;: 0.119, &#x27;reg_lambda&#x27;: 0.345}
+
+-&gt; CV NSE promedio: 0.55
+-&gt; CV NSE desvío  : 0.063
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 45
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 46
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 27.0
+-&gt; Reference tree 95           : 22.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_lambda&#x27;, &#x27;reg_alpha&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.921, &#x27;learning_rate&#x27;: 0.0341, &#x27;reg_lambda&#x27;: 0.0167, &#x27;reg_alpha&#x27;: 0.01, &#x27;subsample&#x27;: 0.00441, &#x27;gamma&#x27;: 0.00355, &#x27;n_estimators&#x27;: 0.00354, &#x27;max_depth&#x27;: 0.0034, &#x27;colsample_bytree&#x27;: 0.00282}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.35, &#x27;MAE&#x27;: 0.2, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.91, &#x27;PBIAS&#x27;: 0.028, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.27}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.64, &#x27;PBIAS&#x27;: -0.18, &#x27;R2&#x27;: 0.52, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Tiempo de ejecución: 15 min 51.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_todos)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 356, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0926, &#x27;subsample&#x27;: 0.97, &#x27;colsample_bytree&#x27;: 0.8, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0581, &#x27;reg_alpha&#x27;: 0.108, &#x27;reg_lambda&#x27;: 0.443}
+
+-&gt; CV NSE promedio: 0.55
+-&gt; CV NSE desvío  : 0.083
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 282
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 283
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 132.0
+-&gt; Reference tree 95           : 50.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;reg_lambda&#x27;, &#x27;subsample&#x27;, &#x27;max_depth&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.911, &#x27;reg_lambda&#x27;: 0.0196, &#x27;subsample&#x27;: 0.018, &#x27;max_depth&#x27;: 0.014, &#x27;gamma&#x27;: 0.0124, &#x27;reg_alpha&#x27;: 0.00844, &#x27;n_estimators&#x27;: 0.007, &#x27;learning_rate&#x27;: 0.00595, &#x27;colsample_bytree&#x27;: 0.00361}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.32, &#x27;MAE&#x27;: 0.2, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.93, &#x27;PBIAS&#x27;: 0.034, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.25}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.66, &#x27;PBIAS&#x27;: -0.22, &#x27;R2&#x27;: 0.56, &#x27;RSR&#x27;: 0.67}
+
+-&gt; Tiempo de ejecución: 17 min 50.00 s
+
+
+######################################################################
+Procesando hibrido_(corr_todos)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Preset: None
+   Experiment label: sets_lotico_intermedio
+   n_estimators_saturation_pct: 100
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Rangos de búsqueda para los parámetros:
+   n_estimators      : 200 a 1500
+   max_depth         : 2 a 6
+   learning_rate     : 0.005 a 0.1 (step=0.0001)
+   subsample         : 0.8 a 1.0 (step=0.01)
+   colsample_bytree  : 0.8 a 1.0 (step=0.01)
+   min_child_weight  : 3 a 10
+   gamma             : 1e-06 a 0.3 (step=1e-06)
+   reg_alpha         : 1e-06 a 0.2 (step=1e-06)
+   reg_lambda        : 0.3 a 3.0 (step=0.001)
+
+-&gt; Mejores parámetros:
+{&#x27;n_estimators&#x27;: 380, &#x27;max_depth&#x27;: 2, &#x27;learning_rate&#x27;: 0.0875, &#x27;subsample&#x27;: 0.97, &#x27;colsample_bytree&#x27;: 0.92, &#x27;min_child_weight&#x27;: 3, &#x27;gamma&#x27;: 0.0169, &#x27;reg_alpha&#x27;: 0.0953, &#x27;reg_lambda&#x27;: 0.622}
+
+-&gt; CV NSE promedio: 0.54
+-&gt; CV NSE desvío  : 0.067
+
+-&gt; Preset                : None
+-&gt; Experiment label      : sets_lotico_intermedio
+-&gt; Search space type     : custom
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 196
+-&gt; n_estimators_saturation_pct : 100
+-&gt; Reported n_estimators       : 197
+-&gt; Reported mode               : early_stopping_original
+-&gt; Reference tree 99           : 146.0
+-&gt; Reference tree 95           : 30.0
+
+-&gt; Top hiperparámetros para contorno: [&#x27;min_child_weight&#x27;, &#x27;learning_rate&#x27;, &#x27;reg_lambda&#x27;, &#x27;max_depth&#x27;]
+
+-&gt; Importancia de hiperparámetros:
+{&#x27;min_child_weight&#x27;: 0.937, &#x27;learning_rate&#x27;: 0.0157, &#x27;reg_lambda&#x27;: 0.0133, &#x27;max_depth&#x27;: 0.0132, &#x27;subsample&#x27;: 0.00543, &#x27;n_estimators&#x27;: 0.00408, &#x27;gamma&#x27;: 0.00408, &#x27;colsample_bytree&#x27;: 0.0037, &#x27;reg_alpha&#x27;: 0.00367}
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.3, &#x27;MAE&#x27;: 0.18, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.94, &#x27;PBIAS&#x27;: 0.05, &#x27;R2&#x27;: 0.95, &#x27;RSR&#x27;: 0.24}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.67, &#x27;PBIAS&#x27;: -0.12, &#x27;R2&#x27;: 0.55, &#x27;RSR&#x27;: 0.67}
+
+-&gt; Tiempo de ejecución: 17 min 30.00 s
+
+--------------------------------------------------------------------------------------------------
+
+Carpeta de resultados: Resultados_6-10--0-32
+
+Resumen de métricas de train:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0             hibrido_(corr_todos)_(relfis_agua_q)  0.30  0.18  0.94  0.94   
+1          hibrido_(corr_todos)_(relfis_agua_qmax)  0.32  0.20  0.94  0.93   
+2                                       corr_todos  0.39  0.25  0.90  0.88   
+3           hibrido_(corr_top3)_(relfis_agua_qmax)  0.35  0.20  0.93  0.89   
+4               hibrido_(corr_todos)_(relfis_agua)  0.35  0.20  0.93  0.91   
+5                                  corr_todos_sinP  0.42  0.31  0.89  0.86   
+6              hibrido_(corr_top3)_(relfis_agua_q)  0.31  0.14  0.94  0.92   
+7        hibrido_(corr_todos_sinP)_(relfis_agua_q)  0.35  0.24  0.92  0.91   
+8          hibrido_(corr_todos_sinP)_(relfis_agua)  0.38  0.27  0.91  0.88   
+9     hibrido_(corr_todos_sinP)_(relfis_agua_qmax)  0.33  0.19  0.93  0.88   
+10               hibrido_(corr_top3)_(relfis_agua)  0.35  0.20  0.93  0.90   
+11                                       corr_top4  0.57  0.41  0.80  0.78   
+12                                   relfis_agua_q  0.83  0.55  0.58  0.50   
+13                                       corr_top3  0.63  0.42  0.76  0.76   
+14               hibrido_(corr_top4)_(relfis_agua)  0.47  0.34  0.86  0.84   
+15             hibrido_(corr_top4)_(relfis_agua_q)  0.40  0.30  0.90  0.87   
+16          hibrido_(corr_top4)_(relfis_agua_qmax)  0.32  0.23  0.94  0.90   
+17                                relfis_agua_qmax  0.62  0.40  0.76  0.75   
+18  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.44  0.30  0.88  0.83   
+19     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.32  0.21  0.94  0.91   
+20                               corr_meteorologia  0.54  0.40  0.82  0.82   
+21       hibrido_(corr_meteorologia)_(relfis_agua)  0.53  0.38  0.83  0.78   
+22                                     relfis_agua  0.44  0.24  0.88  0.87   
+
+       PBIAS    R2   RSR  
+0   0.050000  0.95  0.24  
+1   0.034000  0.94  0.25  
+2   0.021000  0.91  0.31  
+3  -0.019000  0.93  0.27  
+4   0.028000  0.93  0.27  
+5   0.040000  0.90  0.33  
+6  -0.024000  0.94  0.24  
+7   0.046000  0.93  0.28  
+8   0.035000  0.92  0.30  
+9  -0.005400  0.94  0.26  
+10 -0.014000  0.93  0.27  
+11  0.016000  0.81  0.44  
+12 -0.033000  0.65  0.65  
+13 -0.002300  0.76  0.49  
+14  0.019000  0.87  0.37  
+15  0.033000  0.91  0.31  
+16  0.028000  0.94  0.25  
+17  0.019000  0.77  0.49  
+18 -0.014000  0.89  0.34  
+19 -0.004100  0.94  0.25  
+20 -0.016000  0.83  0.42  
+21 -0.012000  0.84  0.41  
+22  0.000041  0.88  0.35  
+
+Resumen de métricas de test:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0             hibrido_(corr_todos)_(relfis_agua_q)  0.78  0.61  0.55  0.67   
+1          hibrido_(corr_todos)_(relfis_agua_qmax)  0.78  0.59  0.55  0.66   
+2                                       corr_todos  0.79  0.58  0.54  0.63   
+3           hibrido_(corr_top3)_(relfis_agua_qmax)  0.80  0.60  0.53  0.60   
+4               hibrido_(corr_todos)_(relfis_agua)  0.81  0.59  0.51  0.64   
+5                                  corr_todos_sinP  0.82  0.61  0.51  0.63   
+6              hibrido_(corr_top3)_(relfis_agua_q)  0.84  0.65  0.48  0.55   
+7        hibrido_(corr_todos_sinP)_(relfis_agua_q)  0.85  0.65  0.47  0.61   
+8          hibrido_(corr_todos_sinP)_(relfis_agua)  0.85  0.66  0.47  0.64   
+9     hibrido_(corr_todos_sinP)_(relfis_agua_qmax)  0.86  0.61  0.46  0.56   
+10               hibrido_(corr_top3)_(relfis_agua)  0.87  0.69  0.44  0.54   
+11                                       corr_top4  0.88  0.61  0.43  0.55   
+12                                   relfis_agua_q  0.90  0.70  0.41  0.46   
+13                                       corr_top3  0.90  0.64  0.40  0.47   
+14               hibrido_(corr_top4)_(relfis_agua)  0.92  0.67  0.38  0.57   
+15             hibrido_(corr_top4)_(relfis_agua_q)  0.95  0.73  0.34  0.55   
+16          hibrido_(corr_top4)_(relfis_agua_qmax)  0.95  0.71  0.34  0.54   
+17                                relfis_agua_qmax  0.95  0.78  0.33  0.58   
+18  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.98  0.78  0.29  0.61   
+19     hibrido_(corr_meteorologia)_(relfis_agua_q)  1.00  0.85  0.21  0.61   
+20                               corr_meteorologia  1.00  0.81  0.19  0.51   
+21       hibrido_(corr_meteorologia)_(relfis_agua)  1.10  0.84  0.18  0.61   
+22                                     relfis_agua  1.10  0.83  0.10  0.58   
+
+    PBIAS    R2   RSR  
+0  -0.120  0.55  0.67  
+1  -0.220  0.56  0.67  
+2  -0.230  0.55  0.68  
+3  -0.250  0.55  0.69  
+4  -0.180  0.52  0.70  
+5  -0.190  0.52  0.70  
+6  -0.120  0.48  0.72  
+7  -0.160  0.48  0.73  
+8  -0.220  0.49  0.73  
+9  -0.260  0.48  0.74  
+10 -0.180  0.45  0.75  
+11 -0.350  0.47  0.75  
+12 -0.160  0.42  0.77  
+13 -0.400  0.46  0.78  
+14 -0.350  0.43  0.79  
+15 -0.270  0.38  0.81  
+16 -0.320  0.39  0.81  
+17 -0.025  0.38  0.82  
+18 -0.610  0.43  0.84  
+19 -0.520  0.38  0.89  
+20 -0.690  0.35  0.90  
+21 -0.790  0.41  0.91  
+22 -0.380  0.34  0.95  
+
+Resumen de mejores parámetros:
+
+                                         DataFrame  n_estimators  max_depth  \
+0             hibrido_(corr_todos)_(relfis_agua_q)           380          2   
+1          hibrido_(corr_todos)_(relfis_agua_qmax)           356          2   
+2                                       corr_todos          1106          4   
+3           hibrido_(corr_top3)_(relfis_agua_qmax)           819          3   
+4               hibrido_(corr_todos)_(relfis_agua)           265          5   
+5                                  corr_todos_sinP          1442          2   
+6              hibrido_(corr_top3)_(relfis_agua_q)           613          4   
+7        hibrido_(corr_todos_sinP)_(relfis_agua_q)          1394          2   
+8          hibrido_(corr_todos_sinP)_(relfis_agua)           630          2   
+9     hibrido_(corr_todos_sinP)_(relfis_agua_qmax)           562          5   
+10               hibrido_(corr_top3)_(relfis_agua)           476          3   
+11                                       corr_top4          1215          2   
+12                                   relfis_agua_q           397          3   
+13                                       corr_top3          1444          2   
+14               hibrido_(corr_top4)_(relfis_agua)          1122          2   
+15             hibrido_(corr_top4)_(relfis_agua_q)           650          2   
+16          hibrido_(corr_top4)_(relfis_agua_qmax)           621          2   
+17                                relfis_agua_qmax           512          4   
+18  hibrido_(corr_meteorologia)_(relfis_agua_qmax)          1399          3   
+19     hibrido_(corr_meteorologia)_(relfis_agua_q)          1164          3   
+20                               corr_meteorologia          1081          2   
+21       hibrido_(corr_meteorologia)_(relfis_agua)          1468          3   
+22                                     relfis_agua           477          6   
+
+    learning_rate  subsample  colsample_bytree  min_child_weight     gamma  \
+0          0.0875       0.97              0.92                 3  0.016875   
+1          0.0926       0.97              0.80                 3  0.058113   
+2          0.0891       0.86              0.95                 4  0.080406   
+3          0.0738       0.97              0.97                 4  0.000073   
+4          0.0955       0.90              1.00                 4  0.062776   
+5          0.0737       0.93              0.82                 4  0.009951   
+6          0.0778       0.91              1.00                 4  0.009011   
+7          0.0423       0.80              0.95                 3  0.052916   
+8          0.0587       0.96              0.92                 4  0.021145   
+9          0.0551       0.87              0.88                 3  0.049090   
+10         0.0966       0.96              1.00                 4  0.059367   
+11         0.0677       0.83              0.98                 3  0.033539   
+12         0.0959       0.87              0.80                 5  0.041116   
+13         0.0935       0.88              0.88                 3  0.018905   
+14         0.0954       0.85              0.96                 3  0.039740   
+15         0.0908       0.92              0.89                 4  0.118249   
+16         0.0537       1.00              0.93                 3  0.005315   
+17         0.0847       0.82              1.00                 6  0.173551   
+18         0.0827       0.84              0.93                 3  0.014479   
+19         0.0306       0.98              0.94                 4  0.059310   
+20         0.0934       0.88              0.92                 5  0.153415   
+21         0.0954       0.81              0.91                 4  0.143343   
+22         0.0875       0.80              0.89                 4  0.000817   
+
+    reg_alpha  reg_lambda  
+0    0.095273       0.622  
+1    0.107852       0.443  
+2    0.025090       0.661  
+3    0.049074       1.484  
+4    0.119344       0.345  
+5    0.091326       0.858  
+6    0.014799       1.615  
+7    0.060946       0.808  
+8    0.048892       0.391  
+9    0.026567       0.382  
+10   0.068632       0.908  
+11   0.025224       1.639  
+12   0.051130       0.835  
+13   0.009180       0.821  
+14   0.013343       0.589  
+15   0.017520       0.353  
+16   0.089201       0.497  
+17   0.066711       0.442  
+18   0.014606       0.344  
+19   0.071785       0.570  
+20   0.048232       0.385  
+21   0.079571       0.396  
+22   0.011888       1.258  
+
+Resumen de metadatos:
+
+                                         DataFrame  \
+0             hibrido_(corr_todos)_(relfis_agua_q)   
+1          hibrido_(corr_todos)_(relfis_agua_qmax)   
+2                                       corr_todos   
+3           hibrido_(corr_top3)_(relfis_agua_qmax)   
+4               hibrido_(corr_todos)_(relfis_agua)   
+5                                  corr_todos_sinP   
+6              hibrido_(corr_top3)_(relfis_agua_q)   
+7        hibrido_(corr_todos_sinP)_(relfis_agua_q)   
+8          hibrido_(corr_todos_sinP)_(relfis_agua)   
+9     hibrido_(corr_todos_sinP)_(relfis_agua_qmax)   
+10               hibrido_(corr_top3)_(relfis_agua)   
+11                                       corr_top4   
+12                                   relfis_agua_q   
+13                                       corr_top3   
+14               hibrido_(corr_top4)_(relfis_agua)   
+15             hibrido_(corr_top4)_(relfis_agua_q)   
+16          hibrido_(corr_top4)_(relfis_agua_qmax)   
+17                                relfis_agua_qmax   
+18  hibrido_(corr_meteorologia)_(relfis_agua_qmax)   
+19     hibrido_(corr_meteorologia)_(relfis_agua_q)   
+20                               corr_meteorologia   
+21       hibrido_(corr_meteorologia)_(relfis_agua)   
+22                                     relfis_agua   
+
+                                 Target             config_mode  \
+0   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+1   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+2   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+3   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+4   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+5   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+6   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+7   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+8   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+9   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+10  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+11  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+12  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+13  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+14  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+15  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+16  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+17  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+18  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+19  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+20  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+21  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+22  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_intermedio   
+
+   search_space_type  use_early_stopping  n_train  n_test  n_features  \
+0             custom                True       84      21          13   
+1             custom                True       84      21          13   
+2             custom                True       84      21           9   
+3             custom                True       84      21           7   
+4             custom                True       84      21          12   
+5             custom                True       84      21           8   
+6             custom                True       84      21           7   
+7             custom                True       84      21          12   
+8             custom                True       84      21          11   
+9             custom                True       84      21          12   
+10            custom                True       84      21           6   
+11            custom                True       84      21           4   
+12            custom                True       84      21           4   
+13            custom                True       84      21           3   
+14            custom                True       84      21           7   
+15            custom                True       84      21           8   
+16            custom                True       84      21           8   
+17            custom                True       84      21           4   
+18            custom                True       84      21           6   
+19            custom                True       84      21           6   
+20            custom                True       84      21           2   
+21            custom                True       84      21           5   
+22            custom                True       84      21           3   
+
+   train_start  train_end  ... final_val_size n_estimators_saturation_pct  \
+0   2014-04-30 2021-03-31  ...           0.15                         100   
+1   2014-04-30 2021-03-31  ...           0.15                         100   
+2   2014-04-30 2021-03-31  ...           0.15                         100   
+3   2014-04-30 2021-03-31  ...           0.15                         100   
+4   2014-04-30 2021-03-31  ...           0.15                         100   
+5   2014-04-30 2021-03-31  ...           0.15                         100   
+6   2014-04-30 2021-03-31  ...           0.15                         100   
+7   2014-04-30 2021-03-31  ...           0.15                         100   
+8   2014-04-30 2021-03-31  ...           0.15                         100   
+9   2014-04-30 2021-03-31  ...           0.15                         100   
+10  2014-04-30 2021-03-31  ...           0.15                         100   
+11  2014-04-30 2021-03-31  ...           0.15                         100   
+12  2014-04-30 2021-03-31  ...           0.15                         100   
+13  2014-04-30 2021-03-31  ...           0.15                         100   
+14  2014-04-30 2021-03-31  ...           0.15                         100   
+15  2014-04-30 2021-03-31  ...           0.15                         100   
+16  2014-04-30 2021-03-31  ...           0.15                         100   
+17  2014-04-30 2021-03-31  ...           0.15                         100   
+18  2014-04-30 2021-03-31  ...           0.15                         100   
+19  2014-04-30 2021-03-31  ...           0.15                         100   
+20  2014-04-30 2021-03-31  ...           0.15                         100   
+21  2014-04-30 2021-03-31  ...           0.15                         100   
+22  2014-04-30 2021-03-31  ...           0.15                         100   
+
+    reported_n_estimators  reported_n_estimators_mode  \
+0                     197     early_stopping_original   
+1                     283     early_stopping_original   
+2                      44     early_stopping_original   
+3                     150     early_stopping_original   
+4                      46     early_stopping_original   
+5                      96     early_stopping_original   
+6                     161     early_stopping_original   
+7                     267     early_stopping_original   
+8                     140     early_stopping_original   
+9                      64     early_stopping_original   
+10                    223     early_stopping_original   
+11                     64     early_stopping_original   
+12                     17     early_stopping_original   
+13                     44     early_stopping_original   
+14                     64     early_stopping_original   
+15                    104     early_stopping_original   
+16                    239     early_stopping_original   
+17                     63     early_stopping_original   
+18                     54     early_stopping_original   
+19                   1047     early_stopping_original   
+20                    266     early_stopping_original   
+21                     40     early_stopping_original   
+22                    132     early_stopping_original   
+
+    reference_best_iteration_plus_1  reference_tree_n_99  reference_tree_n_95  \
+0                               197                146.0                 30.0   
+1                               283                132.0                 50.0   
+2                                44                 31.0                 22.0   
+3                               150                 97.0                 60.0   
+4                                46                 27.0                 22.0   
+5                                96                 90.0                 49.0   
+6                               161                124.0                 67.0   
+7                               267                217.0                124.0   
+8                               140                118.0                 71.0   
+9                                64                 51.0                 35.0   
+10                              223                 75.0                 37.0   
+11                               64                 61.0                 43.0   
+12                               17                 16.0                 16.0   
+13                               44                 41.0                 23.0   
+14                               64                 44.0                 33.0   
+15                              104                 51.0                 38.0   
+16                              239                203.0                143.0   
+17                               63                 63.0                 11.0   
+18                               54                 52.0                 35.0   
+19                             1047                355.0                159.0   
+20                              266                245.0                 99.0   
+21                               40                 32.0                 30.0   
+22                              132                128.0                125.0   
+
+    reference_max_nse_val_internal  execution_seconds  execution_time  
+0                         0.649208             1050.0  17 min 30.00 s  
+1                         0.622284             1070.0  17 min 50.00 s  
+2                         0.573391             1010.0  16 min 50.00 s  
+3                         0.591240              899.0  14 min 59.00 s  
+4                         0.597620              951.0  15 min 51.00 s  
+5                         0.704901             1010.0  16 min 50.00 s  
+6                         0.589998              907.0   15 min 7.00 s  
+7                         0.633870             1190.0  19 min 50.00 s  
+8                         0.688068             1200.0   20 min 0.00 s  
+9                         0.626245             1190.0  19 min 50.00 s  
+10                        0.575200              839.0  13 min 59.00 s  
+11                        0.645527              908.0   15 min 8.00 s  
+12                        0.198031              758.0  12 min 38.00 s  
+13                        0.565531              811.0  13 min 31.00 s  
+14                        0.669485              877.0  14 min 37.00 s  
+15                        0.728539              835.0  13 min 55.00 s  
+16                        0.758131             1010.0  16 min 50.00 s  
+17                        0.097067              826.0  13 min 46.00 s  
+18                        0.556816              795.0  13 min 15.00 s  
+19                        0.661002             1110.0  18 min 30.00 s  
+20                        0.527924              827.0  13 min 47.00 s  
+21                        0.582216              766.0  12 min 46.00 s  
+22                        0.233486              793.0  13 min 13.00 s  
+
+[23 rows x 26 columns]
+
+Resumen comparativo final (train / test / CV / tiempo):
+
+                                         DataFrame     NSE         \
+                                                   CV Mean CV Std   
+0             hibrido_(corr_todos)_(relfis_agua_q)    0.54  0.067   
+1          hibrido_(corr_todos)_(relfis_agua_qmax)    0.55  0.083   
+2                                       corr_todos    0.59  0.054   
+3           hibrido_(corr_top3)_(relfis_agua_qmax)    0.45  0.180   
+4               hibrido_(corr_todos)_(relfis_agua)    0.55  0.063   
+5                                  corr_todos_sinP    0.58  0.087   
+6              hibrido_(corr_top3)_(relfis_agua_q)    0.45  0.180   
+7        hibrido_(corr_todos_sinP)_(relfis_agua_q)    0.52  0.067   
+8          hibrido_(corr_todos_sinP)_(relfis_agua)    0.52  0.068   
+9     hibrido_(corr_todos_sinP)_(relfis_agua_qmax)    0.53  0.064   
+10               hibrido_(corr_top3)_(relfis_agua)    0.43  0.160   
+11                                       corr_top4    0.53  0.140   
+12                                   relfis_agua_q    0.25  0.190   
+13                                       corr_top3    0.46  0.160   
+14               hibrido_(corr_top4)_(relfis_agua)    0.52  0.130   
+15             hibrido_(corr_top4)_(relfis_agua_q)    0.51  0.140   
+16          hibrido_(corr_top4)_(relfis_agua_qmax)    0.53  0.180   
+17                                relfis_agua_qmax    0.23  0.220   
+18  hibrido_(corr_meteorologia)_(relfis_agua_qmax)    0.47  0.200   
+19     hibrido_(corr_meteorologia)_(relfis_agua_q)    0.46  0.190   
+20                               corr_meteorologia    0.43  0.150   
+21       hibrido_(corr_meteorologia)_(relfis_agua)    0.43  0.190   
+22                                     relfis_agua    0.26  0.130   
+
+                                                    RMSE         MAE  ...  \
+      CV Performance Train  Test  Test Performance Train  Test Train  ...   
+0              Bueno  0.94  0.55             Bueno  0.30  0.78  0.18  ...   
+1              Bueno  0.94  0.55             Bueno  0.32  0.78  0.20  ...   
+2              Bueno  0.90  0.54             Bueno  0.39  0.79  0.25  ...   
+3      Satisfactorio  0.93  0.53             Bueno  0.35  0.80  0.20  ...   
+4              Bueno  0.93  0.51             Bueno  0.35  0.81  0.20  ...   
+5              Bueno  0.89  0.51             Bueno  0.42  0.82  0.31  ...   
+6      Satisfactorio  0.94  0.48     Satisfactorio  0.31  0.84  0.14  ...   
+7              Bueno  0.92  0.47     Satisfactorio  0.35  0.85  0.24  ...   
+8              Bueno  0.91  0.47     Satisfactorio  0.38  0.85  0.27  ...   
+9              Bueno  0.93  0.46     Satisfactorio  0.33  0.86  0.19  ...   
+10     Satisfactorio  0.93  0.44     Satisfactorio  0.35  0.87  0.20  ...   
+11             Bueno  0.80  0.43     Satisfactorio  0.57  0.88  0.41  ...   
+12  No satisfactorio  0.58  0.41     Satisfactorio  0.83  0.90  0.55  ...   
+13     Satisfactorio  0.76  0.40     Satisfactorio  0.63  0.90  0.42  ...   
+14             Bueno  0.86  0.38     Satisfactorio  0.47  0.92  0.34  ...   
+15             Bueno  0.90  0.34  No satisfactorio  0.40  0.95  0.30  ...   
+16             Bueno  0.94  0.34  No satisfactorio  0.32  0.95  0.23  ...   
+17  No satisfactorio  0.76  0.33  No satisfactorio  0.62  0.95  0.40  ...   
+18     Satisfactorio  0.88  0.29  No satisfactorio  0.44  0.98  0.30  ...   
+19     Satisfactorio  0.94  0.21  No satisfactorio  0.32  1.00  0.21  ...   
+20     Satisfactorio  0.82  0.19  No satisfactorio  0.54  1.00  0.40  ...   
+21     Satisfactorio  0.83  0.18  No satisfactorio  0.53  1.10  0.38  ...   
+22  No satisfactorio  0.88  0.10  No satisfactorio  0.44  1.10  0.24  ...   
+
+     RSR           EarlyStop Saturacion                \
+   Train  Test BestIteration        Pct ReportedTrees   
+0   0.24  0.67           196        100           197   
+1   0.25  0.67           282        100           283   
+2   0.31  0.68            43        100            44   
+3   0.27  0.69           149        100           150   
+4   0.27  0.70            45        100            46   
+5   0.33  0.70            95        100            96   
+6   0.24  0.72           160        100           161   
+7   0.28  0.73           266        100           267   
+8   0.30  0.73           139        100           140   
+9   0.26  0.74            63        100            64   
+10  0.27  0.75           222        100           223   
+11  0.44  0.75            63        100            64   
+12  0.65  0.77            16        100            17   
+13  0.49  0.78            43        100            44   
+14  0.37  0.79            63        100            64   
+15  0.31  0.81           103        100           104   
+16  0.25  0.81           238        100           239   
+17  0.49  0.82            62        100            63   
+18  0.34  0.84            53        100            54   
+19  0.25  0.89          1046        100          1047   
+20  0.42  0.90           265        100           266   
+21  0.41  0.91            39        100            40   
+22  0.35  0.95           131        100           132   
+
+                                                  Tiempo                  
+                       Mode RefTree99 RefTree95 Segundos           Texto  
+0   early_stopping_original     146.0      30.0   1050.0  17 min 30.00 s  
+1   early_stopping_original     132.0      50.0   1070.0  17 min 50.00 s  
+2   early_stopping_original      31.0      22.0   1010.0  16 min 50.00 s  
+3   early_stopping_original      97.0      60.0    899.0  14 min 59.00 s  
+4   early_stopping_original      27.0      22.0    951.0  15 min 51.00 s  
+5   early_stopping_original      90.0      49.0   1010.0  16 min 50.00 s  
+6   early_stopping_original     124.0      67.0    907.0   15 min 7.00 s  
+7   early_stopping_original     217.0     124.0   1190.0  19 min 50.00 s  
+8   early_stopping_original     118.0      71.0   1200.0   20 min 0.00 s  
+9   early_stopping_original      51.0      35.0   1190.0  19 min 50.00 s  
+10  early_stopping_original      75.0      37.0    839.0  13 min 59.00 s  
+11  early_stopping_original      61.0      43.0    908.0   15 min 8.00 s  
+12  early_stopping_original      16.0      16.0    758.0  12 min 38.00 s  
+13  early_stopping_original      41.0      23.0    811.0  13 min 31.00 s  
+14  early_stopping_original      44.0      33.0    877.0  14 min 37.00 s  
+15  early_stopping_original      51.0      38.0    835.0  13 min 55.00 s  
+16  early_stopping_original     203.0     143.0   1010.0  16 min 50.00 s  
+17  early_stopping_original      63.0      11.0    826.0  13 min 46.00 s  
+18  early_stopping_original      52.0      35.0    795.0  13 min 15.00 s  
+19  early_stopping_original     355.0     159.0   1110.0  18 min 30.00 s  
+20  early_stopping_original     245.0      99.0    827.0  13 min 47.00 s  
+21  early_stopping_original      32.0      30.0    766.0  12 min 46.00 s  
+22  early_stopping_original     128.0     125.0    793.0  13 min 13.00 s  
+
+[23 rows x 27 columns]
+
+Estadísticas globales de performance NSE:
+
+  Estadística  CV Mean  CV Std  Train  Test
+0    Promedio     0.47   0.130  0.870  0.40
+1     Mediana     0.51   0.140  0.900  0.43
+2         Std     0.10   0.054  0.086  0.13
+</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

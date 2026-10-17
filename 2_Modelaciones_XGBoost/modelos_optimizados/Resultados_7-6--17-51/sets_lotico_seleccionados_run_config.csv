@@ -1,0 +1,11 @@
+dict_name,preset,experiment_label,search_space_type,use_early_stopping,early_stopping_rounds,final_val_size,n_trials,train_size,cv_splits,make_plots,make_tree_evolution_plot,tree_evolution_step,n_estimators_saturation_pct,output_dir_run,search_param,search_range
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,,
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,n_estimators,200 a 1500
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,max_depth,2 a 6
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,learning_rate,0.005 a 0.1 (step=0.0001)
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,subsample,0.8 a 1.0 (step=0.01)
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,colsample_bytree,0.8 a 1.0 (step=0.01)
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,min_child_weight,3 a 10
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,gamma,1e-06 a 0.3 (step=1e-06)
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,reg_alpha,1e-06 a 0.2 (step=1e-06)
+sets_lotico_seleccionados,,sets_lotico_seleccionados_intermedio_100,custom,True,100,0.15,1000,0.8,4,True,True,1,100,Resultados_7-6--17-51,reg_lambda,0.3 a 3.0 (step=0.001)

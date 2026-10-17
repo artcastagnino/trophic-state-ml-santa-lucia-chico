@@ -1,0 +1,25 @@
+DataFrame,NSE,NSE,NSE,NSE,NSE,NSE,RMSE,RMSE,MAE,MAE,KGE,KGE,PBIAS,PBIAS,R2,R2,RSR,RSR,EarlyStop,Tiempo,Tiempo
+,CV Mean,CV Std,CV Performance,Train,Test,Test Performance,Train,Test,Train,Test,Train,Test,Train,Test,Train,Test,Train,Test,BestEpoch,Segundos,Texto
+hibrido_(corr_todos)_(relfis_agua_q),0.36,0.15,Satisfactorio,0.75,0.59,Bueno,0.63,0.75,0.45,0.53,0.81,0.64,0.024,-0.12,0.75,0.6,0.5,0.64,159,2870.0,47 min 53.31 s
+hibrido_(corr_meteorologia)_(relfis_agua_q),0.24,0.14,No satisfactorio,0.58,0.58,Bueno,0.82,0.76,0.6,0.55,0.67,0.55,-0.016,-0.24,0.58,0.63,0.65,0.65,207,4380.0,73 min 3.96 s
+hibrido_(corr_todos)_(relfis_agua_qmax),0.36,0.17,Satisfactorio,0.75,0.58,Bueno,0.63,0.75,0.45,0.54,0.81,0.64,0.019,-0.14,0.75,0.59,0.5,0.64,159,2500.0,41 min 41.76 s
+hibrido_(corr_top4)_(relfis_agua_q),0.28,0.18,No satisfactorio,0.67,0.57,Bueno,0.73,0.76,0.51,0.55,0.72,0.56,0.029,-0.19,0.67,0.61,0.57,0.66,160,8460.0,141 min 2.01 s
+corr_todos,0.44,0.19,Satisfactorio,0.62,0.56,Bueno,0.78,0.77,0.54,0.53,0.67,0.6,-0.0027,-0.35,0.62,0.61,0.61,0.66,45,6780.0,112 min 58.05 s
+hibrido_(corr_top4)_(relfis_agua_qmax),0.3,0.2,No satisfactorio,0.68,0.56,Bueno,0.72,0.77,0.5,0.56,0.72,0.55,0.019,-0.21,0.68,0.6,0.57,0.66,59,5210.0,86 min 52.73 s
+corr_todos_sinP,0.34,0.25,No satisfactorio,0.65,0.55,Bueno,0.76,0.78,0.52,0.51,0.73,0.6,0.016,-0.31,0.65,0.59,0.59,0.67,395,7920.0,131 min 58.76 s
+hibrido_(corr_todos_sinP)_(relfis_agua_q),0.27,0.19,No satisfactorio,0.74,0.55,Bueno,0.65,0.78,0.46,0.59,0.78,0.54,0.035,0.054,0.74,0.57,0.51,0.67,313,3500.0,58 min 22.11 s
+corr_top3,0.36,0.14,Satisfactorio,0.6,0.52,Bueno,0.81,0.81,0.57,0.59,0.67,0.53,0.015,-0.34,0.6,0.58,0.63,0.7,328,8610.0,143 min 27.47 s
+corr_top4,0.47,0.087,Satisfactorio,0.67,0.52,Bueno,0.73,0.81,0.51,0.54,0.71,0.57,0.06,-0.31,0.67,0.56,0.58,0.69,46,5160.0,85 min 55.33 s
+relfis_agua_qmax,0.066,0.15,No satisfactorio,0.41,0.51,Bueno,0.97,0.81,0.67,0.5,0.47,0.51,-0.019,-0.17,0.42,0.55,0.76,0.7,157,7760.0,129 min 23.81 s
+hibrido_(corr_todos)_(relfis_agua),0.3,0.24,No satisfactorio,0.66,0.51,Bueno,0.75,0.82,0.53,0.58,0.73,0.65,0.0054,-0.41,0.66,0.56,0.59,0.7,126,2620.0,43 min 35.05 s
+hibrido_(corr_top3)_(relfis_agua),0.4,0.13,Satisfactorio,0.67,0.48,Satisfactorio,0.73,0.84,0.51,0.63,0.72,0.44,0.026,0.05,0.68,0.52,0.57,0.72,140,9830.0,163 min 51.90 s
+hibrido_(corr_todos_sinP)_(relfis_agua_qmax),0.33,0.22,No satisfactorio,0.85,0.48,Satisfactorio,0.49,0.84,0.36,0.61,0.88,0.62,0.047,-0.19,0.85,0.5,0.39,0.72,435,9910.0,165 min 9.13 s
+relfis_agua,0.11,0.11,No satisfactorio,0.44,0.46,Satisfactorio,0.95,0.85,0.67,0.57,0.54,0.53,-0.062,-0.16,0.44,0.47,0.75,0.73,74,2870.0,47 min 51.43 s
+hibrido_(corr_meteorologia)_(relfis_agua),0.24,0.16,No satisfactorio,0.61,0.46,Satisfactorio,0.8,0.86,0.57,0.63,0.67,0.61,0.049,-0.45,0.61,0.52,0.63,0.74,59,3030.0,50 min 31.20 s
+hibrido_(corr_top3)_(relfis_agua_q),0.23,0.21,No satisfactorio,0.59,0.42,Satisfactorio,0.82,0.89,0.58,0.63,0.65,0.61,-0.0085,-0.52,0.59,0.5,0.64,0.76,15,4080.0,67 min 58.64 s
+hibrido_(corr_meteorologia)_(relfis_agua_qmax),0.31,0.18,No satisfactorio,0.65,0.39,Satisfactorio,0.76,0.91,0.53,0.66,0.7,0.62,0.056,-0.53,0.65,0.48,0.59,0.78,293,9610.0,160 min 13.32 s
+hibrido_(corr_top4)_(relfis_agua),0.37,0.11,Satisfactorio,0.72,0.39,Satisfactorio,0.67,0.91,0.49,0.66,0.76,0.63,0.036,-0.43,0.73,0.47,0.53,0.78,298,9610.0,160 min 8.75 s
+corr_meteorologia,0.37,0.19,Satisfactorio,0.49,0.35,No satisfactorio,0.91,0.94,0.67,0.73,0.56,0.53,-0.019,-0.53,0.49,0.43,0.71,0.81,72,5380.0,89 min 38.07 s
+relfis_agua_q,0.034,0.14,No satisfactorio,0.46,0.35,No satisfactorio,0.94,0.94,0.64,0.65,0.5,0.58,0.0056,-0.44,0.46,0.43,0.74,0.8,245,6710.0,111 min 49.70 s
+hibrido_(corr_top3)_(relfis_agua_qmax),0.24,0.21,No satisfactorio,0.71,0.34,No satisfactorio,0.69,0.95,0.51,0.72,0.76,0.35,0.013,0.19,0.71,0.36,0.54,0.81,58,4650.0,77 min 26.91 s
+hibrido_(corr_todos_sinP)_(relfis_agua),0.38,0.14,Satisfactorio,0.88,0.32,No satisfactorio,0.44,0.96,0.32,0.72,0.89,0.51,0.018,0.15,0.88,0.35,0.35,0.83,254,4430.0,73 min 49.44 s

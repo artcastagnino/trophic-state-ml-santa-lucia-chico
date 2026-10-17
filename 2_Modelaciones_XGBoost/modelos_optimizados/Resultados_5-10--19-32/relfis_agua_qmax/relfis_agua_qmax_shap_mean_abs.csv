@@ -1,0 +1,5 @@
+feature,mean_abs_shap
+Temperatura_del_agua__T___ºC__XSLH030,0.35296357
+Caudal_Maximo__Qmax___m3_s__Florida__Puente_Ruta_5_,0.1152987
+Conductividad__μS_cm__XSLH030,0.105105504
+Turbidez__NTU__XSLH030,0.044422675

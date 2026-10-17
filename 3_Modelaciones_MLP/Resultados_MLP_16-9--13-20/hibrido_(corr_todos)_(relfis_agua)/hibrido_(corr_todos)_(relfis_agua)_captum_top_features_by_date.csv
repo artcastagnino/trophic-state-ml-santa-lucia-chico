@@ -1,0 +1,85 @@
+Fecha,top_feature,top_attribution,top_abs_attribution
+2014-04-30,Fósforo Total (PT) [μg/L] XSLH030_lag1,-0.12426516,0.12426516
+2014-05-31,Conductividad [μS/cm] EPSE040,-0.1506385,0.1506385
+2014-06-30,Conductividad [μS/cm] XSLH010,-0.18270491,0.18270491
+2014-07-31,Conductividad [μS/cm] XSLH020,-0.3063315,0.3063315
+2014-08-31,Conductividad [μS/cm] XSLH010,-0.20691703,0.20691703
+2014-09-30,Conductividad [μS/cm] EPSE020,-0.27844876,0.27844876
+2014-10-31,Conductividad [μS/cm] EPSE040,-0.16241378,0.16241378
+2014-11-30,Conductividad [μS/cm] EPSE040,-0.19444565,0.19444565
+2014-12-31,Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.1385199,0.1385199
+2015-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.1890368,0.1890368
+2015-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.2308289,0.2308289
+2015-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.2540728,0.2540728
+2015-04-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.19468768,0.19468768
+2015-05-31,Conductividad [μS/cm] XSLH020,0.34657666,0.34657666
+2015-06-30,Conductividad [μS/cm] XSLH020_lag1,0.24600703,0.24600703
+2015-07-31,Conductividad [μS/cm] EPSE020,-0.33711293,0.33711293
+2015-08-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.22230142,0.22230142
+2015-09-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.15198702,0.15198702
+2015-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.18166806,0.18166806
+2015-11-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.195775,0.195775
+2015-12-31,Temperatura del agua (T) [ºC] XSLH030,0.1337948,0.1337948
+2016-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.208565,0.208565
+2016-02-29,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.29849392,0.29849392
+2016-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.29856315,0.29856315
+2016-04-30,Conductividad [μS/cm] XSLH020,0.15041877,0.15041877
+2016-05-31,Conductividad [μS/cm] XSLH020_lag1,0.077375986,0.077375986
+2016-06-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.25960183,0.25960183
+2016-07-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.28374153,0.28374153
+2016-08-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.24435167,0.24435167
+2016-09-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.18621737,0.18621737
+2016-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.21383813,0.21383813
+2016-11-30,Fósforo Total (PT) [μg/L] XSLH030_lag1,-0.18953405,0.18953405
+2016-12-31,Conductividad [μS/cm] EPSE040,0.280982,0.280982
+2017-01-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.243562,0.243562
+2017-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.30892822,0.30892822
+2017-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.3127963,0.3127963
+2017-04-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.22098902,0.22098902
+2017-05-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.069930635,0.069930635
+2017-06-30,Conductividad [μS/cm] XSLH020,-0.09598279,0.09598279
+2017-07-31,Fósforo Total (PT) [μg/L] XSLH030_lag1,0.15283765,0.15283765
+2017-08-31,Conductividad [μS/cm] XSLH010,-0.31905603,0.31905603
+2017-09-30,Conductividad [μS/cm] XSLH020_lag1,-0.14048398,0.14048398
+2017-10-31,Conductividad [μS/cm] XSLH020_lag1,-0.12919888,0.12919888
+2017-11-30,Fósforo Total (PT) [μg/L] XSLH030_lag1,-0.26124257,0.26124257
+2017-12-31,Temperatura del agua (T) [ºC] XSLH030,0.23620452,0.23620452
+2018-01-31,Conductividad [μS/cm] EPSE040,0.27396762,0.27396762
+2018-02-28,Turbidez [NTU] XSLH030,-0.42104465,0.42104465
+2018-03-31,Conductividad [μS/cm] EPSE040,0.24955611,0.24955611
+2018-04-30,Conductividad [μS/cm] XSLH020,0.35442075,0.35442075
+2018-05-31,Fósforo Total (PT) [μg/L] XSLH030_lag1,0.22932047,0.22932047
+2018-06-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.09452295,0.09452295
+2018-07-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.21262026,0.21262026
+2018-08-31,Conductividad [μS/cm] EPSE020,-0.22088164,0.22088164
+2018-09-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.14585674,0.14585674
+2018-10-31,Conductividad [μS/cm] EPSE040,-0.07205813,0.07205813
+2018-11-30,Fósforo Total (PT) [μg/L] XSLH030_lag1,-0.078212336,0.078212336
+2018-12-31,Conductividad [μS/cm] EPSE040,0.17993428,0.17993428
+2019-01-31,Conductividad [μS/cm] XSLH020,-0.1385631,0.1385631
+2019-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.22992212,0.22992212
+2019-03-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.2572476,0.2572476
+2019-04-30,Conductividad [μS/cm] EPSE040,-0.4337739,0.4337739
+2019-05-31,Conductividad [μS/cm] XSLH020_lag1,0.12806225,0.12806225
+2019-06-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.098656446,0.098656446
+2019-07-31,Conductividad [μS/cm] XSLH020,-0.15295911,0.15295911
+2019-08-31,Conductividad [μS/cm] XSLH020,-0.28843257,0.28843257
+2019-09-30,Conductividad [μS/cm] XSLH010,-0.17099203,0.17099203
+2019-10-31,Conductividad [μS/cm] EPSE040,-0.1849353,0.1849353
+2019-11-30,Fósforo Total (PT) [μg/L] XSLH030_lag1,-0.1744715,0.1744715
+2019-12-31,Conductividad [μS/cm] XSLH020,0.25966868,0.25966868
+2020-01-31,Temperatura del agua (T) [ºC] XSLH030,0.20605564,0.20605564
+2020-02-29,Conductividad [μS/cm] XSLH020,0.27084237,0.27084237
+2020-03-31,Fósforo Total (PT) [μg/L] XSLH030_lag1,0.43899688,0.43899688
+2020-04-30,Conductividad [μS/cm] XSLH020,0.27721444,0.27721444
+2020-05-31,Conductividad [μS/cm] XSLH020_lag1,0.29787052,0.29787052
+2020-06-30,Conductividad [μS/cm] XSLH020_lag1,0.23116563,0.23116563
+2020-07-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.25151607,0.25151607
+2020-08-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.24748184,0.24748184
+2020-09-30,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.10477171,0.10477171
+2020-10-31,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,-0.20781843,0.20781843
+2020-11-30,Fósforo Total (PT) [μg/L] XSLH030_lag1,-0.19095168,0.19095168
+2020-12-31,Conductividad [μS/cm] XSLH020,0.3122766,0.3122766
+2021-01-31,Fósforo Total (PT) [μg/L] XSLH030_lag1,0.3581809,0.3581809
+2021-02-28,Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.24419008,0.24419008
+2021-03-31,Turbidez [NTU] XSLH030,-0.29287437,0.29287437

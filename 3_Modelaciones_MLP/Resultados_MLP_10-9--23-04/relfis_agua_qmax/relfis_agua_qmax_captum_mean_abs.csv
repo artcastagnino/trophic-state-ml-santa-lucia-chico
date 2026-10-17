@@ -1,0 +1,7 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.15688756,0.024479792,0.19464478
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.105529085,0.010494777,0.13221201
+Temperatura del agua (T) [ºC] EPSE040,0.088774644,-0.0071361503,0.10350693
+Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.021636188,0.009957779,0.024475021
+Turbidez [NTU] EPSE040,0.0126721645,0.0017191889,0.017367762
+Conductividad [μS/cm] EPSE040,0.0116930995,0.0003071369,0.015478613

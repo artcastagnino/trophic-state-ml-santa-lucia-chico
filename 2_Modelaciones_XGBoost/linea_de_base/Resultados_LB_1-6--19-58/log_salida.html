@@ -1,0 +1,1218 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Log de salida del experimento baseline XGBoost</title>
+        
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .best-row td {
+            background: #e8f7e8 !important;
+            font-weight: bold;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kv-table th {
+            width: 38%;
+            background: #f8fafc;
+        }
+
+        .img-box {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            line-height: 1.35;
+            font-size: 0.92rem;
+        }
+
+        .dataset-title {
+            padding-top: 8px;
+            border-top: 2px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        .dataset-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+        }
+
+        .small {
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Log de salida del experimento baseline XGBoost</h1>
+                                <div class="code-block">
+==================================================================================================
+INICIO DEL PROCESAMIENTO - LÍNEA DE BASE XGBOOST
+==================================================================================================
+Diccionario procesado : sets_lentico
+Tipo de modelo         : XGBoost baseline sin Optuna
+Experiment label      : sets_lentico_LB
+Cantidad de trials    : No aplica
+Train size            : 0.8
+CV splits             : 4
+Make plots            : True
+Make tree evolution   : True
+Tree evolution step   : 1
+Use early stopping    : True
+Early stopping rounds : 100
+Final val size        : 0.15
+Search space type     : xgb_baseline_defaults_explicit
+n_estimators máximo   : 2500
+Carpeta de salida     : Resultados_LB_1-6--19-58
+
+Frase metodológica:
+Se entrenó una línea de base XGBoost utilizando los valores por defecto del algoritmo y fijando n_estimators=2500 como máximo de árboles. El número efectivo de árboles fue determinado mediante early stopping sobre una partición interna de validación temporal.
+
+
+######################################################################
+Procesando corr_top3...
+######################################################################
+
+
+-&gt; Dataset: corr_top3
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.19
+-&gt; CV NSE desvío  : 0.33
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 2
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.38, &#x27;MAE&#x27;: 0.29, &#x27;NSE&#x27;: 0.74, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: 0.028, &#x27;R2&#x27;: 0.9, &#x27;RSR&#x27;: 0.51}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.33, &#x27;NSE&#x27;: 0.58, &#x27;KGE&#x27;: 0.52, &#x27;PBIAS&#x27;: -0.29, &#x27;R2&#x27;: 0.78, &#x27;RSR&#x27;: 0.65}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando corr_top4...
+######################################################################
+
+
+-&gt; Dataset: corr_top4
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.31
+-&gt; CV NSE desvío  : 0.25
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 1
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.46, &#x27;MAE&#x27;: 0.34, &#x27;NSE&#x27;: 0.63, &#x27;KGE&#x27;: 0.44, &#x27;PBIAS&#x27;: 0.029, &#x27;R2&#x27;: 0.89, &#x27;RSR&#x27;: 0.61}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.49, &#x27;MAE&#x27;: 0.36, &#x27;NSE&#x27;: 0.47, &#x27;KGE&#x27;: 0.42, &#x27;PBIAS&#x27;: -0.3, &#x27;R2&#x27;: 0.73, &#x27;RSR&#x27;: 0.73}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando corr_meteorologia...
+######################################################################
+
+
+-&gt; Dataset: corr_meteorologia
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: -0.23
+-&gt; CV NSE desvío  : 0.3
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.63, &#x27;MAE&#x27;: 0.51, &#x27;NSE&#x27;: 0.31, &#x27;KGE&#x27;: 0.19, &#x27;PBIAS&#x27;: 0.031, &#x27;R2&#x27;: 0.67, &#x27;RSR&#x27;: 0.83}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.67, &#x27;MAE&#x27;: 0.5, &#x27;NSE&#x27;: 0.03, &#x27;KGE&#x27;: 0.07, &#x27;PBIAS&#x27;: -0.37, &#x27;R2&#x27;: 0.17, &#x27;RSR&#x27;: 0.98}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando relfis_agua...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: -0.33
+-&gt; CV NSE desvío  : 0.28
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.6, &#x27;MAE&#x27;: 0.49, &#x27;NSE&#x27;: 0.36, &#x27;KGE&#x27;: 0.23, &#x27;PBIAS&#x27;: 0.031, &#x27;R2&#x27;: 0.77, &#x27;RSR&#x27;: 0.8}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.73, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: -0.17, &#x27;KGE&#x27;: -0.37, &#x27;PBIAS&#x27;: -0.33, &#x27;R2&#x27;: 0.0096, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando relfis_agua_q...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_q
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: -0.29
+-&gt; CV NSE desvío  : 0.32
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.6, &#x27;MAE&#x27;: 0.48, &#x27;NSE&#x27;: 0.38, &#x27;KGE&#x27;: 0.24, &#x27;PBIAS&#x27;: 0.043, &#x27;R2&#x27;: 0.78, &#x27;RSR&#x27;: 0.79}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.73, &#x27;MAE&#x27;: 0.53, &#x27;NSE&#x27;: -0.16, &#x27;KGE&#x27;: -0.28, &#x27;PBIAS&#x27;: -0.38, &#x27;R2&#x27;: 1.5e-05, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando relfis_agua_qmax...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_qmax
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: -0.41
+-&gt; CV NSE desvío  : 0.21
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.59, &#x27;MAE&#x27;: 0.47, &#x27;NSE&#x27;: 0.38, &#x27;KGE&#x27;: 0.24, &#x27;PBIAS&#x27;: 0.04, &#x27;R2&#x27;: 0.8, &#x27;RSR&#x27;: 0.79}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.73, &#x27;MAE&#x27;: 0.53, &#x27;NSE&#x27;: -0.16, &#x27;KGE&#x27;: -0.28, &#x27;PBIAS&#x27;: -0.37, &#x27;R2&#x27;: 4.7e-05, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.24
+-&gt; CV NSE desvío  : 0.22
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 3
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.3, &#x27;MAE&#x27;: 0.22, &#x27;NSE&#x27;: 0.84, &#x27;KGE&#x27;: 0.68, &#x27;PBIAS&#x27;: 0.023, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.4}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.46, &#x27;MAE&#x27;: 0.33, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.26, &#x27;R2&#x27;: 0.67, &#x27;RSR&#x27;: 0.67}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_q)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.22
+-&gt; CV NSE desvío  : 0.21
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 4
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.25, &#x27;MAE&#x27;: 0.17, &#x27;NSE&#x27;: 0.89, &#x27;KGE&#x27;: 0.75, &#x27;PBIAS&#x27;: 0.033, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.33}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.41, &#x27;MAE&#x27;: 0.32, &#x27;NSE&#x27;: 0.63, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: -0.21, &#x27;R2&#x27;: 0.72, &#x27;RSR&#x27;: 0.61}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_qmax)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.24
+-&gt; CV NSE desvío  : 0.25
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 3
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.3, &#x27;MAE&#x27;: 0.22, &#x27;NSE&#x27;: 0.84, &#x27;KGE&#x27;: 0.68, &#x27;PBIAS&#x27;: 0.023, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.4}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.46, &#x27;MAE&#x27;: 0.33, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.26, &#x27;R2&#x27;: 0.67, &#x27;RSR&#x27;: 0.67}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.26
+-&gt; CV NSE desvío  : 0.2
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 1
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.45, &#x27;MAE&#x27;: 0.35, &#x27;NSE&#x27;: 0.64, &#x27;KGE&#x27;: 0.44, &#x27;PBIAS&#x27;: 0.0047, &#x27;R2&#x27;: 0.89, &#x27;RSR&#x27;: 0.6}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.56, &#x27;MAE&#x27;: 0.38, &#x27;NSE&#x27;: 0.31, &#x27;KGE&#x27;: 0.34, &#x27;PBIAS&#x27;: -0.34, &#x27;R2&#x27;: 0.52, &#x27;RSR&#x27;: 0.83}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_q)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.22
+-&gt; CV NSE desvío  : 0.21
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 2
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.37, &#x27;MAE&#x27;: 0.27, &#x27;NSE&#x27;: 0.77, &#x27;KGE&#x27;: 0.57, &#x27;PBIAS&#x27;: 0.039, &#x27;R2&#x27;: 0.91, &#x27;RSR&#x27;: 0.48}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.52, &#x27;MAE&#x27;: 0.36, &#x27;NSE&#x27;: 0.42, &#x27;KGE&#x27;: 0.39, &#x27;PBIAS&#x27;: -0.26, &#x27;R2&#x27;: 0.59, &#x27;RSR&#x27;: 0.76}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_qmax)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.24
+-&gt; CV NSE desvío  : 0.23
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 4
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.25, &#x27;MAE&#x27;: 0.17, &#x27;NSE&#x27;: 0.89, &#x27;KGE&#x27;: 0.75, &#x27;PBIAS&#x27;: 0.027, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.33}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.44, &#x27;MAE&#x27;: 0.34, &#x27;NSE&#x27;: 0.58, &#x27;KGE&#x27;: 0.62, &#x27;PBIAS&#x27;: -0.27, &#x27;R2&#x27;: 0.66, &#x27;RSR&#x27;: 0.65}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: -0.077
+-&gt; CV NSE desvío  : 0.44
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.6, &#x27;MAE&#x27;: 0.47, &#x27;NSE&#x27;: 0.38, &#x27;KGE&#x27;: 0.24, &#x27;PBIAS&#x27;: 0.036, &#x27;R2&#x27;: 0.76, &#x27;RSR&#x27;: 0.79}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.77, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: -0.29, &#x27;KGE&#x27;: -0.53, &#x27;PBIAS&#x27;: -0.42, &#x27;R2&#x27;: 0.082, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_q)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.012
+-&gt; CV NSE desvío  : 0.42
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.59, &#x27;MAE&#x27;: 0.46, &#x27;NSE&#x27;: 0.39, &#x27;KGE&#x27;: 0.25, &#x27;PBIAS&#x27;: 0.045, &#x27;R2&#x27;: 0.78, &#x27;RSR&#x27;: 0.78}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.72, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: -0.11, &#x27;KGE&#x27;: -0.16, &#x27;PBIAS&#x27;: -0.38, &#x27;R2&#x27;: 0.022, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_qmax)
+   Target: IET(PT) Léntico_Cunha [EPSE040]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lentico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: -0.075
+-&gt; CV NSE desvío  : 0.47
+
+-&gt; Experiment label      : sets_lentico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 0
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.59, &#x27;MAE&#x27;: 0.47, &#x27;NSE&#x27;: 0.39, &#x27;KGE&#x27;: 0.25, &#x27;PBIAS&#x27;: 0.036, &#x27;R2&#x27;: 0.78, &#x27;RSR&#x27;: 0.78}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.77, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: -0.28, &#x27;KGE&#x27;: -0.51, &#x27;PBIAS&#x27;: -0.43, &#x27;R2&#x27;: 0.068, &#x27;RSR&#x27;: 1.1}
+
+-&gt; Tiempo de ejecución: None
+
+--------------------------------------------------------------------------------------------------
+
+Carpeta de resultados: Resultados_LB_1-6--19-58
+
+Resumen de métricas de train:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0              hibrido_(corr_top3)_(relfis_agua_q)  0.25  0.17  0.89  0.75   
+1           hibrido_(corr_top4)_(relfis_agua_qmax)  0.25  0.17  0.89  0.75   
+2                                        corr_top3  0.38  0.29  0.74  0.56   
+3                hibrido_(corr_top3)_(relfis_agua)  0.30  0.22  0.84  0.68   
+4           hibrido_(corr_top3)_(relfis_agua_qmax)  0.30  0.22  0.84  0.68   
+5                                        corr_top4  0.46  0.34  0.63  0.44   
+6              hibrido_(corr_top4)_(relfis_agua_q)  0.37  0.27  0.77  0.57   
+7                hibrido_(corr_top4)_(relfis_agua)  0.45  0.35  0.64  0.44   
+8                                corr_meteorologia  0.63  0.51  0.31  0.19   
+9      hibrido_(corr_meteorologia)_(relfis_agua_q)  0.59  0.46  0.39  0.25   
+10                                   relfis_agua_q  0.60  0.48  0.38  0.24   
+11                                relfis_agua_qmax  0.59  0.47  0.38  0.24   
+12                                     relfis_agua  0.60  0.49  0.36  0.23   
+13  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.59  0.47  0.39  0.25   
+14       hibrido_(corr_meteorologia)_(relfis_agua)  0.60  0.47  0.38  0.24   
+
+     PBIAS    R2   RSR  
+0   0.0330  0.94  0.33  
+1   0.0270  0.94  0.33  
+2   0.0280  0.90  0.51  
+3   0.0230  0.92  0.40  
+4   0.0230  0.92  0.40  
+5   0.0290  0.89  0.61  
+6   0.0390  0.91  0.48  
+7   0.0047  0.89  0.60  
+8   0.0310  0.67  0.83  
+9   0.0450  0.78  0.78  
+10  0.0430  0.78  0.79  
+11  0.0400  0.80  0.79  
+12  0.0310  0.77  0.80  
+13  0.0360  0.78  0.78  
+14  0.0360  0.76  0.79  
+
+Resumen de métricas de test:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0              hibrido_(corr_top3)_(relfis_agua_q)  0.41  0.32  0.63  0.60   
+1           hibrido_(corr_top4)_(relfis_agua_qmax)  0.44  0.34  0.58  0.62   
+2                                        corr_top3  0.44  0.33  0.58  0.52   
+3                hibrido_(corr_top3)_(relfis_agua)  0.46  0.33  0.55  0.53   
+4           hibrido_(corr_top3)_(relfis_agua_qmax)  0.46  0.33  0.55  0.53   
+5                                        corr_top4  0.49  0.36  0.47  0.42   
+6              hibrido_(corr_top4)_(relfis_agua_q)  0.52  0.36  0.42  0.39   
+7                hibrido_(corr_top4)_(relfis_agua)  0.56  0.38  0.31  0.34   
+8                                corr_meteorologia  0.67  0.50  0.03  0.07   
+9      hibrido_(corr_meteorologia)_(relfis_agua_q)  0.72  0.55 -0.11 -0.16   
+10                                   relfis_agua_q  0.73  0.53 -0.16 -0.28   
+11                                relfis_agua_qmax  0.73  0.53 -0.16 -0.28   
+12                                     relfis_agua  0.73  0.56 -0.17 -0.37   
+13  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.77  0.58 -0.28 -0.51   
+14       hibrido_(corr_meteorologia)_(relfis_agua)  0.77  0.58 -0.29 -0.53   
+
+    PBIAS        R2   RSR  
+0   -0.21  0.720000  0.61  
+1   -0.27  0.660000  0.65  
+2   -0.29  0.780000  0.65  
+3   -0.26  0.670000  0.67  
+4   -0.26  0.670000  0.67  
+5   -0.30  0.730000  0.73  
+6   -0.26  0.590000  0.76  
+7   -0.34  0.520000  0.83  
+8   -0.37  0.170000  0.98  
+9   -0.38  0.022000  1.10  
+10  -0.38  0.000015  1.10  
+11  -0.37  0.000047  1.10  
+12  -0.33  0.009600  1.10  
+13  -0.43  0.068000  1.10  
+14  -0.42  0.082000  1.10  
+
+Resumen de hiperparámetros usados por la línea de base:
+
+                                         DataFrame  n_estimators  \
+0              hibrido_(corr_top3)_(relfis_agua_q)          2500   
+1           hibrido_(corr_top4)_(relfis_agua_qmax)          2500   
+2                                        corr_top3          2500   
+3                hibrido_(corr_top3)_(relfis_agua)          2500   
+4           hibrido_(corr_top3)_(relfis_agua_qmax)          2500   
+5                                        corr_top4          2500   
+6              hibrido_(corr_top4)_(relfis_agua_q)          2500   
+7                hibrido_(corr_top4)_(relfis_agua)          2500   
+8                                corr_meteorologia          2500   
+9      hibrido_(corr_meteorologia)_(relfis_agua_q)          2500   
+10                                   relfis_agua_q          2500   
+11                                relfis_agua_qmax          2500   
+12                                     relfis_agua          2500   
+13  hibrido_(corr_meteorologia)_(relfis_agua_qmax)          2500   
+14       hibrido_(corr_meteorologia)_(relfis_agua)          2500   
+
+    learning_rate  max_depth  min_child_weight  gamma  reg_alpha  reg_lambda  \
+0             0.3          6                 1      0          0           1   
+1             0.3          6                 1      0          0           1   
+2             0.3          6                 1      0          0           1   
+3             0.3          6                 1      0          0           1   
+4             0.3          6                 1      0          0           1   
+5             0.3          6                 1      0          0           1   
+6             0.3          6                 1      0          0           1   
+7             0.3          6                 1      0          0           1   
+8             0.3          6                 1      0          0           1   
+9             0.3          6                 1      0          0           1   
+10            0.3          6                 1      0          0           1   
+11            0.3          6                 1      0          0           1   
+12            0.3          6                 1      0          0           1   
+13            0.3          6                 1      0          0           1   
+14            0.3          6                 1      0          0           1   
+
+    subsample  colsample_bytree  
+0           1                 1  
+1           1                 1  
+2           1                 1  
+3           1                 1  
+4           1                 1  
+5           1                 1  
+6           1                 1  
+7           1                 1  
+8           1                 1  
+9           1                 1  
+10          1                 1  
+11          1                 1  
+12          1                 1  
+13          1                 1  
+14          1                 1  
+
+Resumen de metadatos:
+
+                                         DataFrame  \
+0              hibrido_(corr_top3)_(relfis_agua_q)   
+1           hibrido_(corr_top4)_(relfis_agua_qmax)   
+2                                        corr_top3   
+3                hibrido_(corr_top3)_(relfis_agua)   
+4           hibrido_(corr_top3)_(relfis_agua_qmax)   
+5                                        corr_top4   
+6              hibrido_(corr_top4)_(relfis_agua_q)   
+7                hibrido_(corr_top4)_(relfis_agua)   
+8                                corr_meteorologia   
+9      hibrido_(corr_meteorologia)_(relfis_agua_q)   
+10                                   relfis_agua_q   
+11                                relfis_agua_qmax   
+12                                     relfis_agua   
+13  hibrido_(corr_meteorologia)_(relfis_agua_qmax)   
+14       hibrido_(corr_meteorologia)_(relfis_agua)   
+
+                             Target      config_mode  \
+0   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+1   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+2   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+3   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+4   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+5   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+6   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+7   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+8   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+9   IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+10  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+11  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+12  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+13  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+14  IET(PT) Léntico_Cunha [EPSE040]  sets_lentico_LB   
+
+                 search_space_type  use_early_stopping  n_train  n_test  \
+0   xgb_baseline_defaults_explicit                True       84      21   
+1   xgb_baseline_defaults_explicit                True       84      21   
+2   xgb_baseline_defaults_explicit                True       84      21   
+3   xgb_baseline_defaults_explicit                True       84      21   
+4   xgb_baseline_defaults_explicit                True       84      21   
+5   xgb_baseline_defaults_explicit                True       84      21   
+6   xgb_baseline_defaults_explicit                True       84      21   
+7   xgb_baseline_defaults_explicit                True       84      21   
+8   xgb_baseline_defaults_explicit                True       84      21   
+9   xgb_baseline_defaults_explicit                True       84      21   
+10  xgb_baseline_defaults_explicit                True       84      21   
+11  xgb_baseline_defaults_explicit                True       84      21   
+12  xgb_baseline_defaults_explicit                True       84      21   
+13  xgb_baseline_defaults_explicit                True       84      21   
+14  xgb_baseline_defaults_explicit                True       84      21   
+
+    n_features train_start  train_end test_start   test_end  cv_nse_mean  \
+0            9  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.220   
+1           10  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.240   
+2            3  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.190   
+3            8  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.240   
+4            9  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.240   
+5            4  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.310   
+6           10  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.220   
+7            9  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.260   
+8            1  2014-04-30 2021-03-31 2021-04-30 2022-12-31       -0.230   
+9            7  2014-04-30 2021-03-31 2021-04-30 2022-12-31        0.012   
+10           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31       -0.290   
+11           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31       -0.410   
+12           5  2014-04-30 2021-03-31 2021-04-30 2022-12-31       -0.330   
+13           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31       -0.075   
+14           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31       -0.077   
+
+    cv_nse_std  best_iteration  early_stopping_rounds  final_val_size  \
+0         0.21               4                    100            0.15   
+1         0.23               4                    100            0.15   
+2         0.33               2                    100            0.15   
+3         0.22               3                    100            0.15   
+4         0.25               3                    100            0.15   
+5         0.25               1                    100            0.15   
+6         0.21               2                    100            0.15   
+7         0.20               1                    100            0.15   
+8         0.30               0                    100            0.15   
+9         0.42               0                    100            0.15   
+10        0.32               0                    100            0.15   
+11        0.21               0                    100            0.15   
+12        0.28               0                    100            0.15   
+13        0.47               0                    100            0.15   
+14        0.44               0                    100            0.15   
+
+    execution_seconds execution_time  
+0                7.49           None  
+1                7.15           None  
+2                7.37           None  
+3                7.10           None  
+4                7.10           None  
+5                9.31           None  
+6                7.68           None  
+7                6.95           None  
+8                6.72           None  
+9                7.13           None  
+10               8.46           None  
+11               6.99           None  
+12               8.11           None  
+13               6.61           None  
+14               6.46           None  
+
+Resumen comparativo final (train / test / CV / tiempo):
+
+                                         DataFrame     NSE         \
+                                                   CV Mean CV Std   
+0              hibrido_(corr_top3)_(relfis_agua_q)   0.220   0.21   
+1           hibrido_(corr_top4)_(relfis_agua_qmax)   0.240   0.23   
+2                                        corr_top3   0.190   0.33   
+3                hibrido_(corr_top3)_(relfis_agua)   0.240   0.22   
+4           hibrido_(corr_top3)_(relfis_agua_qmax)   0.240   0.25   
+5                                        corr_top4   0.310   0.25   
+6              hibrido_(corr_top4)_(relfis_agua_q)   0.220   0.21   
+7                hibrido_(corr_top4)_(relfis_agua)   0.260   0.20   
+8                                corr_meteorologia  -0.230   0.30   
+9      hibrido_(corr_meteorologia)_(relfis_agua_q)   0.012   0.42   
+10                                   relfis_agua_q  -0.290   0.32   
+11                                relfis_agua_qmax  -0.410   0.21   
+12                                     relfis_agua  -0.330   0.28   
+13  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  -0.075   0.47   
+14       hibrido_(corr_meteorologia)_(relfis_agua)  -0.077   0.44   
+
+                                                    RMSE         MAE  ...  \
+      CV Performance Train  Test  Test Performance Train  Test Train  ...   
+0   No satisfactorio  0.89  0.63             Bueno  0.25  0.41  0.17  ...   
+1   No satisfactorio  0.89  0.58             Bueno  0.25  0.44  0.17  ...   
+2   No satisfactorio  0.74  0.58             Bueno  0.38  0.44  0.29  ...   
+3   No satisfactorio  0.84  0.55             Bueno  0.30  0.46  0.22  ...   
+4   No satisfactorio  0.84  0.55             Bueno  0.30  0.46  0.22  ...   
+5   No satisfactorio  0.63  0.47     Satisfactorio  0.46  0.49  0.34  ...   
+6   No satisfactorio  0.77  0.42     Satisfactorio  0.37  0.52  0.27  ...   
+7   No satisfactorio  0.64  0.31  No satisfactorio  0.45  0.56  0.35  ...   
+8   No satisfactorio  0.31  0.03  No satisfactorio  0.63  0.67  0.51  ...   
+9   No satisfactorio  0.39 -0.11  No satisfactorio  0.59  0.72  0.46  ...   
+10  No satisfactorio  0.38 -0.16  No satisfactorio  0.60  0.73  0.48  ...   
+11  No satisfactorio  0.38 -0.16  No satisfactorio  0.59  0.73  0.47  ...   
+12  No satisfactorio  0.36 -0.17  No satisfactorio  0.60  0.73  0.49  ...   
+13  No satisfactorio  0.39 -0.28  No satisfactorio  0.59  0.77  0.47  ...   
+14  No satisfactorio  0.38 -0.29  No satisfactorio  0.60  0.77  0.47  ...   
+
+     KGE   PBIAS          R2             RSR           EarlyStop   Tiempo  \
+    Test   Train  Test Train      Test Train  Test BestIteration Segundos   
+0   0.60  0.0330 -0.21  0.94  0.720000  0.33  0.61             4     7.49   
+1   0.62  0.0270 -0.27  0.94  0.660000  0.33  0.65             4     7.15   
+2   0.52  0.0280 -0.29  0.90  0.780000  0.51  0.65             2     7.37   
+3   0.53  0.0230 -0.26  0.92  0.670000  0.40  0.67             3     7.10   
+4   0.53  0.0230 -0.26  0.92  0.670000  0.40  0.67             3     7.10   
+5   0.42  0.0290 -0.30  0.89  0.730000  0.61  0.73             1     9.31   
+6   0.39  0.0390 -0.26  0.91  0.590000  0.48  0.76             2     7.68   
+7   0.34  0.0047 -0.34  0.89  0.520000  0.60  0.83             1     6.95   
+8   0.07  0.0310 -0.37  0.67  0.170000  0.83  0.98             0     6.72   
+9  -0.16  0.0450 -0.38  0.78  0.022000  0.78  1.10             0     7.13   
+10 -0.28  0.0430 -0.38  0.78  0.000015  0.79  1.10             0     8.46   
+11 -0.28  0.0400 -0.37  0.80  0.000047  0.79  1.10             0     6.99   
+12 -0.37  0.0310 -0.33  0.77  0.009600  0.80  1.10             0     8.11   
+13 -0.51  0.0360 -0.43  0.78  0.068000  0.78  1.10             0     6.61   
+14 -0.53  0.0360 -0.42  0.76  0.082000  0.79  1.10             0     6.46   
+
+          
+   Texto  
+0   None  
+1   None  
+2   None  
+3   None  
+4   None  
+5   None  
+6   None  
+7   None  
+8   None  
+9   None  
+10  None  
+11  None  
+12  None  
+13  None  
+14  None  
+
+[15 rows x 22 columns]
+
+Estadísticas globales de performance NSE:
+
+  Estadística  CV Mean  CV Std  Train  Test
+0    Promedio    0.035    0.29   0.59  0.20
+1     Mediana    0.190    0.25   0.63  0.31
+2         Std    0.250    0.09   0.22  0.36
+</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

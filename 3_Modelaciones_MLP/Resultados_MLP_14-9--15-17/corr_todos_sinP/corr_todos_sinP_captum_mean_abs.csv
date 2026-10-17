@@ -1,0 +1,9 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Conductividad [μS/cm] XSLH020,0.21276444,0.028637486,0.26520842
+Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.1680042,0.030456379,0.19174847
+Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.16675833,0.05565656,0.1913225
+Conductividad [μS/cm] EPSE020,0.09493734,0.010352328,0.13164155
+Oxigeno Disuelto (OD) [mg/L] XSLH010,0.0881883,0.07638772,0.088164
+Conductividad [μS/cm] XSLH020_lag1,0.08284835,0.010178731,0.096898325
+Conductividad [μS/cm] EPSE040,0.07794493,0.0012986825,0.106789954
+Conductividad [μS/cm] XSLH010,0.06208436,-0.055448,0.06963268

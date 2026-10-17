@@ -1,0 +1,5 @@
+DataFrame,RMSE,MAE,NSE,KGE,PBIAS,R2,RSR
+corr_top3,0.47,0.35,0.61,0.49,0.028,0.73,0.62
+hibrido_(corr_top4)_(relfis_agua_qmax),0.45,0.34,0.64,0.47,0.037,0.83,0.6
+hibrido_(corr_top4)_(relfis_agua_qmax)_top5,0.45,0.34,0.64,0.48,0.031,0.82,0.6
+hibrido_(corr_top4)_(relfis_agua_qmax)_top3,0.51,0.39,0.54,0.38,0.017,0.79,0.68

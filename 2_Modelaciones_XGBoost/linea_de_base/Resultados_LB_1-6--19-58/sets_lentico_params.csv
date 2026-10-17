@@ -1,0 +1,16 @@
+DataFrame,n_estimators,learning_rate,max_depth,min_child_weight,gamma,reg_alpha,reg_lambda,subsample,colsample_bytree
+hibrido_(corr_top3)_(relfis_agua_q),2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_top4)_(relfis_agua_qmax),2500,0.3,6,1,0,0,1,1,1
+corr_top3,2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_top3)_(relfis_agua),2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_top3)_(relfis_agua_qmax),2500,0.3,6,1,0,0,1,1,1
+corr_top4,2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_top4)_(relfis_agua_q),2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_top4)_(relfis_agua),2500,0.3,6,1,0,0,1,1,1
+corr_meteorologia,2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_meteorologia)_(relfis_agua_q),2500,0.3,6,1,0,0,1,1,1
+relfis_agua_q,2500,0.3,6,1,0,0,1,1,1
+relfis_agua_qmax,2500,0.3,6,1,0,0,1,1,1
+relfis_agua,2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_meteorologia)_(relfis_agua_qmax),2500,0.3,6,1,0,0,1,1,1
+hibrido_(corr_meteorologia)_(relfis_agua),2500,0.3,6,1,0,0,1,1,1

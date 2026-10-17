@@ -1,0 +1,6 @@
+DataFrame,NSE,NSE,NSE,NSE,NSE,NSE,RMSE,RMSE,MAE,MAE,KGE,KGE,PBIAS,PBIAS,R2,R2,RSR,RSR,EarlyStop,Saturacion,Saturacion,Saturacion,Saturacion,Saturacion,Tiempo,Tiempo
+,CV Mean,CV Std,CV Performance,Train,Test,Test Performance,Train,Test,Train,Test,Train,Test,Train,Test,Train,Test,Train,Test,BestIteration,Pct,ReportedTrees,Mode,RefTree99,RefTree95,Segundos,Texto
+hibrido_(corr_top4)_(relfis_agua_qmax),0.63,0.065,Bueno,0.73,0.67,Muy bueno,0.39,0.39,0.29,0.29,0.58,0.62,0.033,-0.29,0.85,0.83,0.52,0.57,23,99,22,saturation_99,22.0,16.0,859.0,14 min 19.00 s
+hibrido_(corr_top4)_(relfis_agua_qmax)_top5,0.61,0.042,Bueno,0.74,0.66,Muy bueno,0.39,0.4,0.28,0.29,0.59,0.56,0.032,-0.23,0.83,0.83,0.51,0.58,13,99,14,saturation_99,14.0,10.0,813.0,13 min 33.00 s
+corr_top3,0.53,0.19,Bueno,0.64,0.6,Bueno,0.46,0.43,0.34,0.32,0.52,0.51,0.021,-0.23,0.74,0.77,0.6,0.63,10,99,11,saturation_99,11.0,10.0,808.0,13 min 28.00 s
+hibrido_(corr_top4)_(relfis_agua_qmax)_top3,0.56,0.18,Bueno,0.59,0.54,Bueno,0.48,0.46,0.36,0.33,0.44,0.44,0.018,-0.27,0.79,0.8,0.64,0.68,25,99,25,saturation_99,25.0,21.0,899.0,14 min 59.00 s

@@ -1,0 +1,28 @@
+Indicador,Valor
+Best iteration + 1,64.0
+Máximo NSE validación interna,0.6694854825342573
+Árbol de máximo NSE validación interna,64.0
+Mínimo RMSE validación interna,0.6534210583503591
+Árbol de mínimo RMSE validación interna,64.0
+Umbral 99% del máximo NSE validación,0.6627906277089147
+Primer árbol que alcanza 99% del máximo NSE validación,44.0
+NSE validación en 99%,0.66806420027402
+NSE train en 99%,0.8451015973708513
+Gap NSE train-validación en 99%,0.1770373970968313
+Proporción árboles 99% / best_iteration+1,0.6875
+Reducción de árboles usando 99%,0.3125
+Umbral 95% del máximo NSE validación,0.6360112084075444
+Primer árbol que alcanza 95% del máximo NSE validación,33.0
+NSE validación en 95%,0.6387714727068182
+NSE train en 95%,0.8114807056025457
+Gap NSE train-validación en 95%,0.17270923289572748
+Proporción árboles 95% / best_iteration+1,0.515625
+Reducción de árboles usando 95%,0.484375
+NSE validación en best_iteration+1,0.6694854825342573
+NSE train en best_iteration+1,0.8903426805179049
+Gap NSE train-validación en best_iteration+1,0.22085719798364756
+RMSE validación en best_iteration+1,0.6534210583503591
+RMSE train en best_iteration+1,0.42613989047180134
+Gap RMSE validación-train en best_iteration+1,0.2272811678785578
+Mejora NSE validación del 99% a best_iteration+1,0.0014212822602372999
+Mejora NSE train del 99% a best_iteration+1,0.04524108314705355

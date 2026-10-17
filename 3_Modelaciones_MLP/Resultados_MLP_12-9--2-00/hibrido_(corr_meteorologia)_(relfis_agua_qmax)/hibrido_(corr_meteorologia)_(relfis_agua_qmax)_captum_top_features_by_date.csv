@@ -1,0 +1,85 @@
+Fecha,top_feature,top_attribution,top_abs_attribution
+2014-04-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.074943505,0.074943505
+2014-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.08856567,0.08856567
+2014-06-30,Turbidez [NTU] EPSE040,-0.087117776,0.087117776
+2014-07-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.11224846,0.11224846
+2014-08-31,Conductividad [μS/cm] EPSE040,0.089476004,0.089476004
+2014-09-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.099074505,0.099074505
+2014-10-31,Conductividad [μS/cm] EPSE040,0.06453549,0.06453549
+2014-11-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.053563662,0.053563662
+2014-12-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.09633293,0.09633293
+2015-01-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.13967751,0.13967751
+2015-02-28,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.11599482,0.11599482
+2015-03-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.12730978,0.12730978
+2015-04-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.0861094,0.0861094
+2015-05-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.0935741,0.0935741
+2015-06-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.102318324,0.102318324
+2015-07-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.12111278,0.12111278
+2015-08-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.11467244,0.11467244
+2015-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.13465883,0.13465883
+2015-10-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.078797676,0.078797676
+2015-11-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.06342763,0.06342763
+2015-12-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.055518206,0.055518206
+2016-01-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.07065243,0.07065243
+2016-02-29,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.08457276,0.08457276
+2016-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.10620709,0.10620709
+2016-04-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.15146816,0.15146816
+2016-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.04375401,0.04375401
+2016-06-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.10778784,0.10778784
+2016-07-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.08850891,0.08850891
+2016-08-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.07535719,0.07535719
+2016-09-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.07566033,0.07566033
+2016-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.090371884,0.090371884
+2016-11-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),-0.04152843,0.04152843
+2016-12-31,Turbidez [NTU] EPSE040,0.08170151,0.08170151
+2017-01-31,Turbidez [NTU] EPSE040,0.07201925,0.07201925
+2017-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.0832661,0.0832661
+2017-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.10274172,0.10274172
+2017-04-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.0546567,0.0546567
+2017-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.062042303,0.062042303
+2017-06-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.112502165,0.112502165
+2017-07-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.07554063,0.07554063
+2017-08-31,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.073485315,0.073485315
+2017-09-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.09655851,0.09655851
+2017-10-31,Temperatura del agua (T) [ºC] EPSE040,-0.046047464,0.046047464
+2017-11-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),-0.037728243,0.037728243
+2017-12-31,Turbidez [NTU] EPSE040,0.05326061,0.05326061
+2018-01-31,Turbidez [NTU] EPSE040,0.07184739,0.07184739
+2018-02-28,Potencial de Hidrogeno (pH) [NA] EPSE040,0.10804333,0.10804333
+2018-03-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.07552616,0.07552616
+2018-04-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.067266926,0.067266926
+2018-05-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.078916766,0.078916766
+2018-06-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.1107825,0.1107825
+2018-07-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.13399656,0.13399656
+2018-08-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.14698292,0.14698292
+2018-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.10393158,0.10393158
+2018-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.144671,0.144671
+2018-11-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.075622074,0.075622074
+2018-12-31,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.16373198,0.16373198
+2019-01-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.051803295,0.051803295
+2019-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.106569566,0.106569566
+2019-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.081963405,0.081963405
+2019-04-30,Conductividad [μS/cm] EPSE040,0.04966829,0.04966829
+2019-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.02689435,0.02689435
+2019-06-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),0.20557436,0.20557436
+2019-07-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.06950652,0.06950652
+2019-08-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.09352509,0.09352509
+2019-09-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.1011832,0.1011832
+2019-10-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.12918954,0.12918954
+2019-11-30,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.12054745,0.12054745
+2019-12-31,Potencial de Hidrogeno (pH) [NA] EPSE040,-0.13834749,0.13834749
+2020-01-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.059580564,0.059580564
+2020-02-29,Potencial de Hidrogeno (pH) [NA] EPSE040,0.11213601,0.11213601
+2020-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.08554125,0.08554125
+2020-04-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.095279396,0.095279396
+2020-05-31,Potencial de Hidrogeno (pH) [NA] EPSE040,0.061018072,0.061018072
+2020-06-30,Potencial de Hidrogeno (pH) [NA] EPSE040,0.06329219,0.06329219
+2020-07-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.068811305,0.068811305
+2020-08-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.09075537,0.09075537
+2020-09-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.074232794,0.074232794
+2020-10-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.07890939,0.07890939
+2020-11-30,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),-0.040042587,0.040042587
+2020-12-31,Caudal Maximo (Qmax) [m3/s] Florida (Puente Ruta 5),-0.041407622,0.041407622
+2021-01-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.05580541,0.05580541
+2021-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.096928805,0.096928805
+2021-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.09998502,0.09998502

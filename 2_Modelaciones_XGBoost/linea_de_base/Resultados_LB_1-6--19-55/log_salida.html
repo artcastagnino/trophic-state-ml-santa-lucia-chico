@@ -1,0 +1,1728 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Log de salida del experimento baseline XGBoost</title>
+        
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .best-row td {
+            background: #e8f7e8 !important;
+            font-weight: bold;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kv-table th {
+            width: 38%;
+            background: #f8fafc;
+        }
+
+        .img-box {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            line-height: 1.35;
+            font-size: 0.92rem;
+        }
+
+        .dataset-title {
+            padding-top: 8px;
+            border-top: 2px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        .dataset-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+        }
+
+        .small {
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Log de salida del experimento baseline XGBoost</h1>
+                                <div class="code-block">
+==================================================================================================
+INICIO DEL PROCESAMIENTO - LÍNEA DE BASE XGBOOST
+==================================================================================================
+Diccionario procesado : sets_lotico
+Tipo de modelo         : XGBoost baseline sin Optuna
+Experiment label      : sets_lotico_LB
+Cantidad de trials    : No aplica
+Train size            : 0.8
+CV splits             : 4
+Make plots            : True
+Make tree evolution   : True
+Tree evolution step   : 1
+Use early stopping    : True
+Early stopping rounds : 100
+Final val size        : 0.15
+Search space type     : xgb_baseline_defaults_explicit
+n_estimators máximo   : 2500
+Carpeta de salida     : Resultados_LB_1-6--19-55
+
+Frase metodológica:
+Se entrenó una línea de base XGBoost utilizando los valores por defecto del algoritmo y fijando n_estimators=2500 como máximo de árboles. El número efectivo de árboles fue determinado mediante early stopping sobre una partición interna de validación temporal.
+
+
+######################################################################
+Procesando corr_top3...
+######################################################################
+
+
+-&gt; Dataset: corr_top3
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.36
+-&gt; CV NSE desvío  : 0.12
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 3
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.62, &#x27;MAE&#x27;: 0.38, &#x27;NSE&#x27;: 0.77, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: -0.002, &#x27;R2&#x27;: 0.87, &#x27;RSR&#x27;: 0.48}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.92, &#x27;MAE&#x27;: 0.64, &#x27;NSE&#x27;: 0.38, &#x27;KGE&#x27;: 0.36, &#x27;PBIAS&#x27;: -0.25, &#x27;R2&#x27;: 0.44, &#x27;RSR&#x27;: 0.79}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando corr_top4...
+######################################################################
+
+
+-&gt; Dataset: corr_top4
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.39
+-&gt; CV NSE desvío  : 0.15
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 5
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.46, &#x27;MAE&#x27;: 0.28, &#x27;NSE&#x27;: 0.87, &#x27;KGE&#x27;: 0.74, &#x27;PBIAS&#x27;: -0.00056, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.36}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.91, &#x27;MAE&#x27;: 0.65, &#x27;NSE&#x27;: 0.39, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.39, &#x27;R2&#x27;: 0.44, &#x27;RSR&#x27;: 0.78}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando corr_meteorologia...
+######################################################################
+
+
+-&gt; Dataset: corr_meteorologia
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.25
+-&gt; CV NSE desvío  : 0.19
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 33
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.29, &#x27;MAE&#x27;: 0.1, &#x27;NSE&#x27;: 0.95, &#x27;KGE&#x27;: 0.96, &#x27;PBIAS&#x27;: -0.053, &#x27;R2&#x27;: 0.95, &#x27;RSR&#x27;: 0.23}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.1, &#x27;MAE&#x27;: 0.76, &#x27;NSE&#x27;: 0.15, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: -0.49, &#x27;R2&#x27;: 0.29, &#x27;RSR&#x27;: 0.92}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando corr_todos_sinP...
+######################################################################
+
+
+-&gt; Dataset: corr_todos_sinP
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.4
+-&gt; CV NSE desvío  : 0.14
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 6
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.37, &#x27;MAE&#x27;: 0.22, &#x27;NSE&#x27;: 0.91, &#x27;KGE&#x27;: 0.81, &#x27;PBIAS&#x27;: 0.0056, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.29}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: -0.29, &#x27;R2&#x27;: 0.54, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando corr_todos...
+######################################################################
+
+
+-&gt; Dataset: corr_todos
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.38
+-&gt; CV NSE desvío  : 0.16
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 13
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.35, &#x27;MAE&#x27;: 0.14, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.92, &#x27;PBIAS&#x27;: 0.012, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.27}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.29, &#x27;R2&#x27;: 0.54, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando relfis_agua...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.22
+-&gt; CV NSE desvío  : 0.14
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 61
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.37, &#x27;MAE&#x27;: 0.11, &#x27;NSE&#x27;: 0.92, &#x27;KGE&#x27;: 0.94, &#x27;PBIAS&#x27;: -0.053, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.29}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.1, &#x27;MAE&#x27;: 0.76, &#x27;NSE&#x27;: 0.14, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.49, &#x27;R2&#x27;: 0.31, &#x27;RSR&#x27;: 0.93}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando relfis_agua_qmax...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_qmax
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.29
+-&gt; CV NSE desvío  : 0.081
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 3
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.65, &#x27;MAE&#x27;: 0.41, &#x27;NSE&#x27;: 0.74, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: -0.022, &#x27;R2&#x27;: 0.84, &#x27;RSR&#x27;: 0.51}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.5, &#x27;KGE&#x27;: 0.5, &#x27;PBIAS&#x27;: -0.21, &#x27;R2&#x27;: 0.54, &#x27;RSR&#x27;: 0.71}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando relfis_agua_q...
+######################################################################
+
+
+-&gt; Dataset: relfis_agua_q
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.24
+-&gt; CV NSE desvío  : 0.1
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 3
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.65, &#x27;MAE&#x27;: 0.42, &#x27;NSE&#x27;: 0.74, &#x27;KGE&#x27;: 0.59, &#x27;PBIAS&#x27;: -0.041, &#x27;R2&#x27;: 0.85, &#x27;RSR&#x27;: 0.51}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.083, &#x27;R2&#x27;: 0.52, &#x27;RSR&#x27;: 0.7}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.33
+-&gt; CV NSE desvío  : 0.18
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 6
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.43, &#x27;MAE&#x27;: 0.24, &#x27;NSE&#x27;: 0.89, &#x27;KGE&#x27;: 0.78, &#x27;PBIAS&#x27;: -0.021, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.34}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.95, &#x27;MAE&#x27;: 0.65, &#x27;NSE&#x27;: 0.34, &#x27;KGE&#x27;: 0.35, &#x27;PBIAS&#x27;: -0.23, &#x27;R2&#x27;: 0.37, &#x27;RSR&#x27;: 0.81}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.33
+-&gt; CV NSE desvío  : 0.19
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 8
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.39, &#x27;MAE&#x27;: 0.19, &#x27;NSE&#x27;: 0.91, &#x27;KGE&#x27;: 0.84, &#x27;PBIAS&#x27;: -0.017, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.3}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.91, &#x27;MAE&#x27;: 0.6, &#x27;NSE&#x27;: 0.39, &#x27;KGE&#x27;: 0.41, &#x27;PBIAS&#x27;: -0.23, &#x27;R2&#x27;: 0.42, &#x27;RSR&#x27;: 0.78}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top3)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top3)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.33
+-&gt; CV NSE desvío  : 0.18
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 22
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.32, &#x27;MAE&#x27;: 0.11, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.95, &#x27;PBIAS&#x27;: -0.012, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.25}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.92, &#x27;MAE&#x27;: 0.62, &#x27;NSE&#x27;: 0.38, &#x27;KGE&#x27;: 0.42, &#x27;PBIAS&#x27;: -0.18, &#x27;R2&#x27;: 0.4, &#x27;RSR&#x27;: 0.79}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.36
+-&gt; CV NSE desvío  : 0.15
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 16
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.3, &#x27;MAE&#x27;: 0.13, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.94, &#x27;PBIAS&#x27;: -0.004, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.24}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.94, &#x27;MAE&#x27;: 0.68, &#x27;NSE&#x27;: 0.35, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.35, &#x27;R2&#x27;: 0.42, &#x27;RSR&#x27;: 0.81}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.35
+-&gt; CV NSE desvío  : 0.16
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 6
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.41, &#x27;MAE&#x27;: 0.24, &#x27;NSE&#x27;: 0.9, &#x27;KGE&#x27;: 0.8, &#x27;PBIAS&#x27;: -0.03, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.32}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.83, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.5, &#x27;KGE&#x27;: 0.62, &#x27;PBIAS&#x27;: -0.27, &#x27;R2&#x27;: 0.52, &#x27;RSR&#x27;: 0.71}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_top4)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_top4)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.35
+-&gt; CV NSE desvío  : 0.17
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 6
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.41, &#x27;MAE&#x27;: 0.24, &#x27;NSE&#x27;: 0.9, &#x27;KGE&#x27;: 0.79, &#x27;PBIAS&#x27;: -0.011, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.32}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.86, &#x27;MAE&#x27;: 0.62, &#x27;NSE&#x27;: 0.45, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.25, &#x27;R2&#x27;: 0.47, &#x27;RSR&#x27;: 0.74}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.42
+-&gt; CV NSE desvío  : 0.11
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 9
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.36, &#x27;MAE&#x27;: 0.21, &#x27;NSE&#x27;: 0.92, &#x27;KGE&#x27;: 0.86, &#x27;PBIAS&#x27;: -0.036, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.28}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.1, &#x27;MAE&#x27;: 0.84, &#x27;NSE&#x27;: 0.14, &#x27;KGE&#x27;: 0.63, &#x27;PBIAS&#x27;: -0.79, &#x27;R2&#x27;: 0.41, &#x27;RSR&#x27;: 0.93}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.43
+-&gt; CV NSE desvío  : 0.097
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 15
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.32, &#x27;MAE&#x27;: 0.14, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.94, &#x27;PBIAS&#x27;: -0.025, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.25}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 1.1, &#x27;MAE&#x27;: 0.88, &#x27;NSE&#x27;: 0.14, &#x27;KGE&#x27;: 0.67, &#x27;PBIAS&#x27;: -0.82, &#x27;R2&#x27;: 0.45, &#x27;RSR&#x27;: 0.93}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_meteorologia)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_meteorologia)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.45
+-&gt; CV NSE desvío  : 0.088
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 31
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.3, &#x27;MAE&#x27;: 0.096, &#x27;NSE&#x27;: 0.94, &#x27;KGE&#x27;: 0.96, &#x27;PBIAS&#x27;: -0.023, &#x27;R2&#x27;: 0.94, &#x27;RSR&#x27;: 0.24}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.96, &#x27;MAE&#x27;: 0.73, &#x27;NSE&#x27;: 0.32, &#x27;KGE&#x27;: 0.68, &#x27;PBIAS&#x27;: -0.52, &#x27;R2&#x27;: 0.47, &#x27;RSR&#x27;: 0.82}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_todos_sinP)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos_sinP)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.32
+-&gt; CV NSE desvío  : 0.21
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 32
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.3, &#x27;MAE&#x27;: 0.1, &#x27;NSE&#x27;: 0.95, &#x27;KGE&#x27;: 0.96, &#x27;PBIAS&#x27;: 0.00047, &#x27;R2&#x27;: 0.95, &#x27;RSR&#x27;: 0.23}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.88, &#x27;MAE&#x27;: 0.68, &#x27;NSE&#x27;: 0.43, &#x27;KGE&#x27;: 0.65, &#x27;PBIAS&#x27;: -0.41, &#x27;R2&#x27;: 0.49, &#x27;RSR&#x27;: 0.76}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_todos_sinP)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos_sinP)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.44
+-&gt; CV NSE desvío  : 0.15
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 7
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.37, &#x27;MAE&#x27;: 0.2, &#x27;NSE&#x27;: 0.92, &#x27;KGE&#x27;: 0.83, &#x27;PBIAS&#x27;: 0.00099, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.29}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.93, &#x27;MAE&#x27;: 0.67, &#x27;NSE&#x27;: 0.36, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.43, &#x27;R2&#x27;: 0.42, &#x27;RSR&#x27;: 0.8}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_todos_sinP)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos_sinP)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.41
+-&gt; CV NSE desvío  : 0.14
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 6
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.41, &#x27;MAE&#x27;: 0.24, &#x27;NSE&#x27;: 0.9, &#x27;KGE&#x27;: 0.79, &#x27;PBIAS&#x27;: -0.003, &#x27;R2&#x27;: 0.92, &#x27;RSR&#x27;: 0.32}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.91, &#x27;MAE&#x27;: 0.65, &#x27;NSE&#x27;: 0.39, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.44, &#x27;R2&#x27;: 0.45, &#x27;RSR&#x27;: 0.78}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_todos)_(relfis_agua)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos)_(relfis_agua)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.34
+-&gt; CV NSE desvío  : 0.21
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 2
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.66, &#x27;MAE&#x27;: 0.45, &#x27;NSE&#x27;: 0.73, &#x27;KGE&#x27;: 0.54, &#x27;PBIAS&#x27;: -0.011, &#x27;R2&#x27;: 0.9, &#x27;RSR&#x27;: 0.52}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.89, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.42, &#x27;KGE&#x27;: 0.38, &#x27;PBIAS&#x27;: -0.23, &#x27;R2&#x27;: 0.5, &#x27;RSR&#x27;: 0.76}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_todos)_(relfis_agua_qmax)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos)_(relfis_agua_qmax)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.36
+-&gt; CV NSE desvío  : 0.18
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 15
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.33, &#x27;MAE&#x27;: 0.13, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.93, &#x27;PBIAS&#x27;: 0.031, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.26}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.89, &#x27;MAE&#x27;: 0.63, &#x27;NSE&#x27;: 0.41, &#x27;KGE&#x27;: 0.58, &#x27;PBIAS&#x27;: -0.32, &#x27;R2&#x27;: 0.45, &#x27;RSR&#x27;: 0.77}
+
+-&gt; Tiempo de ejecución: None
+
+
+######################################################################
+Procesando hibrido_(corr_todos)_(relfis_agua_q)...
+######################################################################
+
+
+-&gt; Dataset: hibrido_(corr_todos)_(relfis_agua_q)
+   Target: IET(PT) Lótico_Lamparelli [XSLH030]
+   Modelo: línea de base XGBoost sin Optuna
+   Experiment label: sets_lotico_LB
+   Train: 84 filas | Test: 21 filas
+   Fecha train: 2014-04-30 00:00:00 a 2021-03-31 00:00:00
+   Fecha test : 2021-04-30 00:00:00 a 2022-12-31 00:00:00
+
+-&gt; Valores default/referencia usados por la línea de base:
+   n_estimators      : 2500 (máximo fijado para early stopping)
+   learning_rate     : 0.3 (default/referencia XGBoost)
+   max_depth         : 6 (default/referencia XGBoost)
+   min_child_weight  : 1 (default/referencia XGBoost)
+   gamma             : 0 (default/referencia XGBoost)
+   reg_alpha         : 0 (default/referencia XGBoost)
+   reg_lambda        : 1 (default/referencia XGBoost)
+   subsample         : 1 (default/referencia XGBoost)
+   colsample_bytree  : 1 (default/referencia XGBoost)
+
+-&gt; Hiperparámetros usados:
+{&#x27;n_estimators&#x27;: 2500, &#x27;learning_rate&#x27;: 0.3, &#x27;max_depth&#x27;: 6, &#x27;min_child_weight&#x27;: 1, &#x27;gamma&#x27;: 0, &#x27;reg_alpha&#x27;: 0, &#x27;reg_lambda&#x27;: 1, &#x27;subsample&#x27;: 1, &#x27;colsample_bytree&#x27;: 1}
+
+-&gt; CV NSE promedio: 0.34
+-&gt; CV NSE desvío  : 0.2
+
+-&gt; Experiment label      : sets_lotico_LB
+-&gt; Search space type     : xgb_baseline_defaults_explicit
+-&gt; Use early stopping    : True
+-&gt; Early stopping rounds : 100
+-&gt; Final val size        : 0.15
+-&gt; Make tree evolution   : True
+-&gt; Tree evolution step   : 1
+-&gt; Best iteration        : 8
+
+-&gt; Importancia de hiperparámetros: No aplica en línea de base sin Optuna
+
+-&gt; Métricas train:
+{&#x27;RMSE&#x27;: 0.37, &#x27;MAE&#x27;: 0.18, &#x27;NSE&#x27;: 0.92, &#x27;KGE&#x27;: 0.85, &#x27;PBIAS&#x27;: 0.0074, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.29}
+
+-&gt; Métricas test:
+{&#x27;RMSE&#x27;: 0.87, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.44, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: -0.24, &#x27;R2&#x27;: 0.46, &#x27;RSR&#x27;: 0.75}
+
+-&gt; Tiempo de ejecución: None
+
+--------------------------------------------------------------------------------------------------
+
+Carpeta de resultados: Resultados_LB_1-6--19-55
+
+Resumen de métricas de train:
+
+                                         DataFrame  RMSE    MAE   NSE   KGE  \
+0                                  corr_todos_sinP  0.37  0.220  0.91  0.81   
+1                                       corr_todos  0.35  0.140  0.93  0.92   
+2                                    relfis_agua_q  0.65  0.420  0.74  0.59   
+3           hibrido_(corr_top4)_(relfis_agua_qmax)  0.41  0.240  0.90  0.80   
+4                                 relfis_agua_qmax  0.65  0.410  0.74  0.60   
+5              hibrido_(corr_top4)_(relfis_agua_q)  0.41  0.240  0.90  0.79   
+6             hibrido_(corr_todos)_(relfis_agua_q)  0.37  0.180  0.92  0.85   
+7          hibrido_(corr_todos_sinP)_(relfis_agua)  0.30  0.100  0.95  0.96   
+8               hibrido_(corr_todos)_(relfis_agua)  0.66  0.450  0.73  0.54   
+9          hibrido_(corr_todos)_(relfis_agua_qmax)  0.33  0.130  0.93  0.93   
+10                                       corr_top4  0.46  0.280  0.87  0.74   
+11       hibrido_(corr_todos_sinP)_(relfis_agua_q)  0.41  0.240  0.90  0.79   
+12          hibrido_(corr_top3)_(relfis_agua_qmax)  0.39  0.190  0.91  0.84   
+13                                       corr_top3  0.62  0.380  0.77  0.60   
+14             hibrido_(corr_top3)_(relfis_agua_q)  0.32  0.110  0.94  0.95   
+15    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)  0.37  0.200  0.92  0.83   
+16               hibrido_(corr_top4)_(relfis_agua)  0.30  0.130  0.94  0.94   
+17               hibrido_(corr_top3)_(relfis_agua)  0.43  0.240  0.89  0.78   
+18     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.30  0.096  0.94  0.96   
+19                               corr_meteorologia  0.29  0.100  0.95  0.96   
+20                                     relfis_agua  0.37  0.110  0.92  0.94   
+21       hibrido_(corr_meteorologia)_(relfis_agua)  0.36  0.210  0.92  0.86   
+22  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.32  0.140  0.94  0.94   
+
+      PBIAS    R2   RSR  
+0   0.00560  0.94  0.29  
+1   0.01200  0.93  0.27  
+2  -0.04100  0.85  0.51  
+3  -0.03000  0.92  0.32  
+4  -0.02200  0.84  0.51  
+5  -0.01100  0.92  0.32  
+6   0.00740  0.93  0.29  
+7   0.00047  0.95  0.23  
+8  -0.01100  0.90  0.52  
+9   0.03100  0.93  0.26  
+10 -0.00056  0.92  0.36  
+11 -0.00300  0.92  0.32  
+12 -0.01700  0.92  0.30  
+13 -0.00200  0.87  0.48  
+14 -0.01200  0.94  0.25  
+15  0.00099  0.93  0.29  
+16 -0.00400  0.94  0.24  
+17 -0.02100  0.92  0.34  
+18 -0.02300  0.94  0.24  
+19 -0.05300  0.95  0.23  
+20 -0.05300  0.92  0.29  
+21 -0.03600  0.93  0.28  
+22 -0.02500  0.94  0.25  
+
+Resumen de métricas de test:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0                                  corr_todos_sinP  0.82  0.58  0.51  0.56   
+1                                       corr_todos  0.81  0.56  0.51  0.58   
+2                                    relfis_agua_q  0.81  0.61  0.51  0.53   
+3           hibrido_(corr_top4)_(relfis_agua_qmax)  0.83  0.61  0.50  0.62   
+4                                 relfis_agua_qmax  0.82  0.57  0.50  0.50   
+5              hibrido_(corr_top4)_(relfis_agua_q)  0.86  0.62  0.45  0.58   
+6             hibrido_(corr_todos)_(relfis_agua_q)  0.87  0.59  0.44  0.56   
+7          hibrido_(corr_todos_sinP)_(relfis_agua)  0.88  0.68  0.43  0.65   
+8               hibrido_(corr_todos)_(relfis_agua)  0.89  0.58  0.42  0.38   
+9          hibrido_(corr_todos)_(relfis_agua_qmax)  0.89  0.63  0.41  0.58   
+10                                       corr_top4  0.91  0.65  0.39  0.55   
+11       hibrido_(corr_todos_sinP)_(relfis_agua_q)  0.91  0.65  0.39  0.58   
+12          hibrido_(corr_top3)_(relfis_agua_qmax)  0.91  0.60  0.39  0.41   
+13                                       corr_top3  0.92  0.64  0.38  0.36   
+14             hibrido_(corr_top3)_(relfis_agua_q)  0.92  0.62  0.38  0.42   
+15    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)  0.93  0.67  0.36  0.55   
+16               hibrido_(corr_top4)_(relfis_agua)  0.94  0.68  0.35  0.61   
+17               hibrido_(corr_top3)_(relfis_agua)  0.95  0.65  0.34  0.35   
+18     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.96  0.73  0.32  0.68   
+19                               corr_meteorologia  1.10  0.76  0.15  0.49   
+20                                     relfis_agua  1.10  0.76  0.14  0.53   
+21       hibrido_(corr_meteorologia)_(relfis_agua)  1.10  0.84  0.14  0.63   
+22  hibrido_(corr_meteorologia)_(relfis_agua_qmax)  1.10  0.88  0.14  0.67   
+
+    PBIAS    R2   RSR  
+0  -0.290  0.54  0.70  
+1  -0.290  0.54  0.70  
+2  -0.083  0.52  0.70  
+3  -0.270  0.52  0.71  
+4  -0.210  0.54  0.71  
+5  -0.250  0.47  0.74  
+6  -0.240  0.46  0.75  
+7  -0.410  0.49  0.76  
+8  -0.230  0.50  0.76  
+9  -0.320  0.45  0.77  
+10 -0.390  0.44  0.78  
+11 -0.440  0.45  0.78  
+12 -0.230  0.42  0.78  
+13 -0.250  0.44  0.79  
+14 -0.180  0.40  0.79  
+15 -0.430  0.42  0.80  
+16 -0.350  0.42  0.81  
+17 -0.230  0.37  0.81  
+18 -0.520  0.47  0.82  
+19 -0.490  0.29  0.92  
+20 -0.490  0.31  0.93  
+21 -0.790  0.41  0.93  
+22 -0.820  0.45  0.93  
+
+Resumen de hiperparámetros usados por la línea de base:
+
+                                         DataFrame  n_estimators  \
+0                                  corr_todos_sinP          2500   
+1                                       corr_todos          2500   
+2                                    relfis_agua_q          2500   
+3           hibrido_(corr_top4)_(relfis_agua_qmax)          2500   
+4                                 relfis_agua_qmax          2500   
+5              hibrido_(corr_top4)_(relfis_agua_q)          2500   
+6             hibrido_(corr_todos)_(relfis_agua_q)          2500   
+7          hibrido_(corr_todos_sinP)_(relfis_agua)          2500   
+8               hibrido_(corr_todos)_(relfis_agua)          2500   
+9          hibrido_(corr_todos)_(relfis_agua_qmax)          2500   
+10                                       corr_top4          2500   
+11       hibrido_(corr_todos_sinP)_(relfis_agua_q)          2500   
+12          hibrido_(corr_top3)_(relfis_agua_qmax)          2500   
+13                                       corr_top3          2500   
+14             hibrido_(corr_top3)_(relfis_agua_q)          2500   
+15    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)          2500   
+16               hibrido_(corr_top4)_(relfis_agua)          2500   
+17               hibrido_(corr_top3)_(relfis_agua)          2500   
+18     hibrido_(corr_meteorologia)_(relfis_agua_q)          2500   
+19                               corr_meteorologia          2500   
+20                                     relfis_agua          2500   
+21       hibrido_(corr_meteorologia)_(relfis_agua)          2500   
+22  hibrido_(corr_meteorologia)_(relfis_agua_qmax)          2500   
+
+    learning_rate  max_depth  min_child_weight  gamma  reg_alpha  reg_lambda  \
+0             0.3          6                 1      0          0           1   
+1             0.3          6                 1      0          0           1   
+2             0.3          6                 1      0          0           1   
+3             0.3          6                 1      0          0           1   
+4             0.3          6                 1      0          0           1   
+5             0.3          6                 1      0          0           1   
+6             0.3          6                 1      0          0           1   
+7             0.3          6                 1      0          0           1   
+8             0.3          6                 1      0          0           1   
+9             0.3          6                 1      0          0           1   
+10            0.3          6                 1      0          0           1   
+11            0.3          6                 1      0          0           1   
+12            0.3          6                 1      0          0           1   
+13            0.3          6                 1      0          0           1   
+14            0.3          6                 1      0          0           1   
+15            0.3          6                 1      0          0           1   
+16            0.3          6                 1      0          0           1   
+17            0.3          6                 1      0          0           1   
+18            0.3          6                 1      0          0           1   
+19            0.3          6                 1      0          0           1   
+20            0.3          6                 1      0          0           1   
+21            0.3          6                 1      0          0           1   
+22            0.3          6                 1      0          0           1   
+
+    subsample  colsample_bytree  
+0           1                 1  
+1           1                 1  
+2           1                 1  
+3           1                 1  
+4           1                 1  
+5           1                 1  
+6           1                 1  
+7           1                 1  
+8           1                 1  
+9           1                 1  
+10          1                 1  
+11          1                 1  
+12          1                 1  
+13          1                 1  
+14          1                 1  
+15          1                 1  
+16          1                 1  
+17          1                 1  
+18          1                 1  
+19          1                 1  
+20          1                 1  
+21          1                 1  
+22          1                 1  
+
+Resumen de metadatos:
+
+                                         DataFrame  \
+0                                  corr_todos_sinP   
+1                                       corr_todos   
+2                                    relfis_agua_q   
+3           hibrido_(corr_top4)_(relfis_agua_qmax)   
+4                                 relfis_agua_qmax   
+5              hibrido_(corr_top4)_(relfis_agua_q)   
+6             hibrido_(corr_todos)_(relfis_agua_q)   
+7          hibrido_(corr_todos_sinP)_(relfis_agua)   
+8               hibrido_(corr_todos)_(relfis_agua)   
+9          hibrido_(corr_todos)_(relfis_agua_qmax)   
+10                                       corr_top4   
+11       hibrido_(corr_todos_sinP)_(relfis_agua_q)   
+12          hibrido_(corr_top3)_(relfis_agua_qmax)   
+13                                       corr_top3   
+14             hibrido_(corr_top3)_(relfis_agua_q)   
+15    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)   
+16               hibrido_(corr_top4)_(relfis_agua)   
+17               hibrido_(corr_top3)_(relfis_agua)   
+18     hibrido_(corr_meteorologia)_(relfis_agua_q)   
+19                               corr_meteorologia   
+20                                     relfis_agua   
+21       hibrido_(corr_meteorologia)_(relfis_agua)   
+22  hibrido_(corr_meteorologia)_(relfis_agua_qmax)   
+
+                                 Target     config_mode  \
+0   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+1   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+2   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+3   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+4   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+5   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+6   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+7   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+8   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+9   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+10  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+11  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+12  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+13  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+14  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+15  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+16  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+17  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+18  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+19  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+20  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+21  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+22  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_LB   
+
+                 search_space_type  use_early_stopping  n_train  n_test  \
+0   xgb_baseline_defaults_explicit                True       84      21   
+1   xgb_baseline_defaults_explicit                True       84      21   
+2   xgb_baseline_defaults_explicit                True       84      21   
+3   xgb_baseline_defaults_explicit                True       84      21   
+4   xgb_baseline_defaults_explicit                True       84      21   
+5   xgb_baseline_defaults_explicit                True       84      21   
+6   xgb_baseline_defaults_explicit                True       84      21   
+7   xgb_baseline_defaults_explicit                True       84      21   
+8   xgb_baseline_defaults_explicit                True       84      21   
+9   xgb_baseline_defaults_explicit                True       84      21   
+10  xgb_baseline_defaults_explicit                True       84      21   
+11  xgb_baseline_defaults_explicit                True       84      21   
+12  xgb_baseline_defaults_explicit                True       84      21   
+13  xgb_baseline_defaults_explicit                True       84      21   
+14  xgb_baseline_defaults_explicit                True       84      21   
+15  xgb_baseline_defaults_explicit                True       84      21   
+16  xgb_baseline_defaults_explicit                True       84      21   
+17  xgb_baseline_defaults_explicit                True       84      21   
+18  xgb_baseline_defaults_explicit                True       84      21   
+19  xgb_baseline_defaults_explicit                True       84      21   
+20  xgb_baseline_defaults_explicit                True       84      21   
+21  xgb_baseline_defaults_explicit                True       84      21   
+22  xgb_baseline_defaults_explicit                True       84      21   
+
+    n_features train_start  train_end test_start   test_end  cv_nse_mean  \
+0            8  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.40   
+1            9  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.38   
+2            4  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.24   
+3            8  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.35   
+4            4  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.29   
+5            8  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.35   
+6           13  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.34   
+7           11  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.32   
+8           12  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.34   
+9           13  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.36   
+10           4  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.39   
+11          12  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.41   
+12           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.33   
+13           3  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.36   
+14           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.33   
+15          12  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.44   
+16           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.36   
+17           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.33   
+18           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.45   
+19           2  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.25   
+20           3  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.22   
+21           5  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.42   
+22           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31         0.43   
+
+    cv_nse_std  best_iteration  early_stopping_rounds  final_val_size  \
+0        0.140               6                    100            0.15   
+1        0.160              13                    100            0.15   
+2        0.100               3                    100            0.15   
+3        0.160               6                    100            0.15   
+4        0.081               3                    100            0.15   
+5        0.170               6                    100            0.15   
+6        0.200               8                    100            0.15   
+7        0.210              32                    100            0.15   
+8        0.210               2                    100            0.15   
+9        0.180              15                    100            0.15   
+10       0.150               5                    100            0.15   
+11       0.140               6                    100            0.15   
+12       0.190               8                    100            0.15   
+13       0.120               3                    100            0.15   
+14       0.180              22                    100            0.15   
+15       0.150               7                    100            0.15   
+16       0.150              16                    100            0.15   
+17       0.180               6                    100            0.15   
+18       0.088              31                    100            0.15   
+19       0.190              33                    100            0.15   
+20       0.140              61                    100            0.15   
+21       0.110               9                    100            0.15   
+22       0.097              15                    100            0.15   
+
+    execution_seconds execution_time  
+0                6.82           None  
+1                7.03           None  
+2                6.65           None  
+3                7.14           None  
+4                6.32           None  
+5                7.06           None  
+6                8.21           None  
+7                8.01           None  
+8                7.85           None  
+9                8.16           None  
+10               5.95           None  
+11               8.52           None  
+12               7.18           None  
+13               6.03           None  
+14               7.72           None  
+15               8.00           None  
+16               7.42           None  
+17               7.00           None  
+18               7.01           None  
+19               5.63           None  
+20               6.26           None  
+21               7.31           None  
+22               7.02           None  
+
+Resumen comparativo final (train / test / CV / tiempo):
+
+                                         DataFrame     NSE         \
+                                                   CV Mean CV Std   
+0                                  corr_todos_sinP    0.40  0.140   
+1                                       corr_todos    0.38  0.160   
+2                                    relfis_agua_q    0.24  0.100   
+3           hibrido_(corr_top4)_(relfis_agua_qmax)    0.35  0.160   
+4                                 relfis_agua_qmax    0.29  0.081   
+5              hibrido_(corr_top4)_(relfis_agua_q)    0.35  0.170   
+6             hibrido_(corr_todos)_(relfis_agua_q)    0.34  0.200   
+7          hibrido_(corr_todos_sinP)_(relfis_agua)    0.32  0.210   
+8               hibrido_(corr_todos)_(relfis_agua)    0.34  0.210   
+9          hibrido_(corr_todos)_(relfis_agua_qmax)    0.36  0.180   
+10                                       corr_top4    0.39  0.150   
+11       hibrido_(corr_todos_sinP)_(relfis_agua_q)    0.41  0.140   
+12          hibrido_(corr_top3)_(relfis_agua_qmax)    0.33  0.190   
+13                                       corr_top3    0.36  0.120   
+14             hibrido_(corr_top3)_(relfis_agua_q)    0.33  0.180   
+15    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)    0.44  0.150   
+16               hibrido_(corr_top4)_(relfis_agua)    0.36  0.150   
+17               hibrido_(corr_top3)_(relfis_agua)    0.33  0.180   
+18     hibrido_(corr_meteorologia)_(relfis_agua_q)    0.45  0.088   
+19                               corr_meteorologia    0.25  0.190   
+20                                     relfis_agua    0.22  0.140   
+21       hibrido_(corr_meteorologia)_(relfis_agua)    0.42  0.110   
+22  hibrido_(corr_meteorologia)_(relfis_agua_qmax)    0.43  0.097   
+
+                                                    RMSE          MAE  ...  \
+      CV Performance Train  Test  Test Performance Train  Test  Train  ...   
+0      Satisfactorio  0.91  0.51             Bueno  0.37  0.82  0.220  ...   
+1      Satisfactorio  0.93  0.51             Bueno  0.35  0.81  0.140  ...   
+2   No satisfactorio  0.74  0.51             Bueno  0.65  0.81  0.420  ...   
+3   No satisfactorio  0.90  0.50     Satisfactorio  0.41  0.83  0.240  ...   
+4   No satisfactorio  0.74  0.50     Satisfactorio  0.65  0.82  0.410  ...   
+5   No satisfactorio  0.90  0.45     Satisfactorio  0.41  0.86  0.240  ...   
+6   No satisfactorio  0.92  0.44     Satisfactorio  0.37  0.87  0.180  ...   
+7   No satisfactorio  0.95  0.43     Satisfactorio  0.30  0.88  0.100  ...   
+8   No satisfactorio  0.73  0.42     Satisfactorio  0.66  0.89  0.450  ...   
+9      Satisfactorio  0.93  0.41     Satisfactorio  0.33  0.89  0.130  ...   
+10     Satisfactorio  0.87  0.39     Satisfactorio  0.46  0.91  0.280  ...   
+11     Satisfactorio  0.90  0.39     Satisfactorio  0.41  0.91  0.240  ...   
+12  No satisfactorio  0.91  0.39     Satisfactorio  0.39  0.91  0.190  ...   
+13     Satisfactorio  0.77  0.38     Satisfactorio  0.62  0.92  0.380  ...   
+14  No satisfactorio  0.94  0.38     Satisfactorio  0.32  0.92  0.110  ...   
+15     Satisfactorio  0.92  0.36     Satisfactorio  0.37  0.93  0.200  ...   
+16     Satisfactorio  0.94  0.35  No satisfactorio  0.30  0.94  0.130  ...   
+17  No satisfactorio  0.89  0.34  No satisfactorio  0.43  0.95  0.240  ...   
+18     Satisfactorio  0.94  0.32  No satisfactorio  0.30  0.96  0.096  ...   
+19  No satisfactorio  0.95  0.15  No satisfactorio  0.29  1.10  0.100  ...   
+20  No satisfactorio  0.92  0.14  No satisfactorio  0.37  1.10  0.110  ...   
+21     Satisfactorio  0.92  0.14  No satisfactorio  0.36  1.10  0.210  ...   
+22     Satisfactorio  0.94  0.14  No satisfactorio  0.32  1.10  0.140  ...   
+
+     KGE    PBIAS           R2         RSR           EarlyStop   Tiempo        
+    Test    Train   Test Train  Test Train  Test BestIteration Segundos Texto  
+0   0.56  0.00560 -0.290  0.94  0.54  0.29  0.70             6     6.82  None  
+1   0.58  0.01200 -0.290  0.93  0.54  0.27  0.70            13     7.03  None  
+2   0.53 -0.04100 -0.083  0.85  0.52  0.51  0.70             3     6.65  None  
+3   0.62 -0.03000 -0.270  0.92  0.52  0.32  0.71             6     7.14  None  
+4   0.50 -0.02200 -0.210  0.84  0.54  0.51  0.71             3     6.32  None  
+5   0.58 -0.01100 -0.250  0.92  0.47  0.32  0.74             6     7.06  None  
+6   0.56  0.00740 -0.240  0.93  0.46  0.29  0.75             8     8.21  None  
+7   0.65  0.00047 -0.410  0.95  0.49  0.23  0.76            32     8.01  None  
+8   0.38 -0.01100 -0.230  0.90  0.50  0.52  0.76             2     7.85  None  
+9   0.58  0.03100 -0.320  0.93  0.45  0.26  0.77            15     8.16  None  
+10  0.55 -0.00056 -0.390  0.92  0.44  0.36  0.78             5     5.95  None  
+11  0.58 -0.00300 -0.440  0.92  0.45  0.32  0.78             6     8.52  None  
+12  0.41 -0.01700 -0.230  0.92  0.42  0.30  0.78             8     7.18  None  
+13  0.36 -0.00200 -0.250  0.87  0.44  0.48  0.79             3     6.03  None  
+14  0.42 -0.01200 -0.180  0.94  0.40  0.25  0.79            22     7.72  None  
+15  0.55  0.00099 -0.430  0.93  0.42  0.29  0.80             7     8.00  None  
+16  0.61 -0.00400 -0.350  0.94  0.42  0.24  0.81            16     7.42  None  
+17  0.35 -0.02100 -0.230  0.92  0.37  0.34  0.81             6     7.00  None  
+18  0.68 -0.02300 -0.520  0.94  0.47  0.24  0.82            31     7.01  None  
+19  0.49 -0.05300 -0.490  0.95  0.29  0.23  0.92            33     5.63  None  
+20  0.53 -0.05300 -0.490  0.92  0.31  0.29  0.93            61     6.26  None  
+21  0.63 -0.03600 -0.790  0.93  0.41  0.28  0.93             9     7.31  None  
+22  0.67 -0.02500 -0.820  0.94  0.45  0.25  0.93            15     7.02  None  
+
+[23 rows x 22 columns]
+
+Estadísticas globales de performance NSE:
+
+  Estadística  CV Mean  CV Std  Train  Test
+0    Promedio    0.350   0.150  0.890  0.37
+1     Mediana    0.350   0.150  0.920  0.39
+2         Std    0.061   0.039  0.071  0.12
+</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

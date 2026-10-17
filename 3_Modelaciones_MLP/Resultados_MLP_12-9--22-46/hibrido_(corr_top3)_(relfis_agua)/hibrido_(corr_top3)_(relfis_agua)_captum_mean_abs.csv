@@ -1,0 +1,9 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.5278708,0.037558716,0.63909703
+Temperatura del agua (T) [ºC] EPSE040,0.30703342,-0.039969675,0.3907671
+Conductividad [μS/cm] EPSE040,0.148386,-0.08881696,0.2162397
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.1417108,0.08001962,0.20638575
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.13932216,0.11046728,0.21181771
+Turbidez [NTU] EPSE040,0.090350844,-0.013790359,0.13427995
+Fósforo Total (PT) [μg/L] XSLH020_lag1,0.07544242,0.025002763,0.11925452
+Fósforo Total (PT) [μg/L] XSLH030_lag1,0.07058374,-0.01152227,0.13218202

@@ -1,0 +1,5 @@
+DataFrame,hidden_layers,activation,dropout,learning_rate,weight_decay,batch_size,optimizer,use_batch_norm,leaky_relu_slope,best_epoch,best_val_loss
+hibrido_(corr_top3)_(relfis_agua_qmax)_top3,"(50, 30)",tanh,0.035,0.00029,9.05e-07,8,adamw,0,0.036,65,0.334
+corr_todos_sinP_top5,"(40, 20)",leaky_relu,0.0375,0.0003,2.55e-07,16,adamw,0,0.035,168,0.288
+corr_todos_sinP_top3,"(50, 30)",relu,0.0475,0.00011,8.1e-07,8,adam,0,0.001,107,0.358
+hibrido_(corr_top3)_(relfis_agua_qmax)_top5,"(40, 20)",tanh,0.0325,0.00045,9.45e-07,16,adam,0,0.013,118,0.28

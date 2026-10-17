@@ -1,0 +1,968 @@
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Log de salida del experimento MLP</title>
+        
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f6f8;
+            color: #1f2937;
+        }
+
+        .container {
+            max-width: 1500px;
+            margin: 0 auto;
+            padding: 24px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        h1, h2, h3, h4 {
+            margin-top: 0;
+            color: #111827;
+        }
+
+        .muted {
+            color: #6b7280;
+            font-size: 0.95rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 8px 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+
+        th {
+            background: #eef2f7;
+        }
+
+        tr:nth-child(even) td {
+            background: #fafafa;
+        }
+
+        .best-row td {
+            background: #e8f7e8 !important;
+            font-weight: bold;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .kv-table th {
+            width: 38%;
+            background: #f8fafc;
+        }
+
+        .img-box {
+            text-align: center;
+            margin-top: 12px;
+        }
+
+        .img-box img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+        }
+
+        .code-block {
+            background: #0f172a;
+            color: #e5e7eb;
+            border-radius: 10px;
+            padding: 16px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            font-family: Consolas, "Courier New", monospace;
+            line-height: 1.35;
+            font-size: 0.92rem;
+        }
+
+        .dataset-title {
+            padding-top: 8px;
+            border-top: 2px solid #e5e7eb;
+            margin-top: 20px;
+        }
+
+        .dataset-title h2 {
+            font-size: 2.8rem;
+            margin-bottom: 18px;
+        }
+
+        .small {
+            font-size: 0.9rem;
+        }
+    </style>
+    
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <h1>Log de salida del experimento MLP</h1>
+                                <div class="code-block">
+==================================================================================================
+INICIO DEL PROCESAMIENTO MLP
+==================================================================================================
+Diccionario procesado : sets_lotico
+Experiment label      : sets_lotico_flexible
+Cantidad de trials    : 1000
+Train size            : 0.8
+CV splits             : 4
+Make plots reporte    : True
+Final val size        : 0.15
+Max epochs            : 500
+Patience              : 100
+Scale y               : True
+Pruning               : True
+Seed                  : 42
+Carpeta de salida     : Resultados_MLP_18-9--3-13
+
+
+==========================================================================================
+Procesando set: corr_top3
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (30, 20), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0175, &#x27;learning_rate&#x27;: 5e-05, &#x27;weight_decay&#x27;: 4.6e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.015}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.37
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.6, &#x27;KGE&#x27;: 0.66, &#x27;PBIAS&#x27;: 0.013, &#x27;R2&#x27;: 0.6, &#x27;RSR&#x27;: 0.64}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.52, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.34, &#x27;R2&#x27;: 0.58, &#x27;RSR&#x27;: 0.7}
+
+==========================================================================================
+Procesando set: corr_top4
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.03, &#x27;learning_rate&#x27;: 8e-05, &#x27;weight_decay&#x27;: 3.4000000000000003e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.001}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.46
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.74, &#x27;MAE&#x27;: 0.52, &#x27;NSE&#x27;: 0.66, &#x27;KGE&#x27;: 0.7, &#x27;PBIAS&#x27;: 0.047, &#x27;R2&#x27;: 0.66, &#x27;RSR&#x27;: 0.58}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: 0.51, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.32, &#x27;R2&#x27;: 0.55, &#x27;RSR&#x27;: 0.7}
+
+==========================================================================================
+Procesando set: corr_meteorologia
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 20), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.0125, &#x27;learning_rate&#x27;: 0.00047000000000000004, &#x27;weight_decay&#x27;: 9.65e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.043000000000000003}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.4
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.92, &#x27;MAE&#x27;: 0.67, &#x27;NSE&#x27;: 0.48, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: -0.041, &#x27;R2&#x27;: 0.48, &#x27;RSR&#x27;: 0.72}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.94, &#x27;MAE&#x27;: 0.73, &#x27;NSE&#x27;: 0.34, &#x27;KGE&#x27;: 0.53, &#x27;PBIAS&#x27;: -0.53, &#x27;R2&#x27;: 0.43, &#x27;RSR&#x27;: 0.81}
+
+==========================================================================================
+Procesando set: corr_todos_sinP
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (30, 20), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.005, &#x27;learning_rate&#x27;: 7.000000000000001e-05, &#x27;weight_decay&#x27;: 8.900000000000001e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.006}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.34
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.73, &#x27;MAE&#x27;: 0.5, &#x27;NSE&#x27;: 0.68, &#x27;KGE&#x27;: 0.72, &#x27;PBIAS&#x27;: 0.019, &#x27;R2&#x27;: 0.68, &#x27;RSR&#x27;: 0.57}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.76, &#x27;MAE&#x27;: 0.5, &#x27;NSE&#x27;: 0.57, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: -0.3, &#x27;R2&#x27;: 0.61, &#x27;RSR&#x27;: 0.65}
+
+==========================================================================================
+Procesando set: corr_todos
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (30, 20), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.03, &#x27;learning_rate&#x27;: 0.00033000000000000005, &#x27;weight_decay&#x27;: 4.4500000000000003e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.047}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.43
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.54, &#x27;NSE&#x27;: 0.62, &#x27;KGE&#x27;: 0.67, &#x27;PBIAS&#x27;: -0.0084, &#x27;R2&#x27;: 0.62, &#x27;RSR&#x27;: 0.61}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.53, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.59, &#x27;PBIAS&#x27;: -0.36, &#x27;R2&#x27;: 0.61, &#x27;RSR&#x27;: 0.67}
+
+==========================================================================================
+Procesando set: relfis_agua
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0275, &#x27;learning_rate&#x27;: 0.0003400000000000001, &#x27;weight_decay&#x27;: 4.05e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.003}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.062
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.96, &#x27;MAE&#x27;: 0.67, &#x27;NSE&#x27;: 0.43, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: -0.011, &#x27;R2&#x27;: 0.43, &#x27;RSR&#x27;: 0.76}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.87, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: 0.45, &#x27;KGE&#x27;: 0.47, &#x27;PBIAS&#x27;: -0.11, &#x27;R2&#x27;: 0.46, &#x27;RSR&#x27;: 0.74}
+
+==========================================================================================
+Procesando set: relfis_agua_qmax
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (60, 40, 30), &#x27;activation&#x27;: &#x27;relu&#x27;, &#x27;dropout&#x27;: 0.0225, &#x27;learning_rate&#x27;: 0.0004900000000000001, &#x27;weight_decay&#x27;: 7.75e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.049}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.026
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.93, &#x27;MAE&#x27;: 0.65, &#x27;NSE&#x27;: 0.46, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.014, &#x27;R2&#x27;: 0.46, &#x27;RSR&#x27;: 0.73}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.91, &#x27;MAE&#x27;: 0.62, &#x27;NSE&#x27;: 0.39, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.4, &#x27;R2&#x27;: 0.45, &#x27;RSR&#x27;: 0.78}
+
+==========================================================================================
+Procesando set: relfis_agua_q
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 40, 30, 20), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.025, &#x27;learning_rate&#x27;: 0.0003400000000000001, &#x27;weight_decay&#x27;: 1.35e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.006}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.029
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 1.0, &#x27;MAE&#x27;: 0.69, &#x27;NSE&#x27;: 0.37, &#x27;KGE&#x27;: 0.4, &#x27;PBIAS&#x27;: 0.021, &#x27;R2&#x27;: 0.37, &#x27;RSR&#x27;: 0.8}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.81, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.52, &#x27;KGE&#x27;: 0.51, &#x27;PBIAS&#x27;: -0.21, &#x27;R2&#x27;: 0.56, &#x27;RSR&#x27;: 0.7}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top3)_(relfis_agua)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (30, 20), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0475, &#x27;learning_rate&#x27;: 0.00028000000000000003, &#x27;weight_decay&#x27;: 8.4e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.011}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.4
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.75, &#x27;MAE&#x27;: 0.54, &#x27;NSE&#x27;: 0.66, &#x27;KGE&#x27;: 0.73, &#x27;PBIAS&#x27;: 0.005, &#x27;R2&#x27;: 0.66, &#x27;RSR&#x27;: 0.59}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.54, &#x27;KGE&#x27;: 0.48, &#x27;PBIAS&#x27;: -0.041, &#x27;R2&#x27;: 0.61, &#x27;RSR&#x27;: 0.67}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top3)_(relfis_agua_qmax)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (60, 50, 40, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.05, &#x27;learning_rate&#x27;: 0.00046000000000000007, &#x27;weight_decay&#x27;: 1.35e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.029}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.3
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.63, &#x27;KGE&#x27;: 0.71, &#x27;PBIAS&#x27;: -0.0092, &#x27;R2&#x27;: 0.63, &#x27;RSR&#x27;: 0.61}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.75, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: 0.59, &#x27;KGE&#x27;: 0.52, &#x27;PBIAS&#x27;: -0.17, &#x27;R2&#x27;: 0.66, &#x27;RSR&#x27;: 0.64}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top3)_(relfis_agua_q)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (60, 50, 40, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0175, &#x27;learning_rate&#x27;: 0.00039000000000000005, &#x27;weight_decay&#x27;: 9.55e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.002}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.32
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.75, &#x27;MAE&#x27;: 0.55, &#x27;NSE&#x27;: 0.65, &#x27;KGE&#x27;: 0.73, &#x27;PBIAS&#x27;: 0.014, &#x27;R2&#x27;: 0.65, &#x27;RSR&#x27;: 0.59}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.55, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: -0.05, &#x27;R2&#x27;: 0.61, &#x27;RSR&#x27;: 0.67}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top4)_(relfis_agua)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (60, 50, 40, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.045, &#x27;learning_rate&#x27;: 0.00024, &#x27;weight_decay&#x27;: 1.2000000000000002e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.025}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.29
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.74, &#x27;MAE&#x27;: 0.53, &#x27;NSE&#x27;: 0.66, &#x27;KGE&#x27;: 0.74, &#x27;PBIAS&#x27;: 0.036, &#x27;R2&#x27;: 0.66, &#x27;RSR&#x27;: 0.58}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.74, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.6, &#x27;KGE&#x27;: 0.56, &#x27;PBIAS&#x27;: -0.14, &#x27;R2&#x27;: 0.63, &#x27;RSR&#x27;: 0.64}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top4)_(relfis_agua_qmax)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0025, &#x27;learning_rate&#x27;: 0.0005, &#x27;weight_decay&#x27;: 1e-08, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.001}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.29
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.73, &#x27;MAE&#x27;: 0.51, &#x27;NSE&#x27;: 0.67, &#x27;KGE&#x27;: 0.72, &#x27;PBIAS&#x27;: 0.032, &#x27;R2&#x27;: 0.67, &#x27;RSR&#x27;: 0.57}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: 0.54, &#x27;KGE&#x27;: 0.49, &#x27;PBIAS&#x27;: -0.069, &#x27;R2&#x27;: 0.6, &#x27;RSR&#x27;: 0.67}
+
+==========================================================================================
+Procesando set: hibrido_(corr_top4)_(relfis_agua_q)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (60, 40, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0175, &#x27;learning_rate&#x27;: 0.0003600000000000001, &#x27;weight_decay&#x27;: 5.95e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.003}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.29
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.71, &#x27;MAE&#x27;: 0.49, &#x27;NSE&#x27;: 0.69, &#x27;KGE&#x27;: 0.73, &#x27;PBIAS&#x27;: 0.029, &#x27;R2&#x27;: 0.69, &#x27;RSR&#x27;: 0.56}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: 0.56, &#x27;KGE&#x27;: 0.55, &#x27;PBIAS&#x27;: -0.18, &#x27;R2&#x27;: 0.59, &#x27;RSR&#x27;: 0.67}
+
+==========================================================================================
+Procesando set: hibrido_(corr_meteorologia)_(relfis_agua)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;relu&#x27;, &#x27;dropout&#x27;: 0.03, &#x27;learning_rate&#x27;: 8e-05, &#x27;weight_decay&#x27;: 8.15e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.016}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.26
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.78, &#x27;MAE&#x27;: 0.56, &#x27;NSE&#x27;: 0.63, &#x27;KGE&#x27;: 0.69, &#x27;PBIAS&#x27;: 0.051, &#x27;R2&#x27;: 0.63, &#x27;RSR&#x27;: 0.61}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.85, &#x27;MAE&#x27;: 0.61, &#x27;NSE&#x27;: 0.47, &#x27;KGE&#x27;: 0.59, &#x27;PBIAS&#x27;: -0.43, &#x27;R2&#x27;: 0.52, &#x27;RSR&#x27;: 0.73}
+
+==========================================================================================
+Procesando set: hibrido_(corr_meteorologia)_(relfis_agua_qmax)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 20), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0125, &#x27;learning_rate&#x27;: 0.00041000000000000005, &#x27;weight_decay&#x27;: 9.05e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.043000000000000003}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.26
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.83, &#x27;MAE&#x27;: 0.6, &#x27;NSE&#x27;: 0.57, &#x27;KGE&#x27;: 0.63, &#x27;PBIAS&#x27;: -0.014, &#x27;R2&#x27;: 0.57, &#x27;RSR&#x27;: 0.65}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.57, &#x27;NSE&#x27;: 0.54, &#x27;KGE&#x27;: 0.52, &#x27;PBIAS&#x27;: -0.24, &#x27;R2&#x27;: 0.6, &#x27;RSR&#x27;: 0.68}
+
+==========================================================================================
+Procesando set: hibrido_(corr_meteorologia)_(relfis_agua_q)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 20), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.03, &#x27;learning_rate&#x27;: 0.00011, &#x27;weight_decay&#x27;: 9.55e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.004}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.28
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.82, &#x27;MAE&#x27;: 0.59, &#x27;NSE&#x27;: 0.59, &#x27;KGE&#x27;: 0.65, &#x27;PBIAS&#x27;: -0.0033, &#x27;R2&#x27;: 0.59, &#x27;RSR&#x27;: 0.64}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.53, &#x27;KGE&#x27;: 0.5, &#x27;PBIAS&#x27;: -0.17, &#x27;R2&#x27;: 0.59, &#x27;RSR&#x27;: 0.68}
+
+==========================================================================================
+Procesando set: hibrido_(corr_todos_sinP)_(relfis_agua)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 20), &#x27;activation&#x27;: &#x27;relu&#x27;, &#x27;dropout&#x27;: 0.0075, &#x27;learning_rate&#x27;: 0.00042000000000000007, &#x27;weight_decay&#x27;: 9.450000000000001e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.048}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.37
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.42, &#x27;MAE&#x27;: 0.3, &#x27;NSE&#x27;: 0.89, &#x27;KGE&#x27;: 0.89, &#x27;PBIAS&#x27;: 0.0062, &#x27;R2&#x27;: 0.89, &#x27;RSR&#x27;: 0.33}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.95, &#x27;MAE&#x27;: 0.71, &#x27;NSE&#x27;: 0.33, &#x27;KGE&#x27;: 0.51, &#x27;PBIAS&#x27;: 0.13, &#x27;R2&#x27;: 0.35, &#x27;RSR&#x27;: 0.82}
+
+==========================================================================================
+Procesando set: hibrido_(corr_todos_sinP)_(relfis_agua_qmax)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 30, 20), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.01, &#x27;learning_rate&#x27;: 0.00013000000000000002, &#x27;weight_decay&#x27;: 8.2e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.025}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.33
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.51, &#x27;MAE&#x27;: 0.37, &#x27;NSE&#x27;: 0.84, &#x27;KGE&#x27;: 0.86, &#x27;PBIAS&#x27;: 0.014, &#x27;R2&#x27;: 0.84, &#x27;RSR&#x27;: 0.4}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.79, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.54, &#x27;KGE&#x27;: 0.6, &#x27;PBIAS&#x27;: -0.15, &#x27;R2&#x27;: 0.55, &#x27;RSR&#x27;: 0.68}
+
+==========================================================================================
+Procesando set: hibrido_(corr_todos_sinP)_(relfis_agua_q)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (40, 30, 20), &#x27;activation&#x27;: &#x27;relu&#x27;, &#x27;dropout&#x27;: 0.04, &#x27;learning_rate&#x27;: 0.00027000000000000006, &#x27;weight_decay&#x27;: 7.8e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.019000000000000003}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.31
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.56, &#x27;MAE&#x27;: 0.41, &#x27;NSE&#x27;: 0.8, &#x27;KGE&#x27;: 0.83, &#x27;PBIAS&#x27;: 0.019, &#x27;R2&#x27;: 0.8, &#x27;RSR&#x27;: 0.44}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.8, &#x27;MAE&#x27;: 0.58, &#x27;NSE&#x27;: 0.53, &#x27;KGE&#x27;: 0.62, &#x27;PBIAS&#x27;: -0.19, &#x27;R2&#x27;: 0.54, &#x27;RSR&#x27;: 0.69}
+
+==========================================================================================
+Procesando set: hibrido_(corr_todos)_(relfis_agua)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (80, 60, 40, 20), &#x27;activation&#x27;: &#x27;leaky_relu&#x27;, &#x27;dropout&#x27;: 0.01, &#x27;learning_rate&#x27;: 0.00023, &#x27;weight_decay&#x27;: 9.7e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.017}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.32
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.34, &#x27;MAE&#x27;: 0.23, &#x27;NSE&#x27;: 0.93, &#x27;KGE&#x27;: 0.96, &#x27;PBIAS&#x27;: -0.003, &#x27;R2&#x27;: 0.93, &#x27;RSR&#x27;: 0.27}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.88, &#x27;MAE&#x27;: 0.69, &#x27;NSE&#x27;: 0.44, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: 0.22, &#x27;R2&#x27;: 0.46, &#x27;RSR&#x27;: 0.75}
+
+==========================================================================================
+Procesando set: hibrido_(corr_todos)_(relfis_agua_qmax)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0225, &#x27;learning_rate&#x27;: 0.00026000000000000003, &#x27;weight_decay&#x27;: 8.5e-07, &#x27;batch_size&#x27;: 8, &#x27;optimizer&#x27;: &#x27;adam&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.045}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.35
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.66, &#x27;MAE&#x27;: 0.46, &#x27;NSE&#x27;: 0.73, &#x27;KGE&#x27;: 0.77, &#x27;PBIAS&#x27;: 0.027, &#x27;R2&#x27;: 0.74, &#x27;RSR&#x27;: 0.52}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.74, &#x27;MAE&#x27;: 0.51, &#x27;NSE&#x27;: 0.59, &#x27;KGE&#x27;: 0.61, &#x27;PBIAS&#x27;: -0.12, &#x27;R2&#x27;: 0.61, &#x27;RSR&#x27;: 0.64}
+
+==========================================================================================
+Procesando set: hibrido_(corr_todos)_(relfis_agua_q)
+==========================================================================================
+
+Mejores hiperparámetros:
+{&#x27;hidden_layers&#x27;: (50, 30), &#x27;activation&#x27;: &#x27;tanh&#x27;, &#x27;dropout&#x27;: 0.0375, &#x27;learning_rate&#x27;: 0.00043000000000000004, &#x27;weight_decay&#x27;: 9.7e-07, &#x27;batch_size&#x27;: 16, &#x27;optimizer&#x27;: &#x27;adamw&#x27;, &#x27;use_batch_norm&#x27;: False, &#x27;leaky_relu_slope&#x27;: 0.013000000000000001}
+
+Seed usada para este set: 42
+
+Best CV NSE: 0.36
+
+Métricas TRAIN:
+{&#x27;RMSE&#x27;: 0.63, &#x27;MAE&#x27;: 0.45, &#x27;NSE&#x27;: 0.75, &#x27;KGE&#x27;: 0.81, &#x27;PBIAS&#x27;: 0.025, &#x27;R2&#x27;: 0.75, &#x27;RSR&#x27;: 0.5}
+
+Métricas TEST:
+{&#x27;RMSE&#x27;: 0.75, &#x27;MAE&#x27;: 0.53, &#x27;NSE&#x27;: 0.59, &#x27;KGE&#x27;: 0.64, &#x27;PBIAS&#x27;: -0.12, &#x27;R2&#x27;: 0.6, &#x27;RSR&#x27;: 0.64}
+--------------------------------------------------------------------------------------------------
+
+Carpeta de resultados: Resultados_MLP_18-9--3-13
+Tiempo total de corrida: 1590 min 33.95 s
+
+Resumen de métricas de train:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0                hibrido_(corr_top4)_(relfis_agua)  0.74  0.53  0.66  0.74   
+1           hibrido_(corr_top3)_(relfis_agua_qmax)  0.78  0.57  0.63  0.71   
+2             hibrido_(corr_todos)_(relfis_agua_q)  0.63  0.45  0.75  0.81   
+3          hibrido_(corr_todos)_(relfis_agua_qmax)  0.66  0.46  0.73  0.77   
+4                                  corr_todos_sinP  0.73  0.50  0.68  0.72   
+5              hibrido_(corr_top4)_(relfis_agua_q)  0.71  0.49  0.69  0.73   
+6                                       corr_todos  0.78  0.54  0.62  0.67   
+7              hibrido_(corr_top3)_(relfis_agua_q)  0.75  0.55  0.65  0.73   
+8   hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.83  0.60  0.57  0.63   
+9           hibrido_(corr_top4)_(relfis_agua_qmax)  0.73  0.51  0.67  0.72   
+10               hibrido_(corr_top3)_(relfis_agua)  0.75  0.54  0.66  0.73   
+11    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)  0.51  0.37  0.84  0.86   
+12       hibrido_(corr_todos_sinP)_(relfis_agua_q)  0.56  0.41  0.80  0.83   
+13     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.82  0.59  0.59  0.65   
+14                                       corr_top3  0.81  0.57  0.60  0.66   
+15                                   relfis_agua_q  1.00  0.69  0.37  0.40   
+16                                       corr_top4  0.74  0.52  0.66  0.70   
+17       hibrido_(corr_meteorologia)_(relfis_agua)  0.78  0.56  0.63  0.69   
+18                                     relfis_agua  0.96  0.67  0.43  0.49   
+19              hibrido_(corr_todos)_(relfis_agua)  0.34  0.23  0.93  0.96   
+20                                relfis_agua_qmax  0.93  0.65  0.46  0.55   
+21                               corr_meteorologia  0.92  0.67  0.48  0.56   
+22         hibrido_(corr_todos_sinP)_(relfis_agua)  0.42  0.30  0.89  0.89   
+
+     PBIAS    R2   RSR  
+0   0.0360  0.66  0.58  
+1  -0.0092  0.63  0.61  
+2   0.0250  0.75  0.50  
+3   0.0270  0.74  0.52  
+4   0.0190  0.68  0.57  
+5   0.0290  0.69  0.56  
+6  -0.0084  0.62  0.61  
+7   0.0140  0.65  0.59  
+8  -0.0140  0.57  0.65  
+9   0.0320  0.67  0.57  
+10  0.0050  0.66  0.59  
+11  0.0140  0.84  0.40  
+12  0.0190  0.80  0.44  
+13 -0.0033  0.59  0.64  
+14  0.0130  0.60  0.64  
+15  0.0210  0.37  0.80  
+16  0.0470  0.66  0.58  
+17  0.0510  0.63  0.61  
+18 -0.0110  0.43  0.76  
+19 -0.0030  0.93  0.27  
+20 -0.0140  0.46  0.73  
+21 -0.0410  0.48  0.72  
+22  0.0062  0.89  0.33  
+
+Resumen de métricas de test:
+
+                                         DataFrame  RMSE   MAE   NSE   KGE  \
+0                hibrido_(corr_top4)_(relfis_agua)  0.74  0.57  0.60  0.56   
+1           hibrido_(corr_top3)_(relfis_agua_qmax)  0.75  0.55  0.59  0.52   
+2             hibrido_(corr_todos)_(relfis_agua_q)  0.75  0.53  0.59  0.64   
+3          hibrido_(corr_todos)_(relfis_agua_qmax)  0.74  0.51  0.59  0.61   
+4                                  corr_todos_sinP  0.76  0.50  0.57  0.60   
+5              hibrido_(corr_top4)_(relfis_agua_q)  0.78  0.56  0.56  0.55   
+6                                       corr_todos  0.78  0.53  0.55  0.59   
+7              hibrido_(corr_top3)_(relfis_agua_q)  0.78  0.59  0.55  0.49   
+8   hibrido_(corr_meteorologia)_(relfis_agua_qmax)  0.79  0.57  0.54  0.52   
+9           hibrido_(corr_top4)_(relfis_agua_qmax)  0.79  0.56  0.54  0.49   
+10               hibrido_(corr_top3)_(relfis_agua)  0.79  0.57  0.54  0.48   
+11    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)  0.79  0.58  0.54  0.60   
+12       hibrido_(corr_todos_sinP)_(relfis_agua_q)  0.80  0.58  0.53  0.62   
+13     hibrido_(corr_meteorologia)_(relfis_agua_q)  0.79  0.58  0.53  0.50   
+14                                       corr_top3  0.81  0.59  0.52  0.53   
+15                                   relfis_agua_q  0.81  0.57  0.52  0.51   
+16                                       corr_top4  0.82  0.55  0.51  0.55   
+17       hibrido_(corr_meteorologia)_(relfis_agua)  0.85  0.61  0.47  0.59   
+18                                     relfis_agua  0.87  0.56  0.45  0.47   
+19              hibrido_(corr_todos)_(relfis_agua)  0.88  0.69  0.44  0.61   
+20                                relfis_agua_qmax  0.91  0.62  0.39  0.61   
+21                               corr_meteorologia  0.94  0.73  0.34  0.53   
+22         hibrido_(corr_todos_sinP)_(relfis_agua)  0.95  0.71  0.33  0.51   
+
+    PBIAS    R2   RSR  
+0  -0.140  0.63  0.64  
+1  -0.170  0.66  0.64  
+2  -0.120  0.60  0.64  
+3  -0.120  0.61  0.64  
+4  -0.300  0.61  0.65  
+5  -0.180  0.59  0.67  
+6  -0.360  0.61  0.67  
+7  -0.050  0.61  0.67  
+8  -0.240  0.60  0.68  
+9  -0.069  0.60  0.67  
+10 -0.041  0.61  0.67  
+11 -0.150  0.55  0.68  
+12 -0.190  0.54  0.69  
+13 -0.170  0.59  0.68  
+14 -0.340  0.58  0.70  
+15 -0.210  0.56  0.70  
+16 -0.320  0.55  0.70  
+17 -0.430  0.52  0.73  
+18 -0.110  0.46  0.74  
+19  0.220  0.46  0.75  
+20 -0.400  0.45  0.78  
+21 -0.530  0.43  0.81  
+22  0.130  0.35  0.82  
+
+Resumen de mejores parámetros:
+
+                                         DataFrame     hidden_layers  \
+0                hibrido_(corr_top4)_(relfis_agua)  (60, 50, 40, 30)   
+1           hibrido_(corr_top3)_(relfis_agua_qmax)  (60, 50, 40, 30)   
+2             hibrido_(corr_todos)_(relfis_agua_q)          (50, 30)   
+3          hibrido_(corr_todos)_(relfis_agua_qmax)          (50, 30)   
+4                                  corr_todos_sinP          (30, 20)   
+5              hibrido_(corr_top4)_(relfis_agua_q)      (60, 40, 30)   
+6                                       corr_todos          (30, 20)   
+7              hibrido_(corr_top3)_(relfis_agua_q)  (60, 50, 40, 30)   
+8   hibrido_(corr_meteorologia)_(relfis_agua_qmax)          (40, 20)   
+9           hibrido_(corr_top4)_(relfis_agua_qmax)          (50, 30)   
+10               hibrido_(corr_top3)_(relfis_agua)          (30, 20)   
+11    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)      (40, 30, 20)   
+12       hibrido_(corr_todos_sinP)_(relfis_agua_q)      (40, 30, 20)   
+13     hibrido_(corr_meteorologia)_(relfis_agua_q)          (40, 20)   
+14                                       corr_top3          (30, 20)   
+15                                   relfis_agua_q  (50, 40, 30, 20)   
+16                                       corr_top4          (50, 30)   
+17       hibrido_(corr_meteorologia)_(relfis_agua)          (50, 30)   
+18                                     relfis_agua          (50, 30)   
+19              hibrido_(corr_todos)_(relfis_agua)  (80, 60, 40, 20)   
+20                                relfis_agua_qmax      (60, 40, 30)   
+21                               corr_meteorologia          (40, 20)   
+22         hibrido_(corr_todos_sinP)_(relfis_agua)          (40, 20)   
+
+    activation  dropout  learning_rate  weight_decay  batch_size optimizer  \
+0         tanh   0.0450        0.00024  1.200000e-07          16     adamw   
+1         tanh   0.0500        0.00046  1.350000e-07          16     adamw   
+2         tanh   0.0375        0.00043  9.700000e-07          16     adamw   
+3         tanh   0.0225        0.00026  8.500000e-07           8      adam   
+4   leaky_relu   0.0050        0.00007  8.900000e-07           8     adamw   
+5         tanh   0.0175        0.00036  5.950000e-07           8      adam   
+6   leaky_relu   0.0300        0.00033  4.450000e-07           8     adamw   
+7         tanh   0.0175        0.00039  9.550000e-07          16      adam   
+8         tanh   0.0125        0.00041  9.050000e-07           8      adam   
+9         tanh   0.0025        0.00050  1.000000e-08           8      adam   
+10        tanh   0.0475        0.00028  8.400000e-07          16     adamw   
+11  leaky_relu   0.0100        0.00013  8.200000e-07           8      adam   
+12        relu   0.0400        0.00027  7.800000e-07           8     adamw   
+13        tanh   0.0300        0.00011  9.550000e-07           8     adamw   
+14        tanh   0.0175        0.00005  4.600000e-07           8      adam   
+15        tanh   0.0250        0.00034  1.350000e-07          16     adamw   
+16  leaky_relu   0.0300        0.00008  3.400000e-07           8      adam   
+17        relu   0.0300        0.00008  8.150000e-07          16     adamw   
+18        tanh   0.0275        0.00034  4.050000e-07           8     adamw   
+19  leaky_relu   0.0100        0.00023  9.700000e-07           8      adam   
+20        relu   0.0225        0.00049  7.750000e-07          16     adamw   
+21  leaky_relu   0.0125        0.00047  9.650000e-07          16      adam   
+22        relu   0.0075        0.00042  9.450000e-07           8     adamw   
+
+    use_batch_norm  leaky_relu_slope  best_epoch  best_val_loss  
+0                0             0.025         118          0.221  
+1                0             0.029          44          0.266  
+2                0             0.013         159          0.236  
+3                0             0.045         157          0.248  
+4                0             0.006         364          0.294  
+5                0             0.003          70          0.235  
+6                0             0.047          36          0.311  
+7                0             0.002          60          0.273  
+8                0             0.043          68          0.342  
+9                0             0.001          72          0.262  
+10               0             0.011         245          0.253  
+11               0             0.025         261          0.196  
+12               0             0.019         127          0.214  
+13               0             0.004         328          0.358  
+14               0             0.015         392          0.329  
+15               0             0.006          16          0.602  
+16               0             0.001         173          0.339  
+17               0             0.016         279          0.339  
+18               0             0.003          31          0.564  
+19               0             0.017         110          0.189  
+20               0             0.049          29          0.588  
+21               0             0.043          33          0.493  
+22               0             0.048         210          0.161  
+
+Resumen de metadatos:
+
+                                         DataFrame  \
+0                hibrido_(corr_top4)_(relfis_agua)   
+1           hibrido_(corr_top3)_(relfis_agua_qmax)   
+2             hibrido_(corr_todos)_(relfis_agua_q)   
+3          hibrido_(corr_todos)_(relfis_agua_qmax)   
+4                                  corr_todos_sinP   
+5              hibrido_(corr_top4)_(relfis_agua_q)   
+6                                       corr_todos   
+7              hibrido_(corr_top3)_(relfis_agua_q)   
+8   hibrido_(corr_meteorologia)_(relfis_agua_qmax)   
+9           hibrido_(corr_top4)_(relfis_agua_qmax)   
+10               hibrido_(corr_top3)_(relfis_agua)   
+11    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)   
+12       hibrido_(corr_todos_sinP)_(relfis_agua_q)   
+13     hibrido_(corr_meteorologia)_(relfis_agua_q)   
+14                                       corr_top3   
+15                                   relfis_agua_q   
+16                                       corr_top4   
+17       hibrido_(corr_meteorologia)_(relfis_agua)   
+18                                     relfis_agua   
+19              hibrido_(corr_todos)_(relfis_agua)   
+20                                relfis_agua_qmax   
+21                               corr_meteorologia   
+22         hibrido_(corr_todos_sinP)_(relfis_agua)   
+
+                                 Target      experiment_label  n_train  \
+0   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+1   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+2   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+3   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+4   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+5   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+6   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+7   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+8   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+9   IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+10  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+11  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+12  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+13  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+14  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+15  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+16  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+17  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+18  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+19  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+20  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+21  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+22  IET(PT) Lótico_Lamparelli [XSLH030]  sets_lotico_flexible       84   
+
+    n_test  n_features train_start  train_end test_start   test_end  ...  \
+0       21           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+1       21           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+2       21          13  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+3       21          13  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+4       21           8  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+5       21           8  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+6       21           9  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+7       21           7  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+8       21           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+9       21           8  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+10      21           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+11      21          12  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+12      21          12  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+13      21           6  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+14      21           3  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+15      21           4  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+16      21           4  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+17      21           5  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+18      21           3  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+19      21          12  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+20      21           4  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+21      21           2  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+22      21          11  2014-04-30 2021-03-31 2021-04-30 2022-12-31  ...   
+
+    best_epoch  best_val_loss  max_epochs  patience  final_val_size  scale_y  \
+0          118          0.221         500       100            0.15     True   
+1           44          0.266         500       100            0.15     True   
+2          159          0.236         500       100            0.15     True   
+3          157          0.248         500       100            0.15     True   
+4          364          0.294         500       100            0.15     True   
+5           70          0.235         500       100            0.15     True   
+6           36          0.311         500       100            0.15     True   
+7           60          0.273         500       100            0.15     True   
+8           68          0.342         500       100            0.15     True   
+9           72          0.262         500       100            0.15     True   
+10         245          0.253         500       100            0.15     True   
+11         261          0.196         500       100            0.15     True   
+12         127          0.214         500       100            0.15     True   
+13         328          0.358         500       100            0.15     True   
+14         392          0.329         500       100            0.15     True   
+15          16          0.602         500       100            0.15     True   
+16         173          0.339         500       100            0.15     True   
+17         279          0.339         500       100            0.15     True   
+18          31          0.564         500       100            0.15     True   
+19         110          0.189         500       100            0.15     True   
+20          29          0.588         500       100            0.15     True   
+21          33          0.493         500       100            0.15     True   
+22         210          0.161         500       100            0.15     True   
+
+    pruning  seed_used  execution_seconds  execution_time  
+0      True         42             2610.0  43 min 33.14 s  
+1      True         42             3380.0  56 min 22.91 s  
+2      True         42             2060.0  34 min 15.17 s  
+3      True         42             4320.0  71 min 55.42 s  
+4      True         42             5870.0  97 min 47.62 s  
+5      True         42             4330.0  72 min 10.03 s  
+6      True         42             5930.0  98 min 47.32 s  
+7      True         42             2950.0   49 min 6.64 s  
+8      True         42             3900.0   65 min 0.21 s  
+9      True         42             2170.0  36 min 12.27 s  
+10     True         42             5060.0  84 min 24.43 s  
+11     True         42             5430.0  90 min 25.16 s  
+12     True         42             5640.0  93 min 55.54 s  
+13     True         42             5010.0  83 min 31.22 s  
+14     True         42             8280.0  138 min 2.44 s  
+15     True         42             2620.0  43 min 42.35 s  
+16     True         42             5720.0  95 min 21.97 s  
+17     True         42             4630.0   77 min 9.08 s  
+18     True         42             4090.0  68 min 14.84 s  
+19     True         42             2960.0  49 min 24.14 s  
+20     True         42             1910.0  31 min 50.57 s  
+21     True         42             3680.0  61 min 15.67 s  
+22     True         42             2890.0   48 min 5.67 s  
+
+[23 rows x 22 columns]
+
+Resumen comparativo final (train / test / CV):
+
+                                         DataFrame     NSE         \
+                                                   CV Mean CV Std   
+0                hibrido_(corr_top4)_(relfis_agua)   0.290  0.190   
+1           hibrido_(corr_top3)_(relfis_agua_qmax)   0.300  0.180   
+2             hibrido_(corr_todos)_(relfis_agua_q)   0.360  0.150   
+3          hibrido_(corr_todos)_(relfis_agua_qmax)   0.350  0.130   
+4                                  corr_todos_sinP   0.340  0.260   
+5              hibrido_(corr_top4)_(relfis_agua_q)   0.290  0.200   
+6                                       corr_todos   0.430  0.190   
+7              hibrido_(corr_top3)_(relfis_agua_q)   0.320  0.200   
+8   hibrido_(corr_meteorologia)_(relfis_agua_qmax)   0.260  0.180   
+9           hibrido_(corr_top4)_(relfis_agua_qmax)   0.290  0.260   
+10               hibrido_(corr_top3)_(relfis_agua)   0.400  0.120   
+11    hibrido_(corr_todos_sinP)_(relfis_agua_qmax)   0.330  0.240   
+12       hibrido_(corr_todos_sinP)_(relfis_agua_q)   0.310  0.200   
+13     hibrido_(corr_meteorologia)_(relfis_agua_q)   0.280  0.110   
+14                                       corr_top3   0.370  0.150   
+15                                   relfis_agua_q   0.029  0.150   
+16                                       corr_top4   0.460  0.067   
+17       hibrido_(corr_meteorologia)_(relfis_agua)   0.260  0.160   
+18                                     relfis_agua   0.062  0.130   
+19              hibrido_(corr_todos)_(relfis_agua)   0.320  0.260   
+20                                relfis_agua_qmax   0.026  0.150   
+21                               corr_meteorologia   0.400  0.210   
+22         hibrido_(corr_todos_sinP)_(relfis_agua)   0.370  0.150   
+
+                                                    RMSE         MAE  ...  \
+      CV Performance Train  Test  Test Performance Train  Test Train  ...   
+0   No satisfactorio  0.66  0.60             Bueno  0.74  0.74  0.53  ...   
+1   No satisfactorio  0.63  0.59             Bueno  0.78  0.75  0.57  ...   
+2      Satisfactorio  0.75  0.59             Bueno  0.63  0.75  0.45  ...   
+3   No satisfactorio  0.73  0.59             Bueno  0.66  0.74  0.46  ...   
+4   No satisfactorio  0.68  0.57             Bueno  0.73  0.76  0.50  ...   
+5   No satisfactorio  0.69  0.56             Bueno  0.71  0.78  0.49  ...   
+6      Satisfactorio  0.62  0.55             Bueno  0.78  0.78  0.54  ...   
+7   No satisfactorio  0.65  0.55             Bueno  0.75  0.78  0.55  ...   
+8   No satisfactorio  0.57  0.54             Bueno  0.83  0.79  0.60  ...   
+9   No satisfactorio  0.67  0.54             Bueno  0.73  0.79  0.51  ...   
+10     Satisfactorio  0.66  0.54             Bueno  0.75  0.79  0.54  ...   
+11  No satisfactorio  0.84  0.54             Bueno  0.51  0.79  0.37  ...   
+12  No satisfactorio  0.80  0.53             Bueno  0.56  0.80  0.41  ...   
+13  No satisfactorio  0.59  0.53             Bueno  0.82  0.79  0.59  ...   
+14     Satisfactorio  0.60  0.52             Bueno  0.81  0.81  0.57  ...   
+15  No satisfactorio  0.37  0.52             Bueno  1.00  0.81  0.69  ...   
+16     Satisfactorio  0.66  0.51             Bueno  0.74  0.82  0.52  ...   
+17  No satisfactorio  0.63  0.47     Satisfactorio  0.78  0.85  0.56  ...   
+18  No satisfactorio  0.43  0.45     Satisfactorio  0.96  0.87  0.67  ...   
+19  No satisfactorio  0.93  0.44     Satisfactorio  0.34  0.88  0.23  ...   
+20  No satisfactorio  0.46  0.39     Satisfactorio  0.93  0.91  0.65  ...   
+21     Satisfactorio  0.48  0.34  No satisfactorio  0.92  0.94  0.67  ...   
+22     Satisfactorio  0.89  0.33  No satisfactorio  0.42  0.95  0.30  ...   
+
+     KGE   PBIAS           R2         RSR       EarlyStop   Tiempo  \
+    Test   Train   Test Train  Test Train  Test BestEpoch Segundos   
+0   0.56  0.0360 -0.140  0.66  0.63  0.58  0.64       118   2610.0   
+1   0.52 -0.0092 -0.170  0.63  0.66  0.61  0.64        44   3380.0   
+2   0.64  0.0250 -0.120  0.75  0.60  0.50  0.64       159   2060.0   
+3   0.61  0.0270 -0.120  0.74  0.61  0.52  0.64       157   4320.0   
+4   0.60  0.0190 -0.300  0.68  0.61  0.57  0.65       364   5870.0   
+5   0.55  0.0290 -0.180  0.69  0.59  0.56  0.67        70   4330.0   
+6   0.59 -0.0084 -0.360  0.62  0.61  0.61  0.67        36   5930.0   
+7   0.49  0.0140 -0.050  0.65  0.61  0.59  0.67        60   2950.0   
+8   0.52 -0.0140 -0.240  0.57  0.60  0.65  0.68        68   3900.0   
+9   0.49  0.0320 -0.069  0.67  0.60  0.57  0.67        72   2170.0   
+10  0.48  0.0050 -0.041  0.66  0.61  0.59  0.67       245   5060.0   
+11  0.60  0.0140 -0.150  0.84  0.55  0.40  0.68       261   5430.0   
+12  0.62  0.0190 -0.190  0.80  0.54  0.44  0.69       127   5640.0   
+13  0.50 -0.0033 -0.170  0.59  0.59  0.64  0.68       328   5010.0   
+14  0.53  0.0130 -0.340  0.60  0.58  0.64  0.70       392   8280.0   
+15  0.51  0.0210 -0.210  0.37  0.56  0.80  0.70        16   2620.0   
+16  0.55  0.0470 -0.320  0.66  0.55  0.58  0.70       173   5720.0   
+17  0.59  0.0510 -0.430  0.63  0.52  0.61  0.73       279   4630.0   
+18  0.47 -0.0110 -0.110  0.43  0.46  0.76  0.74        31   4090.0   
+19  0.61 -0.0030  0.220  0.93  0.46  0.27  0.75       110   2960.0   
+20  0.61 -0.0140 -0.400  0.46  0.45  0.73  0.78        29   1910.0   
+21  0.53 -0.0410 -0.530  0.48  0.43  0.72  0.81        33   3680.0   
+22  0.51  0.0062  0.130  0.89  0.35  0.33  0.82       210   2890.0   
+
+                    
+             Texto  
+0   43 min 33.14 s  
+1   56 min 22.91 s  
+2   34 min 15.17 s  
+3   71 min 55.42 s  
+4   97 min 47.62 s  
+5   72 min 10.03 s  
+6   98 min 47.32 s  
+7    49 min 6.64 s  
+8    65 min 0.21 s  
+9   36 min 12.27 s  
+10  84 min 24.43 s  
+11  90 min 25.16 s  
+12  93 min 55.54 s  
+13  83 min 31.22 s  
+14  138 min 2.44 s  
+15  43 min 42.35 s  
+16  95 min 21.97 s  
+17   77 min 9.08 s  
+18  68 min 14.84 s  
+19  49 min 24.14 s  
+20  31 min 50.57 s  
+21  61 min 15.67 s  
+22   48 min 5.67 s  
+
+[23 rows x 22 columns]
+
+Estadísticas globales de performance NSE:
+
+  Estadística  CV Mean  CV Std  Train   Test
+0    Promedio     0.30    0.18   0.65  0.510
+1     Mediana     0.32    0.18   0.66  0.540
+2         Std     0.11    0.05   0.14  0.076
+</div>
+            </div>
+        </div>
+    </body>
+    </html>
+    

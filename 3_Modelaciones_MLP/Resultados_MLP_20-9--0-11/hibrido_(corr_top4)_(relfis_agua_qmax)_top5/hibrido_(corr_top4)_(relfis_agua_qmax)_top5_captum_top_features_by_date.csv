@@ -1,0 +1,85 @@
+Fecha,top_feature,top_attribution,top_abs_attribution
+2014-04-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.2237053,0.2237053
+2014-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.23195912,0.23195912
+2014-06-30,Temperatura del agua (T) [ºC] EPSE040,-0.38608143,0.38608143
+2014-07-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.72698474,0.72698474
+2014-08-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-1.1474196,1.1474196
+2014-09-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.9020777,0.9020777
+2014-10-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.8816518,0.8816518
+2014-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.894254,0.894254
+2014-12-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.8565656,0.8565656
+2015-01-31,Temperatura del agua (T) [ºC] EPSE040,0.41856205,0.41856205
+2015-02-28,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.791227,0.791227
+2015-03-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,-0.5021102,0.5021102
+2015-04-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.6262335,0.6262335
+2015-05-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.36060104,0.36060104
+2015-06-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.47864413,0.47864413
+2015-07-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.56221044,0.56221044
+2015-08-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.7396068,0.7396068
+2015-09-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.4257212,0.4257212
+2015-10-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.1812696,1.1812696
+2015-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.3591932,0.3591932
+2015-12-31,Temperatura del agua (T) [ºC] EPSE040,0.3842422,0.3842422
+2016-01-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.7059783,0.7059783
+2016-02-29,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.2922375,1.2922375
+2016-03-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.3715477,1.3715477
+2016-04-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.5367817,1.5367817
+2016-05-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.7183166,1.7183166
+2016-06-30,Temperatura del agua (T) [ºC] EPSE040,-0.66879785,0.66879785
+2016-07-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.53135777,0.53135777
+2016-08-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.5265193,0.5265193
+2016-09-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.53453344,0.53453344
+2016-10-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.5664359,0.5664359
+2016-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.4761002,0.4761002
+2016-12-31,Temperatura del agua (T) [ºC] EPSE040,0.5454102,0.5454102
+2017-01-31,Temperatura del agua (T) [ºC] EPSE040,0.48689786,0.48689786
+2017-02-28,Temperatura del agua (T) [ºC] EPSE040,0.56512374,0.56512374
+2017-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.51595217,0.51595217
+2017-04-30,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.3739765,0.3739765
+2017-05-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.0560273,1.0560273
+2017-06-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.9664391,0.9664391
+2017-07-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.3423638,1.3423638
+2017-08-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.5189432,0.5189432
+2017-09-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.22505623,0.22505623
+2017-10-31,Temperatura del agua (T) [ºC] EPSE040,-0.489981,0.489981
+2017-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.9934124,0.9934124
+2017-12-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.4892335,0.4892335
+2018-01-31,Temperatura del agua (T) [ºC] EPSE040,0.42933902,0.42933902
+2018-02-28,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.62636787,0.62636787
+2018-03-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.0350683,1.0350683
+2018-04-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.1104368,1.1104368
+2018-05-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.137992,1.137992
+2018-06-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.9174091,0.9174091
+2018-07-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,1.1774931,1.1774931
+2018-08-31,Oxigeno Disuelto (OD) [mg/L] EPSE040,0.71972966,0.71972966
+2018-09-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.35092026,0.35092026
+2018-10-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.41876942,0.41876942
+2018-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.31151372,0.31151372
+2018-12-31,Temperatura del agua (T) [ºC] EPSE040,0.24736142,0.24736142
+2019-01-31,Temperatura del agua (T) [ºC] EPSE040,0.22054394,0.22054394
+2019-02-28,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.42584708,0.42584708
+2019-03-31,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.34561065,0.34561065
+2019-04-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.26138967,0.26138967
+2019-05-31,Temperatura del agua (T) [ºC] EPSE040,-0.1777726,0.1777726
+2019-06-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.4117157,0.4117157
+2019-07-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.53424835,0.53424835
+2019-08-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.59613174,0.59613174
+2019-09-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.71376765,0.71376765
+2019-10-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.7838426,0.7838426
+2019-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-1.1031997,1.1031997
+2019-12-31,Temperatura del agua (T) [ºC] EPSE040,0.4928544,0.4928544
+2020-01-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.66786563,0.66786563
+2020-02-29,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.6482025,0.6482025
+2020-03-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.75520265,0.75520265
+2020-04-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.6063665,0.6063665
+2020-05-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,0.5102922,0.5102922
+2020-06-30,Temperatura del agua (T) [ºC] EPSE040,-0.35211778,0.35211778
+2020-07-31,Temperatura del agua (T) [ºC] EPSE040,-0.42661244,0.42661244
+2020-08-31,Temperatura del agua (T) [ºC] EPSE040,-0.48786345,0.48786345
+2020-09-30,Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,-0.36362448,0.36362448
+2020-10-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.40887526,0.40887526
+2020-11-30,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.52720255,0.52720255
+2020-12-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.6131316,0.6131316
+2021-01-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.27200973,0.27200973
+2021-02-28,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.5023487,0.5023487
+2021-03-31,Fósforo Total (PT) [μg/L] EPSE040_lag1,-0.4693401,0.4693401

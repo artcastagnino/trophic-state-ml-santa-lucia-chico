@@ -1,0 +1,10 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.5980806,0.011587604,0.7225786
+Temperatura del agua (T) [ºC] EPSE040,0.2408511,0.00014456322,0.27766842
+Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.20786501,-0.015683379,0.24005447
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.16428582,0.051435426,0.21530777
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.10433012,0.08552512,0.12254543
+Fósforo Total (PT) [μg/L] XSLH020_lag1,0.08497613,-0.0037222228,0.12814559
+Turbidez [NTU] EPSE040,0.06634775,-0.026641292,0.084035285
+Fósforo Total (PT) [μg/L] XSLH030_lag1,0.059466872,0.015799323,0.085334495
+Conductividad [μS/cm] EPSE040,0.05473968,-0.013560793,0.07994853

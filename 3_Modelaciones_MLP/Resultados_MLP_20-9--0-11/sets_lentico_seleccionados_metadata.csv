@@ -1,0 +1,5 @@
+DataFrame,Target,experiment_label,n_train,n_test,n_features,train_start,train_end,test_start,test_end,cv_nse_mean,cv_nse_std,best_epoch,best_val_loss,max_epochs,patience,final_val_size,scale_y,pruning,seed_used,execution_seconds,execution_time
+hibrido_(corr_top3)_(relfis_agua)_top3,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_seleccionados_intermedio,84,21,3,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.4,0.34,36,0.0649,500,100,0.15,True,True,42,9840.0,163 min 58.58 s
+hibrido_(corr_top4)_(relfis_agua_qmax)_top3,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_seleccionados_intermedio,84,21,3,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.54,0.071,28,0.123,500,100,0.15,True,True,42,8680.0,144 min 42.32 s
+hibrido_(corr_top4)_(relfis_agua_qmax)_top5,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_seleccionados_intermedio,84,21,5,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.4,0.22,75,0.123,500,100,0.15,True,True,42,7430.0,123 min 51.33 s
+hibrido_(corr_top3)_(relfis_agua)_top5,IET(PT) Léntico_Cunha [EPSE040],sets_lentico_seleccionados_intermedio,84,21,5,2014-04-30,2021-03-31,2021-04-30,2022-12-31,0.34,0.34,37,0.113,500,100,0.15,True,True,42,4720.0,78 min 38.87 s

@@ -1,0 +1,7 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Temperatura del aire maxima (TA) [ºC] INIA Las Brujas_lag1,0.3973405,0.04371861,0.44088063
+Conductividad [μS/cm] XSLH030,0.20783116,0.018050905,0.2628137
+Heliofania (Hel) [hs] INIA Las Brujas_lag1,0.1695896,0.050276104,0.19183342
+Caudal (Q) [m3/s] Florida (Puente Ruta 5),0.08582793,0.006191725,0.1163225
+Temperatura del agua (T) [ºC] XSLH030,0.08444793,0.028418312,0.10789898
+Turbidez [NTU] XSLH030,0.016874127,-0.008092791,0.028526343

@@ -1,0 +1,16 @@
+DataFrame,hidden_layers,activation,dropout,learning_rate,weight_decay,batch_size,optimizer,use_batch_norm,leaky_relu_slope,best_epoch,best_val_loss
+hibrido_(corr_top3)_(relfis_agua),"(50, 30, 20)",relu,0.05,0.00035,8.75e-07,8,adam,0,0.005,357,0.0549
+hibrido_(corr_top4)_(relfis_agua),"(40, 30, 20)",tanh,0.05,0.0005,2.75e-07,8,adam,0,0.001,119,0.101
+hibrido_(corr_top3)_(relfis_agua_q),"(40, 30, 20)",tanh,0.05,0.0005,4.25e-07,8,adam,0,0.005,224,0.092
+hibrido_(corr_top4)_(relfis_agua_qmax),"(30, 20)",relu,0.04,0.0005,2.5e-07,8,adam,0,0.009,13,0.157
+hibrido_(corr_top4)_(relfis_agua_q),"(30, 20)",relu,0.05,0.0005,4.75e-07,8,adam,0,0.001,13,0.157
+corr_top3,"(30, 20)",relu,0.03,0.00025,3.5e-07,8,adam,0,0.001,19,0.163
+corr_top4,"(40, 30, 20)",relu,0.03,0.0001,1.25e-07,8,adam,0,0.005,47,0.144
+hibrido_(corr_top3)_(relfis_agua_qmax),"(40, 30, 20)",relu,0.03,0.0001,1.25e-07,8,adam,0,0.005,57,0.144
+corr_meteorologia,"(50, 30, 20)",relu,0.03,0.0003,7.5e-07,16,adam,0,0.001,19,0.198
+hibrido_(corr_meteorologia)_(relfis_agua_qmax),"(30, 20)",relu,0.03,0.00025,8.25e-07,16,adam,0,0.009,21,0.235
+hibrido_(corr_meteorologia)_(relfis_agua),"(40, 30, 20)",tanh,0.04,0.00025,1.25e-07,16,adam,0,0.001,9,0.222
+hibrido_(corr_meteorologia)_(relfis_agua_q),"(30, 20)",relu,0.05,0.0002,5.75e-07,16,adam,0,0.009,30,0.234
+relfis_agua_q,"(50, 30)",tanh,0.03,0.0004,1e-06,8,adam,0,0.005,3,0.204
+relfis_agua,"(50, 30)",tanh,0.03,0.00045,6.5e-07,16,adam,0,0.009,6,0.196
+relfis_agua_qmax,"(30, 20)",tanh,0.04,0.0002,9.25e-07,16,adam,0,0.001,8,0.211

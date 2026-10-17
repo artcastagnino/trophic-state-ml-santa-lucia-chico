@@ -1,0 +1,11 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.090791106,-0.006704566,0.107899405
+Fósforo Total (PT) [μg/L] EPSE040_lag1,0.07924373,0.0075900666,0.099410065
+Temperatura del agua (T) [ºC] EPSE040,0.06159269,-0.013918156,0.07471477
+Fósforo Total (PT) [μg/L] XSLH020_lag1,0.054277346,0.023557523,0.0868914
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.052342005,-0.0070137708,0.073755965
+Conductividad [μS/cm] EPSE040,0.039423257,-0.015135388,0.06337411
+Turbidez [NTU] EPSE040,0.028180543,-0.00055144477,0.036240496
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.02228557,0.010351611,0.03327427
+Caudal (Q) [m3/s] Florida (Puente Ruta 5),0.019916128,-0.0021759914,0.029049028
+Fósforo Total (PT) [μg/L] XSLH030_lag1,0.017835155,-0.014755025,0.02440867

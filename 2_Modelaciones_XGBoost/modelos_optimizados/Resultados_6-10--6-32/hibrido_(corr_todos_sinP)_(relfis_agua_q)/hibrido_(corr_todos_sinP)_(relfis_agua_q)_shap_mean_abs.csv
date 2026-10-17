@@ -1,0 +1,13 @@
+feature,mean_abs_shap
+Conductividad__μS_cm__XSLH020_lag1,0.34093577
+Heliofania__Hel___hs__INIA_Las_Brujas_lag1,0.33002457
+Temperatura_del_aire_maxima__TA___ºC__INIA_Las_Brujas_lag1,0.2840795
+Conductividad__μS_cm__XSLH020,0.15454432
+Conductividad__μS_cm__EPSE020,0.1191864
+Conductividad__μS_cm__EPSE040,0.07735991
+Conductividad__μS_cm__XSLH010,0.06970244
+Oxigeno_Disuelto__OD___mg_L__XSLH010,0.06437277
+Turbidez__NTU__XSLH030,0.04914004
+Caudal__Q___m3_s__Florida__Puente_Ruta_5_,0.028995331
+Temperatura_del_agua__T___ºC__XSLH030,0.020752048
+Conductividad__μS_cm__XSLH030,0.00950812

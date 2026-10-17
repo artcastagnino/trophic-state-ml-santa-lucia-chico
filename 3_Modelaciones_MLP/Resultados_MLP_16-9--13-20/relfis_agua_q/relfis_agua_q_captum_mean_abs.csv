@@ -1,0 +1,5 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Temperatura del agua (T) [ºC] XSLH030,0.3228311,0.033915613,0.36693782
+Conductividad [μS/cm] XSLH030,0.18396914,0.010191482,0.24767247
+Caudal (Q) [m3/s] Florida (Puente Ruta 5),0.052013364,-0.028014008,0.12952287
+Turbidez [NTU] XSLH030,0.049494486,7.173064e-05,0.09175794

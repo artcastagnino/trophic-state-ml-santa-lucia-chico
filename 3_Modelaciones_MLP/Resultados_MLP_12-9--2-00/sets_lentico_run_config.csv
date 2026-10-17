@@ -1,0 +1,11 @@
+dict_name,experiment_label,search_space_type,use_early_stopping,n_trials,train_size,cv_splits,final_val_size,max_epochs,patience,scale_y,make_plots,pruning,seed,output_dir_run,run_execution_seconds,run_execution_time,search_param,search_range
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,,
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,hidden_layers,"[(30, 20), (40, 20), (50, 30), (40, 30, 20), (50, 30, 20), (60, 40, 30), (40, 30, 20, 10), (50, 40, 30, 20), (60, 50, 40, 30)]"
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,activation,"['relu', 'tanh', 'leaky_relu']"
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,dropout,0.01 a 0.05 (step=0.005)
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,learning_rate,5e-05 a 0.0005 (step=2.5e-05)
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,weight_decay,1e-08 a 1e-06 (step=1e-08)
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,batch_size,"[8, 16]"
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,optimizer,"['adam', 'adamw']"
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,use_batch_norm,[False]
+sets_lentico,sets_lentico_intermedio,custom_mlp,True,1000,0.8,4,0.15,500,100,True,True,True,42,Resultados_MLP_12-9--2-00,74500.0,1242 min 13.13 s,leaky_relu_slope,0.001 a 0.029 (step=0.002)

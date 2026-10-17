@@ -1,0 +1,11 @@
+dict_name,preset,experiment_label,search_space_type,use_early_stopping,early_stopping_rounds,final_val_size,n_trials,train_size,cv_splits,make_plots,make_tree_evolution_plot,tree_evolution_step,n_estimators_saturation_pct,output_dir_run,search_param,search_range
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,,
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,n_estimators,200 a 2500
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,max_depth,2 a 8
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,learning_rate,0.0005 a 0.1 (step=1e-05)
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,subsample,0.75 a 1.0 (step=0.01)
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,colsample_bytree,0.75 a 1.0 (step=0.01)
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,min_child_weight,1 a 10
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,gamma,1e-07 a 0.3 (step=1e-07)
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,reg_alpha,1e-07 a 0.2 (step=1e-07)
+sets_lentico_seleccionados,,sets_lentico_seleccionados_flexible_95,custom,True,100,0.15,1000,0.8,4,True,True,1,95,Resultados_8-6--2-44,reg_lambda,0.1 a 3.0 (step=0.0001)

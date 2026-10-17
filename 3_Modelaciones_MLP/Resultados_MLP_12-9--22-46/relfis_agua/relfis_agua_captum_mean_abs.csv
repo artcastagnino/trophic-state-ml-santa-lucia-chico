@@ -1,0 +1,6 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.16168542,0.0125969965,0.20309371
+Turbidez [NTU] EPSE040,0.11845585,-0.017325148,0.14039212
+Temperatura del agua (T) [ºC] EPSE040,0.107855596,-0.009545596,0.12473352
+Conductividad [μS/cm] EPSE040,0.029003002,-0.0012929769,0.037411977
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.024214977,0.00022306695,0.034760784

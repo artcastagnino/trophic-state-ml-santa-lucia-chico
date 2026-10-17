@@ -1,0 +1,11 @@
+feature,gain,weight,cover
+Fósforo_Total__PT___μg_L__EPSE040_lag1,8.424476623535156,17.0,60.70588302612305
+Fósforo_Total__PT___μg_L__XSLH030_lag1,5.285623073577881,6.0,42.83333206176758
+Potencial_de_Hidrogeno__pH___NA__EPSE040,2.5085697174072266,6.0,33.33333206176758
+Temperatura_del_aire_minima__TA___ºC__INIA_Las_Brujas_lag1,2.2487125396728516,5.0,32.79999923706055
+Caudal_Maximo__Qmax___m3_s__Florida__Puente_Ruta_5_,1.8760802745819092,1.0,30.0
+Conductividad__μS_cm__EPSE040,1.6360276937484741,7.0,30.285715103149414
+Turbidez__NTU__EPSE040,1.5091208219528198,4.0,31.0
+Fósforo_Total__PT___μg_L__XSLH020_lag1,0.325986385345459,1.0,15.0
+Oxigeno_Disuelto__OD___mg_L__EPSE040,0.0,0.0,0.0
+Temperatura_del_agua__T___ºC__EPSE040,0.0,0.0,0.0

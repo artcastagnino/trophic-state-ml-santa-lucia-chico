@@ -1,0 +1,4 @@
+feature,mean_abs_shap
+Temperatura_del_aire_maxima__TA___ºC__INIA_Las_Brujas_lag1,0.3915676
+Conductividad__μS_cm__EPSE020,0.30356407
+Conductividad__μS_cm__XSLH020,0.28990555

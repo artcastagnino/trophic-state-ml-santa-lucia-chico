@@ -1,0 +1,8 @@
+feature,mean_abs_attribution,mean_attribution,std_attribution
+Potencial de Hidrogeno (pH) [NA] EPSE040,0.04410027,-0.0006280263,0.055641465
+Oxigeno Disuelto (OD) [mg/L] EPSE040,0.043399855,0.002705232,0.055550486
+Temperatura del agua (T) [ºC] EPSE040,0.034175247,-0.0118448455,0.04282236
+Temperatura del aire minima (TA) [ºC] INIA Las Brujas_lag1,0.033652436,0.017672637,0.043234125
+Turbidez [NTU] EPSE040,0.030115874,-0.0033113016,0.041485082
+Conductividad [μS/cm] EPSE040,0.014244153,-0.0005932788,0.020502307
+Caudal (Q) [m3/s] Florida (Puente Ruta 5),0.010368161,0.0020253442,0.016234254
