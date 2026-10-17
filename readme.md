@@ -86,7 +86,7 @@ Contiene los códigos y resultados de las modelaciones con XGBoost, con Optuna p
 - `xgb_modelos_reducidos.ipynb`: modelaciones con configuraciones reducidas, orientadas a disminuir la cantidad de variables predictoras y el número efectivo de árboles del ensamble.
 - `pipeline_modelado.py`: entrenamiento, validación temporal y optimización de hiperparámetros.
 
-Ambas subcarpetas incluyen módulos auxiliares para el cálculo de métricas (`my_metrics.py`), la generación de gráficos (`visualization.py`) y de reportes HTML (`reportes_html*.py`).
+Ambas subcarpetas incluyen módulos auxiliares para el cálculo de métricas (`my_metrics.py`), la generación de gráficos (`visualization.py`) y de reportes HTML (`reportes_html.py`).
 
 ### 2.3. Carpeta `3_Modelaciones_MLP`
 
